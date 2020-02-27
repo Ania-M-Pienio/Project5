@@ -196,8 +196,31 @@ body, html, h1, h2, h3, h4 {
   background-color: white;
 }
 
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-54 {
+  font-size: 54px;
+}
+
+.material-icons.md-60 {
+  font-size: 60px;
+}
+
 .App {
-  font-family: "Trade Winds";
   text-align: center;
   background-color: #85c1e4;
   height: 100vh;
