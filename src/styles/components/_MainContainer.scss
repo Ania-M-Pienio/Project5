@@ -1,6 +1,7 @@
 .mainContainer {
   color: $font;
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 160px);
+  padding: 2%;
   border: 1px solid rgb(200, 197, 197); // just for boundry lines *will remove*
 }

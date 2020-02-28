@@ -13,8 +13,13 @@ class AppBar extends Component {
   render() {
     return (
       <nav className="appBar">
-        <Logo />
-        <SettingContainer />
+
+        <div className="barLogo">
+          <Logo />
+        </div>
+
+        <SettingContainer/>
+        
       </nav>
     );
   }
