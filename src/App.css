@@ -226,6 +226,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .appBar {
   height: 100px;
+  color: #D5D5D5;
   border: 1px solid #c8c5c5;
 }
 
@@ -236,7 +237,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 body, html, h1, h2, h3, h4 {

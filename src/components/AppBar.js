@@ -12,7 +12,7 @@ class AppBar extends Component {
   //Render 
   render() {
     return (
-      <div className="appBar">
+      <div className="appBar"> AppBar
 
       </div>
     )
