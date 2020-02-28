@@ -225,9 +225,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .appBar {
-  height: 120px;
+  height: 160px;
   color: #D5D5D5;
-  border: 1px solid #c8c5c5;
+  padding: 4% 2% 2% 2%;
+  border: 1px solid #cc168f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mainContainer {
@@ -241,6 +245,25 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 100%;
   color: #D5D5D5;
   border: 1px solid #c8c5c5;
+}
+
+.settingContainer {
+  width: 100%;
+  height: 90%;
+  border: 1px solid #22cca7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.settingContainer .setting {
+  margin-left: 40px;
+  width: 100px;
+  height: 100%;
+  border: 1px solid #43e065;
 }
 
 html {
@@ -263,5 +286,17 @@ body, html, h1, h2, h3, h4 {
 .App {
   text-align: center;
   height: 100vh;
+}
+
+.logo {
+  font-family: "DM Sans";
+  height: 90%;
+  width: 100px;
+}
+
+.logoBorder {
+  border: 4px solid #C7493A;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

@@ -3,10 +3,18 @@
 @import 'styles/setup';
 @import 'styles/colors';
 @import 'styles/icons';
+
 // component partials
 @import 'styles/components/AppBar';
 @import 'styles/components/MainContainer';
 @import 'styles/components/Splash';
+@import 'styles/components/Setting';
+
+
+
+    // font-family: 'DM Sans', ;
+
+    // font-family: 'Spartan', ;
 
 
 
@@ -33,6 +41,18 @@ body, html, h1, h2, h3, h4 {
 .App {
   text-align: center;
   height: 100vh;
+}
+
+.logo {
+  font-family: 'DM Sans',;
+  height: 90%;
+  width: 100px;
+}
+
+.logoBorder {
+  border: 4px solid $bold;
+  height: 100%;
+  width: 100%;
 }
 
 

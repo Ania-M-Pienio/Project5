@@ -1,5 +1,7 @@
 .appBar {
-  height: 120px;
+  height: 160px;
   color: $font;
-  border: 1px solid rgb(200, 197, 197); // just for boundry lines *will remove*
+  padding: 4% 2% 2% 2%;
+  border: 1px solid rgb(204, 22, 143); // just for boundry lines *will remove*
+  display: flex;
 }

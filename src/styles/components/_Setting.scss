@@ -1,0 +1,13 @@
+.settingContainer {
+  width: 100%;
+  height: 90%;
+  border: 1px solid rgb(34, 204, 167); // just for boundry lines *will remove*
+  display: flex;
+  justify-content: flex-end;
+  .setting {
+    margin-left: 40px;
+    width: 100px;
+    height: 100%;
+    border: 1px solid rgb(67, 224, 101); // just for boundry lines *will remove*
+  }
+}
