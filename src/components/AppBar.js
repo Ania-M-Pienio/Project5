@@ -12,9 +12,9 @@ class AppBar extends Component {
   //Render 
   render() {
     return (
-      <div className="appBar"> AppBar
+      <nav className="appBar"> AppBar
 
-      </div>
+      </nav>
     )
   }
 }
