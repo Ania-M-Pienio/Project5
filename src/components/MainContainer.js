@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 class MainContainer extends Component {
   // Main Constructor
   constructor() {
@@ -16,8 +17,10 @@ class MainContainer extends Component {
       <main className="mainContainer">
 
 
-        
+
       </main>
     )
   }
 }
+
+export default MainContainer;

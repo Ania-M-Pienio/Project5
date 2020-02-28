@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
 @import 'styles/variables';
 @import 'styles/setup';
+@import 'styles/colors';
+@import 'styles/icons';
+// component partials
+@import 'styles/components/AppBar';
+@import 'styles/components/MainContainer';
+
+
 
 // typography
 html {
@@ -16,23 +23,15 @@ body, html, h1, h2, h3, h4 {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 5%;
-  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-54 { font-size: 54px; }
-.material-icons.md-60 { font-size: 60px; }
-
+// General App
 .App {
   text-align: center;
   background-color: $primary;
   height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 
