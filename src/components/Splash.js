@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from "./Logo";
 
 class Splash extends Component {
   // Constructor
@@ -11,11 +12,12 @@ class Splash extends Component {
   render() {
     return (
       <section className="splash">
-        Splash
-
-
+        <div className="splashLogo">
+          <Logo />
+        </div>
+        <h1>BrideM8</h1>
       </section>
-    )
+    );
   }
 }
 

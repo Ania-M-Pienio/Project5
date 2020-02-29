@@ -23,7 +23,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isIntro: false
+      isIntro: false,
     }
   }
   render() {
