@@ -3,20 +3,23 @@ import SettingContainer from "./SettingContainer";
 import Logo from "./Logo";
 
 class AppBar extends Component {
-  // Constructor
-  constructor() {
-    super();
-    this.state = {};
-  }
 
   //Render
   render() {
     return (
       <nav className="appBar">
-          <button className="barLogo">
-            <Logo onStartOver={this.props.onStartOver}/>
-          </button>
-        <SettingContainer />
+        <button
+          type="button"
+          className="barLogo"
+          onClick={this.props.onStartOver}
+        >
+          <Logo />
+        </button>
+        <SettingContainer
+          season={this.props.season}
+          time={this.props.time}
+          color={this.props.color}
+        />
       </nav>
     );
   }

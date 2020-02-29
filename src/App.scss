@@ -3,7 +3,6 @@
 @import 'styles/setup';
 @import 'styles/colors';
 @import 'styles/mixins';
-@import 'styles/icons';
 
 // component partials
 @import 'styles/components/AppBar';
@@ -68,6 +67,8 @@ body, html, h1, h2, h3, h4 {
 
 hr {
   color: $font;
+  height: 5px;
+  background-color: $font;
   font-family: 'DM Sans', ;
   font-size: 3rem;
   margin-top: 20px;

@@ -4,30 +4,30 @@ import AppBar from "./components/AppBar";
 import Splash from "./components/Splash";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import 
-{ faUmbrella, 
-  faSnowflake, 
-  faLeaf, 
+import {
+  faUmbrella,
+  faSnowflake,
+  faLeaf,
   faSun,
   faUmbrellaBeach,
   faMoon,
   faCloudRain,
-  faPalette 
+  faPalette
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
 
-    // setup icons
-    library.add(
-      fab,
-      faUmbrella,
-      faSnowflake,
-      faLeaf,
-      faSun,
-      faUmbrellaBeach,
-      faMoon,
-      faCloudRain,
-      faPalette
-    );
+// setup icons
+library.add(
+  fab,
+  faUmbrella,
+  faSnowflake,
+  faLeaf,
+  faSun,
+  faUmbrellaBeach,
+  faMoon,
+  faCloudRain,
+  faPalette
+);
 
 class App extends Component {
   constructor() {
@@ -35,22 +35,26 @@ class App extends Component {
 
     this.state = {
       isIntro: true,
-      season: '',
-      time: '',
-      colorSet: '',
-    }
+      season: "spring",
+      time: "day",
+      colorSet: "yellow_pink"
+    };
   }
 
- handleStart = () => {
-   this.setState({
-     isIntro: false,
-   })
- }
+  handleStart = () => {
+    this.setState({
+      isIntro: false
+    });
+  };
 
- handleStartOver = () => {
-   
- }
-
+  handleStartOver = () => {
+    this.setState({
+      isIntro: true,
+      season: "",
+      time: "",
+      colorSet: ""
+    });
+  };
 
   render() {
     return (
@@ -59,11 +63,20 @@ class App extends Component {
           ""
         ) : (
           <Fragment>
-            <AppBar onStartOver={this.handleStartOver}/>
+            <AppBar
+              onStartOver={this.handleStartOver}
+              season={this.state.season}
+              time={this.state.time}
+              color={this.state.colorSet}
+            />
             <hr></hr>
           </Fragment>
         )}
-        {this.state.isIntro ? <Splash onStart={this.handleStart}/> : <MainContainer />}
+        {this.state.isIntro ? (
+          <Splash onStart={this.handleStart} />
+        ) : (
+          <MainContainer />
+        )}
       </div>
     );
   }
