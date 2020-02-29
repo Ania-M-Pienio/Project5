@@ -207,6 +207,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .logoBorder {
+  padding: 4%;
   border: 4px solid #F64C71;
   height: 100%;
   width: 100%;
@@ -231,22 +232,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .splashLogo {
-  height: 350px;
-  width: 400px;
+  height: 500px;
+  width: 550px;
   margin: 0 auto;
 }
 
 .barLogo {
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  height: 120px;
-  width: 150px;
+  height: 150px;
+  width: 180px;
   margin: 0;
   padding: 0;
 }
 
 .appBar {
-  height: 180px;
+  height: 200px;
   color: #f3efef;
   padding: 50px 2% 2% 2%;
   display: -webkit-box;
@@ -255,50 +256,60 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .mainContainer {
-  position: relative;
   color: #f3efef;
   width: 100%;
-  height: calc(100% - 160px);
-  padding: 2%;
+  height: auto;
+  min-height: 450px;
+  padding: 2.5% 10%;
+  border: 1px solid #c8c5c5;
 }
 
 .mainContainer button {
-  width: 150px;
-  height: 50px;
+  width: 100%;
+  height: 90px;
   font-size: 2.5rem;
-  position: absolute;
-  bottom: 150px;
+  bottom: 0;
   right: 0;
+  margin: 0 auto;
+}
+
+button.oneWay {
+  width: 100%;
+}
+
+button.twoWay {
+  width: 50%;
 }
 
 .splash {
   height: 100%;
   color: #f3efef;
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 .splash button {
-  width: 400px;
-  height: 100px;
+  width: 550px;
+  height: 130px;
   padding: 2%;
   margin: 0 auto;
-  margin-top: 50px;
-  font-size: 3rem;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 3.5rem;
 }
 
 .splash h1 {
   color: #f3efef;
   font-family: "DM Sans";
-  font-size: 3rem;
-  margin-top: 80px;
+  font-size: 4rem;
+  margin-top: 70px;
 }
 
 .splash h3 {
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 1% 15%;
   text-align: center;
   font-family: "Spartan";
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   letter-spacing: 3px;
 }
 
@@ -308,7 +319,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .settingContainer {
   width: 100%;
-  height: 120px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,12 +328,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           justify-content: flex-end;
 }
 
+.settingContainer .setting {
+  margin-top: 30px;
+}
+
 .setting {
-  width: auto;
+  width: 100%;
   min-width: 100px;
-  height: 100px;
-  margin-left: 50px;
-  margin-top: 20px;
+  min-height: 100px;
   font-size: 50px;
 }
 
@@ -330,6 +343,58 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin-top: 20px;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.seasonContainer,
+.timeContainer,
+.colorContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  margin: 0 auto;
+  border: 1px solid fuchsia;
+}
+
+.seasonContainer h1,
+.timeContainer h1,
+.colorContainer h1 {
+  font-size: 4rem;
+  width: 100%;
+}
+
+.seasonChoiceContainer,
+.timeChoiceContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #00fff2;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-top: 5%;
+  display: flex;
+}
+
+.seasonChoiceContainer .choice,
+.timeChoiceContainer .choice {
+  min-width: 300px;
+  padding: 2.5%;
+  margin: 2.5%;
+  border: 4px solid #F64C71;
+}
+
+.seasonChoiceContainer .choice:hover,
+.timeChoiceContainer .choice:hover {
+  background-color: #102363;
+}
+
+.seasonChoiceContainer .choice .setting:hover {
+  background-color: #102363;
 }
 
 html {
@@ -367,13 +432,21 @@ hr {
 }
 
 button {
-  border: 3px solid #F64C71;
+  border: 4px solid #F64C71;
   background: rgba(255, 255, 255, 0);
   font-family: "DM Sans";
   color: #f3efef;
 }
 
 button:hover {
+  background-color: #102363;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}
+
+label:hover {
   background-color: #102363;
 }
 

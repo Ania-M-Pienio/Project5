@@ -51,13 +51,24 @@ hr {
 }
 
 button {
-  border: 3px solid $bold;
+  border: 4px solid $bold;
   background: $transparent;
   font-family: "DM Sans";
   color: $font;
   &:hover {
     background-color: $primaryLite;
   }
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}
+
+label {
+  &:hover {
+    background-color: $primaryLite;
+  }
+ 
 }
 
 // General App

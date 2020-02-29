@@ -1,16 +1,24 @@
 .mainContainer {
-  position: relative;
   color: $font;
   width: 100%;
-  height: calc(100% - 160px);
-  padding: 2%;
-  // border: 1px solid rgb(200, 197, 197); // just for boundry lines *will remove*
+  height: auto;
+  min-height: 450px;
+  padding: 2.5% 10%;
+  border: 1px solid rgb(200, 197, 197); // just for boundry lines *will remove*
   button {
-    width: 150px;
-    height: 50px;
+    width:100%;
+    height: 90px;
     font-size: 2.5rem;
-    position: absolute;
-    bottom: 150px;
+    bottom: 0;
     right: 0;
+    margin: 0 auto;
   }
+}
+
+button.oneWay {
+  width: 100%;
+}
+
+button.twoWay {
+  width: 50%;
 }

@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 
 class ColorContainer extends Component {
-  // constructor() {
-  //   super();
-  // }
 
   render() {
     return (
-      <div>
-        ColorContainer
-      </div>
+      <section className="colorContainer">
+        <h1>Pick one of the following suggested colour schemes for your wedding: </h1>
+      </section>
     );
   }
 }

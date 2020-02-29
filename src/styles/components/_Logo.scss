@@ -2,9 +2,11 @@
   font-family: "DM Sans";
   height: 99%;
   width: 99%;
+  
 }
 
 .logoBorder {
+  padding: 4%;
   border: 4px solid $bold;
   height: 100%;
   width: 100%;
@@ -21,16 +23,16 @@
 }
 
 .splashLogo {
-  height: 350px;
-  width: 400px;
+  height: 500px;
+  width: 550px;
   margin: 0 auto;
 }
 
 .barLogo { //button
   border: none;
   background-color: $transparent;
-  height: 120px;
-  width: 150px;
+  height: 150px;
+  width: 180px;
   margin: 0;
   padding: 0;
 }

@@ -34,7 +34,7 @@ class App extends Component {
     super();
 
     this.state = {
-      isIntro: true,
+      isIntro: false,
       season: "spring",
       time: "day",
       colorSet: "yellow_pink"
@@ -49,7 +49,7 @@ class App extends Component {
 
   handleStartOver = () => {
     this.setState({
-      isIntro: true
+      isIntro: true,
     });
   };
 
