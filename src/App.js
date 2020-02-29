@@ -49,12 +49,15 @@ class App extends Component {
 
   handleStartOver = () => {
     this.setState({
-      isIntro: true,
-      season: "",
-      time: "",
-      colorSet: ""
+      isIntro: true
     });
   };
+
+  handleSeasonChoice = (e, season) => {};
+
+  handleTimeChoice = (e, time) => {};
+
+  handleColorChoice = (e, colors) => {};
 
   render() {
     return (
@@ -75,7 +78,11 @@ class App extends Component {
         {this.state.isIntro ? (
           <Splash onStart={this.handleStart} />
         ) : (
-          <MainContainer />
+          <MainContainer
+            onSeason={this.handleSeasonChoice}
+            onTime={this.handleTimeChoice}
+            onColor={this.handleColorChoice}
+          />
         )}
       </div>
     );

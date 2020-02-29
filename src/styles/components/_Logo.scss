@@ -1,0 +1,36 @@
+.logo {
+  font-family: "DM Sans";
+  height: 99%;
+  width: 99%;
+}
+
+.logoBorder {
+  border: 4px solid $bold;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.splashLogo {
+  height: 350px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.barLogo { //button
+  border: none;
+  background-color: $transparent;
+  height: 120px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}

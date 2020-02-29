@@ -200,6 +200,51 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   color: #9275a8;
 }
 
+.logo {
+  font-family: "DM Sans";
+  height: 99%;
+  width: 99%;
+}
+
+.logoBorder {
+  border: 4px solid #F64C71;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1%;
+}
+
+.logoBorder img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.splashLogo {
+  height: 350px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.barLogo {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
 .appBar {
   height: 180px;
   color: #f3efef;
@@ -209,25 +254,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: flex;
 }
 
-.barLogo {
-  height: 120px;
-  width: 150px;
-  margin: 0;
-  padding: 0;
-  background-color: none;
-}
-
 .mainContainer {
+  position: relative;
   color: #f3efef;
   width: 100%;
   height: calc(100% - 160px);
   padding: 2%;
 }
 
+.mainContainer button {
+  width: 150px;
+  height: 50px;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+}
+
 .splash {
   height: 100%;
   color: #f3efef;
-  padding: 8%;
+  padding-top: 5%;
 }
 
 .splash button {
@@ -236,24 +283,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 2%;
   margin: 0 auto;
   margin-top: 50px;
-  color: #f3efef;
   font-size: 3rem;
-  border: 3px solid #F64C71;
-  background: none;
-  font-family: "DM Sans";
-}
-
-.splashLogo {
-  height: 350px;
-  width: 400px;
-  margin: 0 auto;
 }
 
 .splash h1 {
   color: #f3efef;
   font-family: "DM Sans";
   font-size: 3rem;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .splash h3 {
@@ -299,8 +336,16 @@ html {
   font-size: 70%;
 }
 
-body, html, h1, h2, h3, h4 {
+body {
   background-color: #081336;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -312,52 +357,28 @@ body, html, h1, h2, h3, h4 {
   padding-right: 2.5%;
 }
 
-.App {
-  text-align: center;
-  height: 100vh;
-}
-
-.logo {
-  font-family: "DM Sans";
-  height: 100%;
-  width: 100%;
-}
-
-.logoBorder {
-  border: 4px solid #F64C71;
-  background-color: #081336;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.logoBorder img {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 hr {
-  color: #f3efef;
+  color: #BB89AC;
   height: 5px;
-  background-color: #f3efef;
+  background-color: #BB89AC;
   font-family: "DM Sans";
   font-size: 3rem;
   margin-top: 20px;
 }
 
 button {
-  border: none;
-  background-color: none;
+  border: 3px solid #F64C71;
+  background: rgba(255, 255, 255, 0);
+  font-family: "DM Sans";
+  color: #f3efef;
+}
+
+button:hover {
+  background-color: #102363;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
 }
 /*# sourceMappingURL=App.css.map */

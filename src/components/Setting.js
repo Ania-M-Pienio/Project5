@@ -5,7 +5,8 @@ class Setting extends Component {
   constructor() {
     super();
     this.state = {
-      graphic: {},
+      icon: '',
+      type: '',
       graphics: [
         { type: "winter", icon: "snowflake" },
         { type: "spring", icon: "leaf" },
@@ -28,17 +29,16 @@ class Setting extends Component {
     }
     thisGraphic = icons[0];
     this.setState({
-      graphic: thisGraphic,
-    }, () => {
-      console.log(this.state.graphic);
-    })
+      icon: thisGraphic.icon,
+      type: thisGraphic.type,
+    });
   }
 
   render() {
     return (
       <div className="setting">
-        <FontAwesomeIcon icon={this.state.graphic.icon} />
-        <h3>{this.state.graphic.type}</h3>
+        <FontAwesomeIcon icon={this.state.icon}/>
+        <h3>{this.state.type}</h3>
       </div>
     );
   }

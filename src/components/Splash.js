@@ -17,16 +17,21 @@ class Splash extends Component {
         </div>
         <h1> WEDDING THEME IDEAS </h1>
         <h3>
-          <span> 1 </span> invites <span> 2 </span> floral
+          <span> 1 </span> invites 
+          <span> 2 </span> floral
           <br></br>
-          <span> 3 </span> centerpieces 
-          <br></br>
+          <span> 3 </span> centerpieces
           <span> 4 </span> tableware
-          <span> 5 </span> venue <span> 6 </span> cakes <br></br>
-          <span> 7 </span> favors 
-          <span> 8 </span> patterns 
+          <br></br>
+          <span> 5 </span> venues 
+          <span> 6 </span> cakes
+          <br></br>
+          <span> 7 </span> favors
+          <span> 8 </span> patterns
         </h3>
-        <button type="button" onClick={this.props.onStart}>GET STARTED</button>
+        <button type="button" onClick={this.props.onStart}>
+          GET STARTED
+        </button>
       </section>
     );
   }

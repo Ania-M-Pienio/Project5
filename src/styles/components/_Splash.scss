@@ -1,7 +1,7 @@
 .splash {
   height: 100%;
   color: $font;
-  padding: 8%;
+  padding-top: 5%;
   // border: 1px solid rgb(200, 197, 197); // just for boundry lines *will remove*
   button {
     width: 400px;
@@ -9,25 +9,15 @@
     padding: 2%;
     margin: 0 auto;
     margin-top: 50px;
-    color: $font;
     font-size: 3rem;
-    border: 3px solid $bold;
-    background: none;
-    font-family: 'DM Sans', ;    
   }
-}
-
-.splashLogo {
-  height: 350px;
-  width: 400px;
-  margin: 0 auto;
 }
 
 .splash h1 {
   color: $font;
   font-family: 'DM Sans', ;
   font-size: 3rem;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .splash h3 {

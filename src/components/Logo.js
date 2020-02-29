@@ -1,7 +1,7 @@
 import React from 'react';
 import m8 from '../assets/BM8.png';
 
-const Logo = props => {
+function Logo() {
   return (
   <div className="logo">
     <div className="logoBorder">
