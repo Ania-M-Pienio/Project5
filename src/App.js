@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import MainContainer from "./components/MainContainer";
 import AppBar from "./components/AppBar";
 import Splash from "./components/Splash";
@@ -16,21 +16,54 @@ import
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
 
-// season icons
-library.add(fab, faUmbrella, faSnowflake, faLeaf, faSun, faUmbrellaBeach, faMoon, faCloudRain, faPalette);
+    // setup icons
+    library.add(
+      fab,
+      faUmbrella,
+      faSnowflake,
+      faLeaf,
+      faSun,
+      faUmbrellaBeach,
+      faMoon,
+      faCloudRain,
+      faPalette
+    );
 
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
-      isIntro: false,
+      isIntro: true,
+      season: '',
+      time: '',
+      colorSet: '',
     }
   }
+
+ handleStart = () => {
+   this.setState({
+     isIntro: false,
+   })
+ }
+
+ handleStartOver = () => {
+   
+ }
+
+
   render() {
     return (
       <div className="wrapper App">
-        {this.state.isIntro ? '' : <AppBar />}
-        {this.state.isIntro ? <Splash /> : <MainContainer />}
+        {this.state.isIntro ? (
+          ""
+        ) : (
+          <Fragment>
+            <AppBar onStartOver={this.handleStartOver}/>
+            <hr></hr>
+          </Fragment>
+        )}
+        {this.state.isIntro ? <Splash onStart={this.handleStart}/> : <MainContainer />}
       </div>
     );
   }

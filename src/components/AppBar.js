@@ -13,13 +13,10 @@ class AppBar extends Component {
   render() {
     return (
       <nav className="appBar">
-
-        <div className="barLogo">
-          <Logo />
-        </div>
-
-        <SettingContainer/>
-        
+          <button className="barLogo">
+            <Logo onStartOver={this.props.onStartOver}/>
+          </button>
+        <SettingContainer />
       </nav>
     );
   }

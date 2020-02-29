@@ -2,11 +2,14 @@
   height: 180px;
   color: $font;
   padding: 50px 2% 2% 2%;
-  border: 1px solid rgb(204, 22, 143); // just for boundry lines *will remove*
+  // border: 1px solid rgb(204, 22, 143); // just for boundry lines *will remove*
   display: flex;
 }
 
 .barLogo {
   height: 120px;
   width: 150px;
+  margin: 0;
+  padding: 0;
+  background-color: none;
 }

@@ -181,58 +181,97 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .primary {
-  color: #161616;
+  color: #081336;
 }
 
 .bold {
-  color: #C7493A;
+  color: #F64C71;
 }
 
 .accent {
-  color: #689775;
+  color: #BB89AC;
 }
 
 .font {
-  color: #D5D5D5;
+  color: #f3efef;
 }
 
 .tint {
-  color: #AD8174;
+  color: #9275a8;
 }
 
 .appBar {
-  height: 160px;
-  color: #D5D5D5;
+  height: 180px;
+  color: #f3efef;
   padding: 50px 2% 2% 2%;
-  border: 1px solid #cc168f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .barLogo {
-  height: 90px;
+  height: 120px;
   width: 150px;
+  margin: 0;
+  padding: 0;
+  background-color: none;
 }
 
 .mainContainer {
-  color: #D5D5D5;
+  color: #f3efef;
   width: 100%;
   height: calc(100% - 160px);
   padding: 2%;
-  border: 1px solid #c8c5c5;
 }
 
 .splash {
   height: 100%;
-  color: #D5D5D5;
-  padding: 10%;
-  border: 1px solid #c8c5c5;
+  color: #f3efef;
+  padding: 8%;
+}
+
+.splash button {
+  width: 400px;
+  height: 100px;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #f3efef;
+  font-size: 3rem;
+  border: 3px solid #F64C71;
+  background: none;
+  font-family: "DM Sans";
+}
+
+.splashLogo {
+  height: 350px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.splash h1 {
+  color: #f3efef;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.splash h3 {
+  margin-top: 10px;
+  padding: 1% 15%;
+  text-align: center;
+  font-family: "Spartan";
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+
+.splash h3 span {
+  color: #BB89AC;
 }
 
 .settingContainer {
   width: 100%;
-  height: 90px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,13 +283,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .setting {
   width: auto;
   min-width: 100px;
-  height: 100%;
-  border: 1px solid #43e065;
+  height: 100px;
   margin-left: 50px;
+  margin-top: 20px;
   font-size: 50px;
 }
 
 .setting h3 {
+  margin-top: 20px;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -260,7 +300,7 @@ html {
 }
 
 body, html, h1, h2, h3, h4 {
-  background-color: #161616;
+  background-color: #081336;
   margin: 0;
   padding: 0;
 }
@@ -284,8 +324,8 @@ body, html, h1, h2, h3, h4 {
 }
 
 .logoBorder {
-  background-color: white;
-  border: 4px solid #C7493A;
+  border: 4px solid #F64C71;
+  background-color: #081336;
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -305,5 +345,17 @@ body, html, h1, h2, h3, h4 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+hr {
+  color: #f3efef;
+  font-family: "DM Sans";
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  background-color: none;
 }
 /*# sourceMappingURL=App.css.map */

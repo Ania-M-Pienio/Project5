@@ -15,10 +15,7 @@ class MainContainer extends Component {
   // Render 
   render() {
     return (
-      <main className="mainContainer"> 
-        MainContainer
-
-   
+      <main className="mainContainer">   
 
 
 
