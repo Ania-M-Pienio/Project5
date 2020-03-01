@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import Setting from "./Setting";
 
-class Choice extends Component {
+
+
+class ColorChoice extends Component {
   render() {
     return (
-      <div className="choice">
+      <div className="colorChoice">
         <label htmlFor={this.props.choice}>
           <div className="choiceIcon">
-            <Setting icon={this.props.choice} size="2x" />
+            <div className="colorOne"></div>
+            <div className="colorTwo"></div>
           </div>
         </label>
         <input
@@ -19,4 +21,4 @@ class Choice extends Component {
     );
   }
 }
-export default Choice;
+export default ColorChoice;
