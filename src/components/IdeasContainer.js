@@ -48,7 +48,7 @@ class IdeasContainer extends Component {
     const pageTwoIcon = this.state.domains[pageTwoDomain];
 
     return (
-      <div className={"ideasContainer "}>
+      <div className="ideasContainer">
         <button type="button" onClick={this.handleLeft}>
           {pageOne > 0 ? (
             <FontAwesomeIcon icon="caret-square-left" size="2x" />

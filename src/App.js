@@ -6,7 +6,7 @@ import Splash from "./components/Splash";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./App.scss";
-import bm8 from './temp';
+import bm8 from "./temp";
 import {
   faUmbrella,
   faSnowflake,
@@ -48,15 +48,14 @@ library.add(
   faDoorOpen,
   faShapes,
   faCaretSquareLeft,
-  faCaretSquareRight,
+  faCaretSquareRight
 );
 
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
-      isIntro: true,
+      isIntro: false,
       season: "",
       time: "",
       colorSet: "",
@@ -81,7 +80,7 @@ class App extends Component {
 
   handleRollForward = forward => {
     if (forward === "time") {
-      this.getColorSets();     
+      this.getColorSets();
     }
   };
 

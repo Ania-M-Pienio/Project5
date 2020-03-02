@@ -2,7 +2,6 @@
   font-family: "DM Sans";
   height: 99%;
   width: 99%;
-  
 }
 
 .logoBorder {
@@ -26,13 +25,21 @@
   height: 500px;
   width: 550px;
   margin: 0 auto;
+  transition: height 1s, width 1s;
+  @include mobile-land {
+    width: 350px;
+    height: 350px;
+  }
 }
 
-.barLogo { //button
+.barLogo {
   border: none;
   background-color: $transparent;
   height: 150px;
   width: 180px;
   margin: 0;
   padding: 0;
+  @include mobile-port {
+    margin: 0 auto;
+  }
 }

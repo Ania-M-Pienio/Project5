@@ -68,8 +68,16 @@ input[type="radio"] {
 label {
   &:hover {
     background-color: $primaryLite;
+  } 
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  li {
+    display: flex;
+    justify-content: center;
   }
- 
 }
 
 // General App
