@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Choice from './Choice';
 
-class TimeContainer extends Component {
-
-  render() {
+function TimeContainer(props) {
     return (
       <section className="timeContainer">
         <h1>What time of the day is your wedding starting at? </h1>
@@ -11,18 +9,17 @@ class TimeContainer extends Component {
           <Choice
             choiceGroup="time"
             choice="day"
-            selected={this.props.currentTime === "day"}
-            onSeason={this.props.onTime}
+            selected={props.currentTime === "day"}
+            onSeason={props.onTime}
           />
           <Choice
             choiceGroup="time"
             choice="eve"
-            selected={this.props.currentTime === "eve"}
-            onSeason={this.props.onTime}
+            selected={props.currentTime === "eve"}
+            onSeason={props.onTime}
           />
         </div>
       </section>
     );
-  }
 }
 export default TimeContainer;

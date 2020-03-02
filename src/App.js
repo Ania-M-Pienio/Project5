@@ -5,6 +5,8 @@ import AppBar from "./components/AppBar";
 import Splash from "./components/Splash";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import "./App.scss";
+import bm8 from './temp';
 import {
   faUmbrella,
   faSnowflake,
@@ -22,13 +24,9 @@ import {
   faEnvelopeOpenText,
   faDoorOpen,
   faShapes,
-  faChevronCircleRight,
-  faChevronCircleLeft,
   faCaretSquareLeft,
-  faCaretSquareRight,
+  faCaretSquareRight
 } from "@fortawesome/free-solid-svg-icons";
-import "./App.scss";
-import bm8 from './temp';
 
 // setup icons from Font Awesome
 library.add(
@@ -49,8 +47,6 @@ library.add(
   faEnvelopeOpenText,
   faDoorOpen,
   faShapes,
-  faChevronCircleRight,
-  faChevronCircleLeft,
   faCaretSquareLeft,
   faCaretSquareRight,
 );

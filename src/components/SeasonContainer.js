@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Choice from "./Choice";
 
-class SeasonContainer extends Component {
-  render() {
+function SeasonContainer(props) {
     return (
       <section className="seasonContainer">
         <h1>In which season is your wedding taking place? </h1>
@@ -10,30 +9,29 @@ class SeasonContainer extends Component {
           <Choice
             choiceGroup="season"
             choice="winter"
-            selected={this.props.currentSeason === "winter"}
-            onSeason={this.props.onSeason}
+            selected={props.currentSeason === "winter"}
+            onSeason={props.onSeason}
           />
           <Choice
             choiceGroup="season"
             choice="spring"
-            selected={this.props.currentSeason === "spring"}
-            onSeason={this.props.onSeason}
+            selected={props.currentSeason === "spring"}
+            onSeason={props.onSeason}
           />
           <Choice
             choiceGroup="season"
             choice="summer"
-            selected={this.props.currentSeason === "summer"}
-            onSeason={this.props.onSeason}
+            selected={props.currentSeason === "summer"}
+            onSeason={props.onSeason}
           />
           <Choice
             choiceGroup="season"
             choice="fall"
-            selected={this.props.currentSeason === "fall"}
-            onSeason={this.props.onSeason}
+            selected={props.currentSeason === "fall"}
+            onSeason={props.onSeason}
           />
         </div>
       </section>
     );
-  }
 }
 export default SeasonContainer;

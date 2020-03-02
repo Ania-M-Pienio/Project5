@@ -38,6 +38,7 @@ class IdeasContainer extends Component {
   };
 
   render() {
+    // prepare data to be used in render
     const colorOne = this.props.current.split("_")[0];
     const pageOne = this.state.page;
     const pageTwo = this.state.page + 1;

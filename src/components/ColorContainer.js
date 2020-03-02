@@ -1,16 +1,15 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import ColorChoice from "./ColorChoice";
 import IdeasContainer from "./IdeasContainer";
 
-class ColorContainer extends Component {
-  render() {
+function ColorContainer(props) {
     return (
       <section className="colorContainer">
         <h1>
           Pick one of the following suggested colour schemes:
         </h1>
         <div className="colorChoiceContainer">
-          {this.props.colorChoices.map(choice => (
+          {props.colorChoices.map(choice => (
             <ColorChoice
               key={choice.colors}
               choiceGroup="color"
@@ -19,27 +18,24 @@ class ColorContainer extends Component {
                 colorOne: choice.primary.name,
                 colorTwo: choice.secondary.name
               }}
-              selected={this.props.currentColor === choice.colors}
-              onColor={this.props.onColor}
+              selected={props.currentColor === choice.colors}
+              onColor={props.onColor}
             />
           ))}
         </div>
         <div className="photosContainer">
-          {this.props.photos.length === 0 ? (
+          {props.photos.length === 0 ? (
             ""
           ) : (
             <Fragment>
-              {/* <hr></hr> */}
               <IdeasContainer
-                current={this.props.currentColor}
-                photos={this.props.photos}
+                current={props.currentColor}
+                photos={props.photos}
               />
-              {/* <hr></hr> */}
             </Fragment>
           )}
         </div>
       </section>
     );
   }
-}
 export default ColorContainer;

@@ -4,7 +4,6 @@ import TimeContainer from "./TimeContainer";
 import ColorContainer from "./ColorContainer";
 
 class MainContainer extends Component {
-  // MainContainer Constructor
   constructor() {
     super();
     this.state = {
@@ -25,14 +24,12 @@ class MainContainer extends Component {
 
   handleBack = () => {
     const nowIndex = this.state.stages.indexOf(this.state.stage);
-    this.props.onRollBack(this.state.stages[nowIndex]);  
+    this.props.onRollBack(this.state.stages[nowIndex]);
     this.setState({
       stage: this.state.stages[nowIndex - 1]
     });
-
   };
 
-  // Render
   render() {
     return (
       <main className="mainContainer">
@@ -48,12 +45,11 @@ class MainContainer extends Component {
                 type="button"
                 onClick={this.handleNext}
               >
-                {" "}
-                NEXT{" "}
+                NEXT
               </button>
             ) : (
               ""
-            )}{" "}
+            )}
           </Fragment>
         ) : (
           ""
@@ -94,16 +90,11 @@ class MainContainer extends Component {
               currentColor={this.props.color}
               onColor={this.props.onColor}
               colorChoices={this.props.colorChoices}
-              photos = {this.props.photos}
+              photos={this.props.photos}
             />
-            <button
-              className="oneWay"
-              type="button"
-              onClick={this.handleBack}
-            >
+            <button className="oneWay" type="button" onClick={this.handleBack}>
               BACK
             </button>
-           
           </Fragment>
         ) : (
           ""
