@@ -1,9 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Idea = ({current, color, domain, url, icon}) => {
-
-
+function Idea({current, color, domain, url, icon}) {
     return (
       <div className={"ideasPhotoPage " + color}>
         <img

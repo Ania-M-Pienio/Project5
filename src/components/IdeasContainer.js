@@ -39,13 +39,10 @@ class IdeasContainer extends Component {
 
   render() {
     const colorOne = this.props.current.split("_")[0];
-
     const pageOne = this.state.page;
     const pageTwo = this.state.page + 1;
-
     const pageOneDomain = this.props.photos[pageOne].domain;
     const pageOneIcon = this.state.domains[pageOneDomain];
-
     const pageTwoDomain = this.props.photos[pageTwo].domain;
     const pageTwoIcon = this.state.domains[pageTwoDomain];
 
