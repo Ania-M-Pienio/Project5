@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import SeasonContainer from "./SeasonContainer";
 import TimeContainer from "./TimeContainer";
 import ColorContainer from "./ColorContainer";
-import Ideas from "./Ideas";
 
 class MainContainer extends Component {
   // MainContainer Constructor
@@ -16,6 +15,9 @@ class MainContainer extends Component {
 
   handleNext = () => {
     const nowIndex = this.state.stages.indexOf(this.state.stage);
+    if (this.state.stage === "time") {
+      this.props.onRollForward(this.state.stages[nowIndex]);
+    }
     this.setState({
       stage: this.state.stages[nowIndex + 1]
     });
@@ -23,9 +25,11 @@ class MainContainer extends Component {
 
   handleBack = () => {
     const nowIndex = this.state.stages.indexOf(this.state.stage);
+    this.props.onRollBack(this.state.stages[nowIndex]);  
     this.setState({
       stage: this.state.stages[nowIndex - 1]
     });
+
   };
 
   // Render
@@ -34,10 +38,22 @@ class MainContainer extends Component {
       <main className="mainContainer">
         {this.state.stage === "season" ? (
           <Fragment>
-            <SeasonContainer onSeason={this.props.onSeason}></SeasonContainer>
-            <button className="oneWay" type="button" onClick={this.handleNext}>
-              NEXT
-            </button>
+            <SeasonContainer
+              currentSeason={this.props.season}
+              onSeason={this.props.onSeason}
+            ></SeasonContainer>
+            {this.props.season ? (
+              <button
+                className="oneWay"
+                type="button"
+                onClick={this.handleNext}
+              >
+                {" "}
+                NEXT{" "}
+              </button>
+            ) : (
+              ""
+            )}{" "}
           </Fragment>
         ) : (
           ""
@@ -45,13 +61,28 @@ class MainContainer extends Component {
 
         {this.state.stage === "time" ? (
           <Fragment>
-            <TimeContainer onTime={this.props.onTime}></TimeContainer>
-            <button className="twoWay" type="button" onClick={this.handleBack}>
+            <TimeContainer
+              currentTime={this.props.time}
+              onTime={this.props.onTime}
+            ></TimeContainer>
+            <button
+              className={this.props.time ? "twoWay" : "oneWay"}
+              type="button"
+              onClick={this.handleBack}
+            >
               BACK
             </button>
-            <button className="twoWay" type="button" onClick={this.handleNext}>
-              NEXT
-            </button>
+            {this.props.time ? (
+              <button
+                className={this.props.time ? "twoWay" : "oneWay"}
+                type="button"
+                onClick={this.handleNext}
+              >
+                NEXT
+              </button>
+            ) : (
+              " "
+            )}
           </Fragment>
         ) : (
           ""
@@ -59,12 +90,20 @@ class MainContainer extends Component {
 
         {this.state.stage === "color" ? (
           <Fragment>
-            <ColorContainer onColor={this.props.onColor}>
-              {this.state.stage === "ideas" ? <Ideas></Ideas> : ""}
-            </ColorContainer>
-            <button className="oneWay" type="button" onClick={this.handleBack}>
+            <ColorContainer
+              currentColor={this.props.color}
+              onColor={this.props.onColor}
+              colorChoices={this.props.colorChoices}
+              photos = {this.props.photos}
+            />
+            <button
+              className="oneWay"
+              type="button"
+              onClick={this.handleBack}
+            >
               BACK
             </button>
+           
           </Fragment>
         ) : (
           ""

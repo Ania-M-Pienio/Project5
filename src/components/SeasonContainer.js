@@ -7,10 +7,30 @@ class SeasonContainer extends Component {
       <section className="seasonContainer">
         <h1>In which season is your wedding taking place? </h1>
         <div className="seasonChoiceContainer">
-          <Choice choiceGroup="season" choice="winter" />
-          <Choice choiceGroup="season" choice="spring" />
-          <Choice choiceGroup="season" choice="summer" />
-          <Choice choiceGroup="season" choice="fall" />
+          <Choice
+            choiceGroup="season"
+            choice="winter"
+            selected={this.props.currentSeason === "winter"}
+            onSeason={this.props.onSeason}
+          />
+          <Choice
+            choiceGroup="season"
+            choice="spring"
+            selected={this.props.currentSeason === "spring"}
+            onSeason={this.props.onSeason}
+          />
+          <Choice
+            choiceGroup="season"
+            choice="summer"
+            selected={this.props.currentSeason === "summer"}
+            onSeason={this.props.onSeason}
+          />
+          <Choice
+            choiceGroup="season"
+            choice="fall"
+            selected={this.props.currentSeason === "fall"}
+            onSeason={this.props.onSeason}
+          />
         </div>
       </section>
     );

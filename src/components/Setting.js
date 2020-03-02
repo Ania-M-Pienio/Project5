@@ -5,9 +5,6 @@ class Setting extends Component {
   constructor() {
     super();
     this.state = {
-      icon: "",
-      type: "",
-      size: "",
       graphics: [
         { type: "winter", icon: "snowflake" },
         { type: "spring", icon: "leaf" },
@@ -20,19 +17,7 @@ class Setting extends Component {
     };
   }
 
-  getType = type => {
-    if (type === "day") {
-      return "daytime";
-    } else if (type === "eve") {
-      return "evening";
-    } else if (this.props.icon.includes("_")) {
-      return this.props.icon;
-    } else {
-      return type;
-    }
-  };
-
-  componentDidMount() {
+  render() {
     let thisGraphic = "";
     let icons = [];
     if (this.props.icon.includes("_")) {
@@ -41,22 +26,15 @@ class Setting extends Component {
       icons = this.state.graphics.filter(i => i.type === this.props.icon);
     }
     thisGraphic = icons[0];
-    this.setState({
-      icon: thisGraphic.icon,
-      type: this.getType(thisGraphic.type),
-      size: this.props.size
-    });
-  }
 
-  render() {
     return (
       <div className="setting">
-        {this.state.icon ? (
-          <FontAwesomeIcon icon={this.state.icon} size={this.state.size} />
+        {this.props.icon ? (
+          <FontAwesomeIcon icon={thisGraphic.icon} size={this.props.size} />
         ) : (
           ""
         )}
-        <h3>{this.state.type}</h3>
+        <h3>{ this.props.icon.includes("_") ? this.props.icon : thisGraphic.type }</h3>
       </div>
     );
   }

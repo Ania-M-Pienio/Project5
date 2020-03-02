@@ -11,6 +11,7 @@
 @import "styles/components/Splash";
 @import "styles/components/Setting";
 @import "styles/components/Choices";
+@import "styles/components/Ideas";
 
 // font-family: 'DM Sans', ;
 // font-family: 'Spartan', ;
@@ -35,7 +36,7 @@ h4 {
 
 // all wrappers
 .wrapper {
-  max-width: 1380px;
+  max-width: 1480px;
   margin: 0 auto;
   padding-left: 2.5%;
   padding-right: 2.5%;

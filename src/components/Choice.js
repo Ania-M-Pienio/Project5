@@ -4,7 +4,7 @@ import Setting from "./Setting";
 class Choice extends Component {
   render() {
     return (
-      <div className="choice">
+      <div className={this.props.selected ? "choice selected" : "choice" }>
         <label htmlFor={this.props.choice}>
           <div className="choiceIcon">
             <Setting icon={this.props.choice} size="2x" />
@@ -14,6 +14,7 @@ class Choice extends Component {
           type="radio"
           id={this.props.choice}
           name={this.props.choiceGroup}
+          onChange={() => {this.props.onSeason(this.props.choice)}}
         ></input>
       </div>
     );
