@@ -37,7 +37,7 @@ class Setting extends Component {
     return (
       <div className="setting">
         {this.props.icon ? (
-          <FontAwesomeIcon icon={thisGraphic.icon} size={this.props.size} />
+          <FontAwesomeIcon icon={thisGraphic.icon} size={this.props.size} />           
         ) : (
           ""
         )}
