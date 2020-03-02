@@ -181,23 +181,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .primary {
-  color: #081336;
+  color: #eff7f5;
 }
 
 .bold {
-  color: #F64C71;
+  color: #8cb7bb;
 }
 
 .accent {
-  color: #BB89AC;
+  color: #803268;
 }
 
 .font {
-  color: #f3efef;
+  color: #474545;
 }
 
 .tint {
-  color: #9275a8;
+  color: #3f727a;
 }
 
 .gold {
@@ -302,32 +302,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .logo {
   font-family: "DM Sans";
-  height: 99%;
-  width: 99%;
+  height: 100;
+  width: 100%;
 }
 
 .logoBorder {
-  padding: 4%;
-  border: 4px solid #F64C71;
+  border: 4px solid #3f727a;
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1%;
 }
 
 .logoBorder img {
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -373,17 +363,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .appBar {
   height: 220px;
-  color: #f3efef;
+  color: #474545;
   padding: 50px 2% 50px 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 4px solid #F64C71;
+  border-bottom: 4px solid #8cb7bb;
 }
 
 @media (max-width: 780px) {
   .appBar {
-    border-bottom: 4px solid #F64C71;
+    border-bottom: 4px solid #8cb7bb;
   }
 }
 
@@ -402,12 +392,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: relative;
 }
 
+.settingContainer .setting {
+  color: #8cb7bb;
+}
+
 .home {
   color: rgba(255, 255, 255, 0);
 }
 
 .homeIcon {
-  color: #F64C71;
+  color: #3f727a;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: -webkit-transform 1s;
@@ -424,7 +418,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .mainContainer {
-  color: #f3efef;
+  color: #474545;
   width: 100%;
   height: auto;
   min-height: 450px;
@@ -457,7 +451,7 @@ button.twoWay {
 
 .splash {
   height: 100%;
-  color: #f3efef;
+  color: #474545;
   padding-top: 6%;
 }
 
@@ -480,7 +474,7 @@ button.twoWay {
 .splash h1 {
   margin: 0 auto;
   max-width: 450px;
-  color: #f3efef;
+  color: #474545;
   font-family: "DM Sans";
   font-size: 4rem;
   text-align: center;
@@ -514,7 +508,7 @@ button.twoWay {
 }
 
 .splash ul span {
-  color: #BB89AC;
+  color: #803268;
 }
 
 .settingContainer {
@@ -552,6 +546,7 @@ button.twoWay {
   min-width: 100px;
   min-height: 100px;
   font-size: 50px;
+  color: #3f727a;
 }
 
 .setting h3 {
@@ -608,7 +603,7 @@ button.twoWay {
   min-width: 200px;
   padding: 2.5%;
   margin: 1.5%;
-  border: 4px solid #F64C71;
+  border: 4px solid #3f727a;
 }
 
 @media (max-width: 840px) {
@@ -621,8 +616,8 @@ button.twoWay {
 
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
-  background-color: #102363;
-  color: #9275a8;
+  background-color: #65ffcc;
+  color: #803268;
 }
 
 .colorChoice input {
@@ -651,7 +646,7 @@ button.twoWay {
 }
 
 .colorChoice:hover h3 {
-  color: #F64C71;
+  color: #8cb7bb;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -676,7 +671,7 @@ button.twoWay {
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid #e7e5e5;
+  border: 4px solid #b8b2b2;
 }
 
 .colorOne {
@@ -713,7 +708,7 @@ button.twoWay {
   position: absolute;
   bottom: 55px;
   left: 35px;
-  color: #081336;
+  color: #474545;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -721,15 +716,15 @@ button.twoWay {
 }
 
 .selected {
-  background-color: #102363;
-  color: #F64C71;
-  border: 4px solid #F64C71;
+  background-color: #65ffcc;
+  color: #8cb7bb;
+  border: 4px solid #474545;
 }
 
 .selected .colorTitle {
-  color: #F64C71;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  color: #803268;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 @media (max-width: 780px) {
@@ -765,10 +760,17 @@ button.twoWay {
 }
 
 .ideasContainer button {
+  padding: 0;
   margin-top: 10%;
   height: 400px;
   width: 90px;
-  color: #F64C71;
+  color: #474545;
+  background-color: rgba(255, 255, 255, 0);
+  border: 4px solid rgba(255, 255, 255, 0);
+}
+
+.ideasContainer button:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 @media (max-width: 1250px) {
@@ -776,13 +778,17 @@ button.twoWay {
     height: 94px;
     width: 94px;
     margin: 0;
+    border: 4px solid #8cb7bb;
   }
 }
 
+.right button {
+  text-align: right;
+}
+
 @media (max-width: 1250px) {
-  .ideasContainer .right button {
+  .right button {
     position: absolute;
-    background-color: #081336;
     top: calc(50% - 90px);
     right: 0;
     z-index: 5000;
@@ -790,10 +796,13 @@ button.twoWay {
   }
 }
 
+.left button {
+  text-align: left;
+}
+
 @media (max-width: 1250px) {
-  .ideasContainer .left button {
+  .left button {
     position: absolute;
-    background-color: #081336;
     top: calc(50% - 90px);
     left: 0;
     z-index: 5000;
@@ -804,12 +813,11 @@ button.twoWay {
 .ideasPhotoPage {
   position: relative;
   z-index: 1000;
-  width: 40%;
-  min-width: 470px;
+  width: 50%;
+  min-width: 500px;
   height: 400px;
   max-height: 400px;
   margin: 10px;
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,7 +831,7 @@ button.twoWay {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: hidden;
-  border: 4px solid #F64C71;
+  border: 4px solid #8cb7bb;
 }
 
 @media (max-width: 1250px) {
@@ -840,24 +848,15 @@ button.twoWay {
 }
 
 .ideasPhotoPage img {
-  border: 4px solid #F64C71;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 2000;
+  min-height: 100%;
   width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.ideasPhotoPage .ideaBottomBar {
-  background-color: #081336;
-  border-top: 4px solid #F64C71;
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  bottom: 0;
-  right: 0;
-  z-index: 3001;
 }
 
 .ideasIconContainer {
@@ -865,9 +864,8 @@ button.twoWay {
   width: 100%;
   height: 79px;
   position: absolute;
-  border-bottom: 4px solid #F64C71;
-  color: #081336;
-  background-color: #081336;
+  color: #eff7f5;
+  background-color: #77797ecb;
   z-index: 3000;
   top: 0;
   right: 0;
@@ -890,7 +888,7 @@ button.twoWay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #F64C71;
+  color: #65ffcc;
 }
 
 .ideaDomainAndIcon h3 {
@@ -904,7 +902,7 @@ html {
 }
 
 body {
-  background-color: #081336;
+  background-color: #eff7f5;
 }
 
 body,
@@ -925,23 +923,23 @@ h4 {
 }
 
 hr {
-  color: #BB89AC;
+  color: #803268;
   height: 5px;
-  background-color: #BB89AC;
+  background-color: #803268;
   font-family: "DM Sans";
   font-size: 3rem;
   margin-top: 20px;
 }
 
 button {
-  border: 4px solid #F64C71;
+  border: 4px solid #3f727a;
   background: rgba(255, 255, 255, 0);
   font-family: "DM Sans";
-  color: #f3efef;
+  color: #3f727a;
 }
 
 button:hover {
-  background-color: #102363;
+  background-color: #65ffcc;
 }
 
 input[type="radio"] {
@@ -949,7 +947,7 @@ input[type="radio"] {
 }
 
 label:hover {
-  background-color: #102363;
+  background-color: #65ffcc;
 }
 
 ul {

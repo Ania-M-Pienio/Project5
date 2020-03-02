@@ -18,13 +18,17 @@
   }
 }
 
+.settingContainer .setting {
+  color: $bold;
+}
+
 .home {
   color: rgba(255, 255, 255, 0);
 
 }
 
 .homeIcon {
-  color: $bold;
+  color: $tint;
   transform: scale(0);
   transition: transform 1s;
   // display: none;

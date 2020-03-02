@@ -14,7 +14,7 @@ function Idea({current, color, domain, url, icon}) {
             <h3>{domain}</h3>
           </span>
         </div>
-        <div className="ideaBottomBar"></div>
+        {/* <div className="ideaBottomBar"></div>  */}
       </div>
     );
 }

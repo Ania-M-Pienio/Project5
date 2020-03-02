@@ -11,48 +11,53 @@
     justify-content: flex-start;
   }
   button {
+    padding: 0;
     margin-top: 10%;
     height: 400px;
     width: 90px;
-    color: $bold;
-    // border: 4px solid rgba(255, 255, 255, 0);
+    color: $font;
+    background-color: rgba(255, 255, 255, 0);
+    border: 4px solid rgba(255, 255, 255, 0);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0);
+    }
     @include tablet-land {
       height: 94px;
       width: 94px;
-      margin: 0;      
+      margin: 0;
+      border: 4px solid $bold;
     }
   }
-  .right button {
-    @include tablet-land {
-      position: absolute;
-      background-color: $primary;
-      top: calc(50% - 90px);
-      right: 0;
-      z-index: 5000;
-      border-left: none;
-    }
+}
+.right button {
+  text-align: right;
+  @include tablet-land {
+    position: absolute;
+    top: calc(50% - 90px);
+    right: 0;
+    z-index: 5000;
+    border-left: none;
   }
-    .left button {
-    @include tablet-land {
-      position: absolute;
-      background-color: $primary;
-      top: calc(50% - 90px);
-      left: 0;
-      z-index: 5000;
-      border-right: none;
-    }
+}
+.left button {
+  text-align: left;
+  @include tablet-land {
+    position: absolute;
+    top: calc(50% - 90px);
+    left: 0;
+    z-index: 5000;
+    border-right: none;
   }
 }
 
 .ideasPhotoPage {
   position: relative;
   z-index: 1000;
-  width: 40%;
-  min-width: 470px;
+  width: 50%;
+  min-width: 500px;
   height: 400px;
   max-height: 400px;
   margin: 10px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,27 +76,27 @@
   }
 
   img {
-    border: 4px solid $bold;
+    object-fit: cover;
     position: relative;
     z-index: 2000;
+    min-height: 100%;
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
-     @include tablet-land {
-  
+    @include tablet-land {
     }
   }
-  .ideaBottomBar {
-    background-color: $primary;
-    border-top: 4px solid $bold;
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    bottom: 0;
-    right: 0;
-    z-index: 3001;
-  }
+  // .ideaBottomBar {
+  //   background-color: $primary;
+  //   border-top: 4px solid $bold;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 40px;
+  //   bottom: 0;
+  //   right: 0;
+  //   z-index: 3001;
+  // }
 }
 
 .ideasIconContainer {
@@ -99,9 +104,8 @@
   width: 100%;
   height: 79px;
   position: absolute;
-  border-bottom: 4px solid $bold;
   color: $primary;
-  background-color: $primary;
+  background-color: #77797ecb;
   z-index: 3000;
   top: 0;
   right: 0;
@@ -113,7 +117,7 @@
 
 .ideaDomainAndIcon {
   display: flex;
-  color: $bold;
+  color: $primaryLite;
   h3 {
     font-size: 2rem;
     padding: 10%;
