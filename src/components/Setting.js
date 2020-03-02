@@ -37,11 +37,20 @@ class Setting extends Component {
     return (
       <div className="setting">
         {this.props.icon ? (
-          <FontAwesomeIcon icon={thisGraphic.icon} size={this.props.size} />           
+          <FontAwesomeIcon icon={thisGraphic.icon} size={this.props.size} />
         ) : (
           ""
         )}
-        <h3>{ this.props.icon.includes("_") ? <Fragment> <span>{colorOne}</span> - <span>{colorTwo}</span> </Fragment> : thisGraphic.type }</h3>
+        <h3>
+          {this.props.icon.includes("_") ? (
+            <Fragment>
+              {" "}
+              <span>{colorOne}</span> &amp; <span>{colorTwo}</span>{" "}
+            </Fragment>
+          ) : (
+            thisGraphic.type
+          )}
+        </h3>
       </div>
     );
   }

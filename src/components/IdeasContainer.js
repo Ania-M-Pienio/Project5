@@ -49,13 +49,15 @@ class IdeasContainer extends Component {
 
     return (
       <div className="ideasContainer">
-        <button type="button" onClick={this.handleLeft}>
-          {pageOne > 0 ? (
-            <FontAwesomeIcon icon="caret-square-left" size="2x" />
-          ) : (
-            ""
-          )}
-        </button>
+        <div className="left">
+          <button type="button" onClick={this.handleLeft}>
+            {pageOne > 0 ? (
+              <FontAwesomeIcon icon="caret-square-left" size="2x" />
+            ) : (
+              ""
+            )}
+          </button>
+        </div>
         <Idea
           current={this.props.current}
           color={colorOne}
@@ -70,13 +72,15 @@ class IdeasContainer extends Component {
           url={this.props.photos[pageTwo].photoUrl}
           icon={pageTwoIcon}
         />
-        <button type="button" onClick={this.handleRight}>
-          {pageOne < 6 ? (
-            <FontAwesomeIcon icon="caret-square-right" size="2x" />
-          ) : (
-            ""
-          )}
-        </button>
+        <div className="right">
+          <button type="button" onClick={this.handleRight}>
+            {pageOne < 6 ? (
+              <FontAwesomeIcon icon="caret-square-right" size="2x" />
+            ) : (
+              ""
+            )}
+          </button>
+        </div>
       </div>
     );
   }

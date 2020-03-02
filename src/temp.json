@@ -1,206 +1,104 @@
 {
   "ColorSets": {
     "gold_navy": {
-      "primary": {
-        "color": "#D4AF37",
-        "name": "gold"
-      },
-      "secondary": {
-        "color": "#2F3146",
-        "name": "navy"
-      },
+      "primary": { "color": "#D4AF37", "name": "gold" },
+      "secondary": { "color": "#2F3146", "name": "navy" },
       "seasons": "winter, summer",
       "time": "eve"
     },
     "canary_grey": {
-      "primary": {
-        "color": "#F5F847",
-        "name": "canary"
-      },
-      "secondary": {
-        "color": "#7E7C81",
-        "name": "grey"
-      },
+      "primary": { "color": "#F5F847", "name": "canary" },
+      "secondary": { "color": "#7E7C81", "name": "grey" },
       "seasons": "spring, summer",
       "time": "day"
     },
     "gold_emerald": {
-      "primary": {
-        "color": "#D4AF37",
-        "name": "gold"
-      },
-      "secondary": {
-        "color": "#105C58",
-        "name": "emerald"
-      },
+      "primary": { "color": "#D4AF37", "name": "gold" },
+      "secondary": { "color": "#105C58", "name": "emerald" },
       "seasons": "winter, fall",
       "time": "day, eve"
     },
     "ivory_burgundy": {
-      "primary": {
-        "color": "#FAFBED",
-        "name": "ivory"
-      },
-      "secondary": {
-        "color": "#61242B",
-        "name": "burgundy"
-      },
+      "primary": { "color": "#FAFBED", "name": "ivory" },
+      "secondary": { "color": "#61242B", "name": "burgundy" },
       "seasons": "winter, summer, fall",
       "time": "eve"
     },
     "tangerine_fuschia": {
-      "primary": {
-        "color": "#FA791C",
-        "name": "tangerine"
-      },
-      "secondary": {
-        "color": "#D01D4E",
-        "name": "fuschia"
-      },
+      "primary": { "color": "#FA791C", "name": "tangerine" },
+      "secondary": { "color": "#D01D4E", "name": "fuschia" },
       "seasons": "summer",
       "time": "day, eve"
     },
     "sage_lavender": {
-      "primary": {
-        "color": "#C1D4C0",
-        "name": "sage"
-      },
-      "secondary": {
-        "color": "#B8ACC2",
-        "name": "lavender"
-      },
+      "primary": { "color": "#C1D4C0", "name": "sage" },
+      "secondary": { "color": "#B8ACC2", "name": "lavender" },
       "seasons": "spring",
       "time": "day"
     },
     "bronze_brown": {
-      "primary": {
-        "color": "#AC704E",
-        "name": "bronze"
-      },
-      "secondary": {
-        "color": "#56483D",
-        "name": "brown"
-      },
+      "primary": { "color": "#AC704E", "name": "bronze" },
+      "secondary": { "color": "#56483D", "name": "brown" },
       "seasons": "fall",
       "time": "day, eve"
     },
     "peach_blue": {
-      "primary": {
-        "color": "#F6B492",
-        "name": "peach"
-      },
-      "secondary": {
-        "color": "#B4CEE7",
-        "name": "blue"
-      },
+      "primary": { "color": "#F6B492", "name": "peach" },
+      "secondary": { "color": "#B4CEE7", "name": "blue" },
       "seasons": "spring, summer",
       "time": "day"
     },
     "pink_black": {
-      "primary": {
-        "color": "#F2CED2",
-        "name": "pink"
-      },
-      "secondary": {
-        "color": "#222423",
-        "name": "black"
-      },
+      "primary": { "color": "#F2CED2", "name": "pink" },
+      "secondary": { "color": "#222423", "name": "black" },
       "seasons": "spring, summer, fall",
       "time": "day, eve"
     },
     "aqua_burgundy": {
-      "primary": {
-        "color": "#99E1FA",
-        "name": "aqua"
-      },
-      "secondary": {
-        "color": "#783640",
-        "name": "burgundy"
-      },
+      "primary": { "color": "#99E1FA", "name": "aqua" },
+      "secondary": { "color": "#783640", "name": "burgundy" },
       "seasons": "winter, summer",
       "time": "day"
     },
     "silver_black": {
-      "primary": {
-        "color": "#9EA09D",
-        "name": "silver"
-      },
-      "secondary": {
-        "color": "#222423",
-        "name": "black"
-      },
+      "primary": { "color": "#9EA09D", "name": "silver" },
+      "secondary": { "color": "#222423", "name": "black" },
       "seasons": "winter, fall",
       "time": "eve"
     },
     "yellow_purple": {
-      "primary": {
-        "color": "#FAE84A",
-        "name": "yellow"
-      },
-      "secondary": {
-        "color": "#4A0161",
-        "name": "purple"
-      },
+      "primary": { "color": "#FAE84A", "name": "yellow" },
+      "secondary": { "color": "#4A0161", "name": "purple" },
       "seasons": "spring, summer",
       "time": "day, eve"
     },
     "periwinkle_lavender": {
-      "primary": {
-        "color": "#788AD4",
-        "name": "periwinkle"
-      },
-      "secondary": {
-        "color": "#B8ACC2",
-        "name": "lavender"
-      },
+      "primary": { "color": "#788AD4", "name": "periwinkle" },
+      "secondary": { "color": "#B8ACC2", "name": "lavender" },
       "seasons": "spring",
       "time": "day, eve"
     },
     "mint_brown": {
-      "primary": {
-        "color": "#86AA92",
-        "name": "mint"
-      },
-      "secondary": {
-        "color": "#56483D",
-        "name": "brown"
-      },
+      "primary": { "color": "#86AA92", "name": "mint" },
+      "secondary": { "color": "#56483D", "name": "brown" },
       "seasons": "spring, fall",
       "time": "day, eve"
     },
     "taupe_navy": {
-      "primary": {
-        "color": "#CCC6B8",
-        "name": "taupe"
-      },
-      "secondary": {
-        "color": "#2F3146",
-        "name": "navy"
-      },
+      "primary": { "color": "#CCC6B8", "name": "taupe" },
+      "secondary": { "color": "#2F3146", "name": "navy" },
       "seasons": "winter, fall",
       "time": "day"
     },
     "yellow_magenta": {
-      "primary": {
-        "color": "#FAE84A",
-        "name": "yellow"
-      },
-      "secondary": {
-        "color": "#EA5AA0",
-        "name": "magenta"
-      },
+      "primary": { "color": "#FAE84A", "name": "yellow" },
+      "secondary": { "color": "#EA5AA0", "name": "magenta" },
       "seasons": "summer",
       "time": "day"
     },
     "silver_purple": {
-      "primary": {
-        "color": "#9EA09D",
-        "name": "silver"
-      },
-      "secondary": {
-        "color": "#4A0161",
-        "name": "purple"
-      },
+      "primary": { "color": "#9EA09D", "name": "silver" },
+      "secondary": { "color": "#4A0161", "name": "purple" },
       "seasons": "winter",
       "time": "eve"
     }
@@ -231,13 +129,13 @@
       "floral": "https://ohbestdayever.com/wp-content/uploads/2018/05/white-and-green-wedding-bouquet-with-gold-ribbon.jpg",
       "centerpiece": "https://emmalovesweddings.com/wp-content/uploads/2018/12/gold-and-emerald-green-wedding-centerpiece-ideas.jpg",
       "tableware": "https://i.pinimg.com/736x/35/83/1f/35831f93a399372a58057ecbf4baa498.jpg",
-      "venue": "https://d1zpvjny0s6omk.cloudfront.net/media/cache/b5/c7/b5c7f6bfef3b296b929f24b39bb889f1.jpg",
+      "venue": "https://cdn.weddingbee.com/pics/388603/S+S718.jpg",
       "cake": "https://i.pinimg.com/originals/67/f1/f4/67f1f44dda3162107fd8dbea06263de5.jpg",
       "favor": "https://www.dhresource.com/600x600/f2/albu/g6/M01/3D/40/rBVaR1sA_oSAGnXeAAIOWzHqPkc316.jpg",
       "pattern": "https://static.eporta.com/media/mindthegap-gramercy-emerald-metallic-edition-wallpaper-247-1543295183952-5957.jpg"
     },
     "ivory_burgundy": {
-      "invite": "https://images.squarespace-cdn.com/content/v1/58efaae2be6594f0ff5a657a/1531755885655-O3A2GBIC3BNQZT0GHPUI/ke17ZwdGBToddI8pDm48kPJD_DQSz-nLqSR5W_2EaY0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcYn1Fo_G8Ah1fDu8FxBs2L1_97rc2kV9Y6Wn6XBEhPx9i0vv1l0NrOhKwxY9BmcRp/Marsala+Wine+Invitation+-+burgundy+red+watercolour+gold+copper+wedding+stationery+suite+uk+-+Hawthorne+and+Ivory",
+      "invite": "https://www.brownfoxcreative.com/files/BurgundyGoldCalligraphyWithGreenery.jpg",
       "floral": "https://i.pinimg.com/originals/ca/c0/83/cac08379a07a054fdf267538eb7895f1.jpg",
       "centerpiece": "https://i.pinimg.com/originals/bc/3e/a4/bc3ea4a422b0a57f09f7464c15529b48.jpg",
       "tableware": "https://i.pinimg.com/originals/82/ca/0e/82ca0ea56d3bcc695a4d9a7180953213.jpg",

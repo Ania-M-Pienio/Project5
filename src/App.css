@@ -357,6 +357,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media (max-width: 470px) {
   .barLogo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .logoHide {
     display: none;
   }
 }
@@ -370,14 +376,37 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: flex;
 }
 
+@media (max-width: 780px) {
+  .appBar {
+    border-bottom: 4px solid #F64C71;
+  }
+}
+
 @media (max-width: 470px) {
   .appBar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 250px;
+    height: 300px;
     border-bottom: 4px solid #F64C71;
+  }
+}
+
+.homeIcon {
+  color: #F64C71;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+@media (max-width: 470px) {
+  .homeIcon.iconShow {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -712,6 +741,7 @@ button.twoWay {
 
 @media (max-width: 1250px) {
   .ideasContainer {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -723,7 +753,7 @@ button.twoWay {
 }
 
 .ideasContainer button {
-  margin-top: 0.75%;
+  margin-top: 10%;
   height: 400px;
   width: 90px;
   color: #F64C71;
@@ -731,12 +761,31 @@ button.twoWay {
 
 @media (max-width: 1250px) {
   .ideasContainer button {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    height: 90px;
-    width: 90px;
-    margin: 0 auto;
-    margin-bottom: 2%;
+    height: 94px;
+    width: 94px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .ideasContainer .right button {
+    position: absolute;
+    background-color: #081336;
+    top: calc(50% - 90px);
+    right: 0;
+    z-index: 5000;
+    border-left: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .ideasContainer .left button {
+    position: absolute;
+    background-color: #081336;
+    top: calc(50% - 90px);
+    left: 0;
+    z-index: 5000;
+    border-right: none;
   }
 }
 
@@ -770,10 +819,11 @@ button.twoWay {
     margin: 0 auto;
     width: 100%;
     min-width: 100%;
+    min-height: 600px;
     height: 600px;
     max-height: 600px;
     height: auto;
-    margin-bottom: 1.5%;
+    margin-bottom: 86px;
   }
 }
 

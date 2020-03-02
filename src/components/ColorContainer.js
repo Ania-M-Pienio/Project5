@@ -6,7 +6,7 @@ function ColorContainer(props) {
     return (
       <section className="colorContainer">
         <h1>
-          Pick one of the following suggested colour schemes:
+          Pick one of the following colour schemes:
         </h1>
         <div className="colorChoiceContainer">
           {props.colorChoices.map(choice => (

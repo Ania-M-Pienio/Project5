@@ -149,8 +149,7 @@ const bm8 = {
         "https://emmalovesweddings.com/wp-content/uploads/2018/12/gold-and-emerald-green-wedding-centerpiece-ideas.jpg",
       tableware:
         "https://i.pinimg.com/736x/35/83/1f/35831f93a399372a58057ecbf4baa498.jpg",
-      venue:
-        "https://d1zpvjny0s6omk.cloudfront.net/media/cache/b5/c7/b5c7f6bfef3b296b929f24b39bb889f1.jpg",
+      venue: "https://cdn.weddingbee.com/pics/388603/S+S718.jpg",
       cake:
         "https://i.pinimg.com/originals/67/f1/f4/67f1f44dda3162107fd8dbea06263de5.jpg",
       favor:
@@ -160,7 +159,7 @@ const bm8 = {
     },
     ivory_burgundy: {
       invite:
-        "https://images.squarespace-cdn.com/content/v1/58efaae2be6594f0ff5a657a/1531755885655-O3A2GBIC3BNQZT0GHPUI/ke17ZwdGBToddI8pDm48kPJD_DQSz-nLqSR5W_2EaY0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcYn1Fo_G8Ah1fDu8FxBs2L1_97rc2kV9Y6Wn6XBEhPx9i0vv1l0NrOhKwxY9BmcRp/Marsala+Wine+Invitation+-+burgundy+red+watercolour+gold+copper+wedding+stationery+suite+uk+-+Hawthorne+and+Ivory",
+        "https://www.brownfoxcreative.com/files/BurgundyGoldCalligraphyWithGreenery.jpg",
       floral:
         "https://i.pinimg.com/originals/ca/c0/83/cac08379a07a054fdf267538eb7895f1.jpg",
       centerpiece:

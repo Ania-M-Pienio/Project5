@@ -25,7 +25,8 @@ import {
   faDoorOpen,
   faShapes,
   faCaretSquareLeft,
-  faCaretSquareRight
+  faCaretSquareRight,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 // setup icons from Font Awesome
@@ -48,7 +49,8 @@ library.add(
   faDoorOpen,
   faShapes,
   faCaretSquareLeft,
-  faCaretSquareRight
+  faCaretSquareRight,
+  faHome,
 );
 
 class App extends Component {
