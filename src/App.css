@@ -349,7 +349,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .barLogo {
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  height: 150px;
+  height: 170px;
   width: 180px;
   margin: 0;
   padding: 0;
@@ -359,6 +359,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .barLogo {
     margin: 0 auto;
   }
+}
+
+.homeLogo {
+  height: 110%;
 }
 
 @media (max-width: 470px) {
@@ -374,6 +378,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 4px solid #F64C71;
 }
 
 @media (max-width: 780px) {
@@ -389,8 +394,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 300px;
-    border-bottom: 4px solid #F64C71;
   }
+}
+
+.appBar button {
+  height: 110%;
+  position: relative;
+}
+
+.home {
+  color: rgba(255, 255, 255, 0);
 }
 
 .homeIcon {
@@ -416,7 +429,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: auto;
   min-height: 450px;
   padding: 2.5%;
-  border: 4px solid #BB89AC;
 }
 
 @media (max-width: 780px) {

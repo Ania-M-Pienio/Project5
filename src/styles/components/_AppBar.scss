@@ -4,14 +4,23 @@
   padding: 50px 2% 50px 2%;
   // border: 1px solid rgb(204, 22, 143); // just for boundry lines *will remove*
   display: flex;
+  border-bottom: 4px solid $bold;
   @include mobile-land {
     border-bottom: 4px solid $bold;
   }
   @include mobile-port {
     flex-direction: column;
     height: 300px;
-    border-bottom: 4px solid $bold;
   }
+  button {
+    height: 110%;
+    position: relative;
+  }
+}
+
+.home {
+  color: rgba(255, 255, 255, 0);
+
 }
 
 .homeIcon {
@@ -21,9 +30,8 @@
   // display: none;
 }
 
-  .homeIcon.iconShow {
-    @include mobile-port {
-      transform: scale(1.2);
-    }
+.homeIcon.iconShow {
+  @include mobile-port {
+    transform: scale(1.2);
   }
-
+}

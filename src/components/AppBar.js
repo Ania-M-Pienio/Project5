@@ -7,10 +7,10 @@ function AppBar(props) {
   // barLogoContainer
   return (
     <nav className="appBar">
-      <button role="restart" type="button" className="barLogo" onClick={props.onStartOver}>
+      <button type="button" className="barLogo" onClick={props.onStartOver}>
         <div
           className={
-            props.season || props.time || props.color ? "logoHide" : ""
+            props.season || props.time || props.color ? "homeLogo logoHide" : "homeLogo"
           }
         >
           <Logo />
@@ -24,6 +24,7 @@ function AppBar(props) {
         >
           <FontAwesomeIcon icon="home" size="3x" />
         </div>
+        <span className="home">HOME</span>
       </button>
       <SettingContainer
         season={props.season}

@@ -7,7 +7,7 @@ class Choice extends Component {
       <div className={this.props.selected ? "choice selected" : "choice" }>
         <label htmlFor={this.props.choice}>
           <div className="choiceIcon">
-            <Setting icon={this.props.choice} size="2x" />
+            <Setting icon={this.props.choice} size="1x" />
           </div>
         </label>
         <input

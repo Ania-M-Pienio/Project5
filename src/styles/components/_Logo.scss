@@ -35,13 +35,17 @@
 .barLogo {
   border: none;
   background-color: $transparent;
-  height: 150px;
+  height: 170px;
   width: 180px;
   margin: 0;
   padding: 0;
   @include mobile-port {
     margin: 0 auto;
   }
+}
+
+.homeLogo {
+  height: 110%;
 }
 
 .logoHide {
