@@ -55,7 +55,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isIntro: false,
+      isIntro: true,
       season: "",
       time: "",
       colorSet: "",
@@ -180,7 +180,6 @@ class App extends Component {
               time={this.state.time}
               color={this.state.colorSet}
             />
-            {/* <hr></hr> */}
           </Fragment>
         )}
         {this.state.isIntro ? (
@@ -203,5 +202,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

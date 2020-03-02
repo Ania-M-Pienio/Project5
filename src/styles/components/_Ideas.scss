@@ -13,6 +13,7 @@
     margin-top: 0.75%;
     height: 400px;
     width: 90px;
+    color: $bold;
     @include tablet-land {
       transform: rotate(90deg);
       height: 90px;

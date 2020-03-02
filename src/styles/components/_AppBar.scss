@@ -6,7 +6,8 @@
   display: flex;
   @include mobile-port {
     flex-direction: column;
-    height: 400px;
+    height: 250px;
+    border-bottom: 4px solid $bold;
   }
 
 }

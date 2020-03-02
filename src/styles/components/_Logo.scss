@@ -40,6 +40,6 @@
   margin: 0;
   padding: 0;
   @include mobile-port {
-    margin: 0 auto;
+    display: none;
   }
 }
