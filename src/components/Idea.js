@@ -20,5 +20,4 @@ const Idea = ({current, color, domain, url, icon}) => {
       </div>
     );
 }
-
 export default Idea;

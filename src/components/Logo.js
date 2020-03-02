@@ -1,5 +1,5 @@
 import React from 'react';
-import m8 from '../assets/BM8.png';
+import m8 from '../assets/BM8.PNG';
 
 function Logo() {
   return (
