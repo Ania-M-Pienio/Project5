@@ -3,10 +3,13 @@
   width: 100%;
   height: auto;
   min-height: 450px;
-  padding: 2.5% 2.5%;
+  padding: 2.5%;
   border: 4px solid $accent;
+  @include mobile-land {
+    margin-bottom: 100px;
+  }
   button {
-    width:100%;
+    width: 100%;
     height: 90px;
     font-size: 2.5rem;
     bottom: 0;

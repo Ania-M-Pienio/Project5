@@ -1,28 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import SettingContainer from "./SettingContainer";
 import Logo from "./Logo";
 
-class AppBar extends Component {
-
-  //Render
-  render() {
+function AppBar(props) {
     return (
       <nav className="appBar">
         <button
           type="button"
           className="barLogo"
-          onClick={this.props.onStartOver}
+          onClick={props.onStartOver}
         >
           <Logo />
         </button>
         <SettingContainer
-          season={this.props.season}
-          time={this.props.time}
-          color={this.props.color}
+          season={props.season}
+          time={props.time}
+          color={props.color}
         />
       </nav>
     );
   }
-}
-
 export default AppBar;

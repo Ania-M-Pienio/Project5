@@ -8,7 +8,7 @@ function Splash(props) {
         <div className="splashLogo">
           <Logo />
         </div>
-        <h1> WEDDING THEME IDEAS </h1>
+        <h1> GET IDEAL WEDDING COLOURS </h1>
         <ul>
           <li>
             [<span> {"1"} </span> {"] invites    ["} <span> {"2"} </span>{" "}
