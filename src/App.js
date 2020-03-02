@@ -86,7 +86,7 @@ class App extends Component {
 
   handleStart = () => {
     this.setState({
-      isIntro: false
+      isIntro: true,
     });
   };
 

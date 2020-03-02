@@ -339,7 +339,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   transition: height 1s, width 1s;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .splashLogo {
     width: 350px;
     height: 350px;
@@ -365,7 +365,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 220px;
   color: #f3efef;
   padding: 50px 2% 50px 2%;
-  border: 1px solid #cc168f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,8 +385,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 100%;
   height: auto;
   min-height: 450px;
-  padding: 2.5% 2.5%;
+  padding: 2.5%;
   border: 4px solid #BB89AC;
+}
+
+@media (max-width: 780px) {
+  .mainContainer {
+    margin-bottom: 100px;
+  }
 }
 
 .mainContainer button {
@@ -423,24 +428,30 @@ button.twoWay {
   font-size: 3.5rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .splash button {
     width: 350px;
   }
 }
 
 .splash h1 {
+  margin: 0 auto;
+  max-width: 450px;
   color: #f3efef;
   font-family: "DM Sans";
   font-size: 4rem;
+  text-align: center;
   margin-top: 70px;
   -webkit-transition: font-size 1s;
   transition: font-size 1s;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .splash h1 {
     font-size: 2.5rem;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
@@ -453,7 +464,7 @@ button.twoWay {
   letter-spacing: 3px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .splash ul {
     display: none;
   }
@@ -466,7 +477,6 @@ button.twoWay {
 .settingContainer {
   width: 100%;
   height: 150px;
-  border: 1px solid #2233cc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +508,6 @@ button.twoWay {
   width: 100%;
   min-width: 100px;
   min-height: 100px;
-  border: 1px solid #43e065;
   font-size: 50px;
 }
 
@@ -539,9 +548,9 @@ button.twoWay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
@@ -572,8 +581,14 @@ button.twoWay {
 .colorChoice {
   width: 120px;
   height: 200px;
-  margin: 4% 1.4%;
+  margin: 4% 2%;
   border: 4px solid grey;
+}
+
+@media (max-width: 840px) {
+  .colorChoice {
+    margin: 30px 4%;
+  }
 }
 
 .colorChoice:hover h3 {
@@ -583,6 +598,7 @@ button.twoWay {
 }
 
 .colorChoice h3 {
+  font-family: "Spartan";
   position: relative;
   margin-top: -40px;
   margin-bottom: 45px;
@@ -646,8 +662,8 @@ button.twoWay {
 
 .selected .colorTitle {
   color: #F64C71;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .ideasContainer {
@@ -729,7 +745,7 @@ button.twoWay {
 }
 
 .ideasPhotoPage img {
-  border-radius: 15px;
+  border: 4px solid #F64C71;
   position: relative;
   z-index: 2000;
   width: 100%;
@@ -739,6 +755,8 @@ button.twoWay {
 }
 
 .ideasPhotoPage .ideaBottomBar {
+  background-color: #081336;
+  border-top: 4px solid #F64C71;
   position: absolute;
   width: 100%;
   height: 40px;
@@ -752,7 +770,9 @@ button.twoWay {
   width: 100%;
   height: 79px;
   position: absolute;
+  border-bottom: 4px solid #F64C71;
   color: #081336;
+  background-color: #081336;
   z-index: 3000;
   top: 0;
   right: 0;
@@ -775,10 +795,10 @@ button.twoWay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #F64C71;
 }
 
 .ideaDomainAndIcon h3 {
-  color: #081336;
   font-size: 2rem;
   padding: 10%;
   width: 50%;
