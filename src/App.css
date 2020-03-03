@@ -185,7 +185,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .bold {
-  color: #8cb7bb;
+  color: #709396;
 }
 
 .accent {
@@ -307,18 +307,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .logoBorder {
-  border: 4px solid #3f727a;
   height: 100%;
   width: 100%;
 }
 
 .logoBorder img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  min-height: 100%;
-  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   height: 100%;
+  min-height: 100%;
   display: block;
 }
 
@@ -326,6 +324,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 500px;
   width: 550px;
   margin: 0 auto;
+  border: 4px solid #474545;
   -webkit-transition: height 1s, width 1s;
   transition: height 1s, width 1s;
 }
@@ -338,10 +337,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .barLogo {
-  border: none;
   background-color: rgba(255, 255, 255, 0);
-  height: 105%;
-  width: 200px;
+  height: 150px;
+  width: 270px;
   margin: 0;
   padding: 0;
 }
@@ -353,11 +351,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .barLogo img {
+  -o-object-fit: fit;
+     object-fit: fit;
   min-height: 100%;
 }
 
 .homeLogo {
   height: 100%;
+  border: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 470px) {
+  .homeLogo {
+    border: 4px solid #3f727a;
+  }
 }
 
 @media (max-width: 470px) {
@@ -373,12 +380,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 4px solid #8cb7bb;
+  border-bottom: 4px solid #709396;
 }
 
 @media (max-width: 780px) {
   .appBar {
-    border-bottom: 4px solid #8cb7bb;
+    border-bottom: 4px solid #709396;
   }
 }
 
@@ -393,12 +400,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .appBar button {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
   position: relative;
 }
 
+@media (max-width: 470px) {
+  .appBar button {
+    border: none;
+  }
+}
+
 .settingContainer .setting {
-  color: #8cb7bb;
+  color: #709396;
 }
 
 .home {
@@ -452,6 +467,10 @@ button.oneWay {
 
 button.twoWay {
   width: 50%;
+}
+
+.next {
+  border-left: none;
 }
 
 .splash {
@@ -512,6 +531,10 @@ button.twoWay {
   }
 }
 
+.splash ul li {
+  line-height: 40px;
+}
+
 .splash ul span {
   color: #803268;
 }
@@ -556,6 +579,7 @@ button.twoWay {
 
 .setting h3 {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -606,6 +630,7 @@ button.twoWay {
 .seasonChoiceContainer .choice,
 .timeChoiceContainer .choice {
   min-width: 200px;
+  height: auto;
   padding: 2.5%;
   margin: 1.5%;
   border: 4px solid #3f727a;
@@ -621,6 +646,16 @@ button.twoWay {
 
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
+  background-color: fuchsia;
+}
+
+.seasonChoiceContainer .choice button,
+.timeChoiceContainer .choice button {
+  border: none;
+}
+
+.seasonChoiceContainer .choice:focus-within,
+.timeChoiceContainer .choice:focus-within {
   background-color: #65ffcc;
   color: #803268;
 }
@@ -630,60 +665,75 @@ button.twoWay {
 }
 
 .colorChoice {
-  width: 120px;
-  height: 200px;
-  margin: 4% 2%;
-  border: 4px solid grey;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 5% 2%;
+  border: 4px solid #3f727a;
 }
 
 @media (max-width: 840px) {
   .colorChoice {
-    margin: 30px 4%;
+    margin: 50px 5%;
   }
 }
 
 @media (max-width: 780px) {
   .colorChoice {
-    width: 100px;
+    width: 120px;
     height: 180px;
-    border: 4px solid rgba(255, 255, 255, 0);
   }
 }
 
-.colorChoice:hover h3 {
-  color: #8cb7bb;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .colorChoice h3 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -60px;
+  width: 80%;
+  height: auto;
+  text-align: center;
   font-family: "Spartan";
-  position: relative;
-  margin-top: -40px;
-  margin-bottom: 45px;
+  font-size: 1.6rem;
 }
 
-.colorChoiceIcon {
-  margin-top: 10px;
-  position: relative;
+.colorChoice button {
+  border: none;
+  height: 100%;
+  padding: 10px;
 }
 
-.colorChoiceIcon:hover .colorSelect {
+.colorChoice button:hover .colorSelect,
+.colorChoice button:focus .colorSelect {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.colorChoice button:hover h3,
+.colorChoice button:focus h3,
+.colorChoice button:hover .colorOne,
+.colorChoice button:focus .colorOne {
+  color: #803268;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.colorChoiceIcon:hover .colorSelect,
+.colorChoiceIcon:focus .colorSelect {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid #b8b2b2;
+  border: 4px solid #3f727a;
 }
 
 .colorOne {
-  height: 95px;
-  width: 95px;
-  position: relative;
-  top: -25px;
+  height: 90px;
+  width: 90px;
+  margin-top: -10px;
   -webkit-transition: -webkit-transform 0.9s;
   transition: -webkit-transform 0.9s;
   transition: transform 0.9s;
@@ -711,9 +761,9 @@ button.twoWay {
   -webkit-transform: scale(0.001);
           transform: scale(0.001);
   position: absolute;
-  bottom: 55px;
-  left: 35px;
-  color: #474545;
+  bottom: 50px;
+  left: 45px;
+  color: #3f727a;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -722,14 +772,14 @@ button.twoWay {
 
 .selected {
   background-color: #65ffcc;
-  color: #8cb7bb;
-  border: 4px solid #474545;
+  color: #709396;
+  border: 4px solid #803268;
 }
 
 .selected .colorTitle {
   color: #803268;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 780px) {
@@ -769,21 +819,34 @@ button.twoWay {
   margin-top: 10%;
   height: 400px;
   width: 90px;
-  color: #474545;
+  color: #3f727a;
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid rgba(255, 255, 255, 0);
 }
 
-.ideasContainer button:hover {
+.ideasContainer button:hover, .ideasContainer button:focus {
   background-color: rgba(255, 255, 255, 0);
+  color: #65ffcc;
+}
+
+.ideasContainer button:hover .icoRight,
+.ideasContainer button:hover .icoLeft,
+.ideasContainer button:active .icoRight,
+.ideasContainer button:active .icoLeft,
+.ideasContainer button:focus .icoRight,
+.ideasContainer button:focus .icoLeft {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  color: #65ffcc;
 }
 
 @media (max-width: 1250px) {
   .ideasContainer button {
-    height: 94px;
-    width: 94px;
+    height: 98px;
+    width: 98px;
     margin: 0;
-    border: 4px solid #8cb7bb;
+    margin-top: -2px;
+    border: 10px solid #3f727a;
   }
 }
 
@@ -797,7 +860,7 @@ button.twoWay {
     top: calc(50% - 90px);
     right: 0;
     z-index: 5000;
-    border-left: none;
+    padding-right: 2%;
   }
 }
 
@@ -811,8 +874,22 @@ button.twoWay {
     top: calc(50% - 90px);
     left: 0;
     z-index: 5000;
-    border-right: none;
+    padding-left: 2%;
   }
+}
+
+.icoRight,
+.icoLeft {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.ideasPhotoPage:focus-within {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 8000;
 }
 
 .ideasPhotoPage {
@@ -836,7 +913,46 @@ button.twoWay {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: hidden;
-  border: 4px solid #8cb7bb;
+  border: 10px solid #3f727a;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.ideasPhotoPage:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 8000;
+}
+
+.ideasPhotoPage:hover button {
+  height: 20%;
+}
+
+.ideasPhotoPage:hover .ideasIconContainer {
+  background-color: #696b70d8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 25%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ideasPhotoPage:hover .ideaIco {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.ideasPhotoPage:hover h3 {
+  width: 60%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
 }
 
 @media (max-width: 1250px) {
@@ -865,41 +981,83 @@ button.twoWay {
 }
 
 .ideasIconContainer {
-  opacity: 1;
   width: 100%;
   height: 79px;
   position: absolute;
   color: #eff7f5;
-  background-color: #77797ecb;
+  background-color: #696b70e3;
   z-index: 3000;
   top: 0;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 0.5s, width 0.5s;
+  transition: background-color 0.5s, width 0.5s;
 }
 
-.ideaDomainAndIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.ideasIconContainer button:focus + h3 {
+  width: 60%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+}
+
+.ideasIconContainer button:focus-within {
+  height: 20%;
+}
+
+.ideasIconContainer button:focus .ideaIco {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.ideasIconContainer button {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.ideasIconContainer button:focus {
+  font-size: 1.5rem;
+}
+
+.ideasIconContainer button .ideaIco {
   color: #65ffcc;
 }
 
-.ideaDomainAndIcon h3 {
-  font-size: 2rem;
-  padding: 10%;
-  width: 50%;
+.ideasIconContainer button .ideaIco:focus-within {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.ideasIconContainer h3 {
+  color: #65ffcc;
+  font-family: "Spartan";
+  font-size: 2.2rem;
+  padding-left: 20px;
+}
+
+.ideasIconContainer:focus-within {
+  background-color: #696b70d8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 25%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 html {
@@ -927,15 +1085,6 @@ h4 {
   padding-right: 2.5%;
 }
 
-hr {
-  color: #803268;
-  height: 5px;
-  background-color: #803268;
-  font-family: "DM Sans";
-  font-size: 3rem;
-  margin-top: 20px;
-}
-
 button {
   border: 4px solid #3f727a;
   background: rgba(255, 255, 255, 0);
@@ -943,7 +1092,7 @@ button {
   color: #3f727a;
 }
 
-button:hover {
+button:hover, button:focus {
   background-color: #65ffcc;
 }
 
@@ -951,7 +1100,7 @@ input[type="radio"] {
   visibility: hidden;
 }
 
-label:hover {
+label:hover, label:focus {
   background-color: #65ffcc;
 }
 
