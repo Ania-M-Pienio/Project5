@@ -344,7 +344,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .barLogo {
     margin: 0 auto;
   }
@@ -361,14 +361,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: rgba(255, 255, 255, 0);
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .homeLogo {
     border: 4px solid #3f727a;
   }
 }
 
-@media (max-width: 470px) {
-  .logoHide {
+@media (max-width: 500px) {
+  .homeLogo.logoHide {
     display: none;
   }
 }
@@ -389,7 +389,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .appBar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -407,7 +407,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: relative;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .appBar button {
     border: none;
   }
@@ -431,7 +431,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .homeIcon.iconShow {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -551,7 +551,7 @@ button.twoWay {
           justify-content: flex-end;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .settingContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -608,7 +608,7 @@ button.twoWay {
   padding-top: 40px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .seasonContainer h1,
   .timeContainer h1,
   .colorContainer h1 {

@@ -29,7 +29,6 @@
 }
 
 .barLogo {
-  // button
   background-color: $transparent;
   height: 150px;
   width: 270px;
@@ -52,7 +51,7 @@
   }
 }
 
-.logoHide {
+.homeLogo.logoHide {
   @include mobile-port {
     display: none;
   }

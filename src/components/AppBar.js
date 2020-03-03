@@ -4,7 +4,6 @@ import Logo from "./Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function AppBar(props) {
-  // barLogoContainer
   return (
     <nav className="appBar">
       <div className="barLogo">
