@@ -10,10 +10,11 @@
   }
   @include mobile-port {
     flex-direction: column;
-    height: 300px;
+    min-height: 370px;
   }
   button {
     object-fit: contain;
+    width: 200px;
     height: 100%;
     position: relative;
     @include mobile-port {

@@ -395,13 +395,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 300px;
+    min-height: 370px;
   }
 }
 
 .appBar button {
   -o-object-fit: contain;
      object-fit: contain;
+  width: 200px;
   height: 100%;
   position: relative;
 }
@@ -612,7 +613,7 @@ button.twoWay {
   .timeContainer h1,
   .colorContainer h1 {
     min-height: 250px;
-    background-color: greenyellow;
+    background-color: #c3f8ff;
   }
 }
 
