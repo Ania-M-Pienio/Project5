@@ -641,17 +641,19 @@ button.twoWay {
   .timeChoiceContainer .choice {
     width: 150px;
     min-width: 150px;
+    min-height: 120px;
   }
 }
 
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
-  background-color: fuchsia;
+  background-color: #2600ff;
 }
 
 .seasonChoiceContainer .choice button,
 .timeChoiceContainer .choice button {
   border: none;
+  min-height: 120px;
 }
 
 .seasonChoiceContainer .choice:focus-within,

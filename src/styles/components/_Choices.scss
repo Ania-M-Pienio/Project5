@@ -39,14 +39,16 @@
   @include tablet-port {
     width: 150px;
     min-width: 150px;
+    min-height: 120px;
   }
   &:hover {
     // background-color: $primaryLite;
     // color: $accent;
-    background-color: fuchsia;
+    background-color: rgb(38, 0, 255);
   }
   button {
       border: none;
+      min-height: 120px;
   }
 }
 
