@@ -604,7 +604,16 @@ button.twoWay {
 .colorContainer h1 {
   font-size: 3.5rem;
   width: 100%;
-  padding-top: 2%;
+  padding-top: 40px;
+}
+
+@media (max-width: 470px) {
+  .seasonContainer h1,
+  .timeContainer h1,
+  .colorContainer h1 {
+    min-height: 250px;
+    background-color: greenyellow;
+  }
 }
 
 .seasonChoiceContainer,
@@ -647,7 +656,8 @@ button.twoWay {
 
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
-  background-color: #2600ff;
+  background-color: #65ffcc;
+  color: #803268;
 }
 
 .seasonChoiceContainer .choice button,
