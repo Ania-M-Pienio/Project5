@@ -43,6 +43,15 @@
     background-color: $primaryLite;
     color: $accent;
   }
+  button {
+      border: none;
+  }
+}
+
+.seasonChoiceContainer .choice:focus-within,
+.timeChoiceContainer .choice:focus-within {
+  background-color: $primaryLite;
+  color: $accent;
 }
 
 .colorChoice input {
@@ -85,8 +94,7 @@
     &:hover h3,
     &:focus h3,
     &:hover .colorOne,
-    &:focus .colorOne
-     {
+    &:focus .colorOne {
       color: $accent;
       transform: scale(1.2);
     }

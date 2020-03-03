@@ -163,7 +163,7 @@ const bm8 = {
       floral:
         "https://i.pinimg.com/originals/ca/c0/83/cac08379a07a054fdf267538eb7895f1.jpg",
       "center piece":
-        "https://i.pinimg.com/originals/bc/3e/a4/bc3ea4a422b0a57f09f7464c15529b48.jpg",
+        "https://www.deerpearlflowers.com/wp-content/uploads/2016/08/burgundy-macaron-wedding-centerpiece.jpg",
       tableware:
         "https://i.pinimg.com/originals/82/ca/0e/82ca0ea56d3bcc695a4d9a7180953213.jpg",
       venue:
