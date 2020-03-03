@@ -126,11 +126,15 @@
     object-fit: cover;
     position: relative;
     z-index: 2000;
+    height: 100%;
     min-height: 100%;
     width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
+    @include tablet-land {
+      min-height: 600px;
+    }
   }
 }
 
