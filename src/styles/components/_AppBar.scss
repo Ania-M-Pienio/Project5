@@ -13,8 +13,12 @@
     height: 300px;
   }
   button {
-    height: 110%;
+    object-fit: contain;
+    height: 100%;
     position: relative;
+    @include mobile-port {
+      border: none;
+    }
   }
 }
 
@@ -24,14 +28,12 @@
 
 .home {
   color: rgba(255, 255, 255, 0);
-
 }
 
 .homeIcon {
   color: $tint;
   transform: scale(0);
   transition: transform 1s;
-  // display: none;
 }
 
 .homeIcon.iconShow {

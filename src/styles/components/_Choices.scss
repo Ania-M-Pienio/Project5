@@ -50,51 +50,68 @@
 }
 
 .colorChoice {
-  width: 120px;
-  height: 200px;
-  margin: 4% 2%;
-  border: 4px solid grey;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 5% 2%;
+  border: 4px solid $tint;
   @include tablet-port {
-    margin: 30px 4%;
+    margin: 50px 5%;
   }
   @include mobile-land {
-    width: 100px;
+    width: 120px;
     height: 180px;
-    border: 4px solid rgba(255, 255, 255, 0);
-  }
-  &:hover h3 {
-    color: $bold;
-    transform: scale(1.2);
   }
   h3 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -60px;
+    width: 80%;
+    height: auto;
+    text-align: center;
     font-family: "Spartan";
-    position: relative;
-    margin-top: -40px;
-    margin-bottom: 45px;
+    font-size: 1.6rem;
+  }
+
+  button {
+    border: none;
+    height: 100%;
+    padding: 10px;
+    &:hover .colorSelect,
+    &:focus .colorSelect {
+      transform: scale(1.6);
+    }
+    &:hover h3,
+    &:focus h3,
+    &:hover .colorOne,
+    &:focus .colorOne
+     {
+      color: $accent;
+      transform: scale(1.2);
+    }
   }
 }
 
 .colorChoiceIcon {
-  margin-top: 10px;
-  position: relative;
-  &:hover .colorSelect {
-    transform: scale(1.2);
+  &:hover .colorSelect,
+  &:focus .colorSelect {
+    transform: scale(1.6);
   }
 }
-
 
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid rgb(184, 178, 178);
+  border: 4px solid $tint;
 }
 
 .colorOne {
-  height: 95px;
-  width: 95px;
-  position: relative;
-  top: -25px;
+  height: 90px;
+  width: 90px;
+  margin-top: -10px;
   transition: transform 0.9s;
+
   @include tablet-port {
     width: 80px;
     height: 80px;
@@ -112,19 +129,19 @@
 .colorSelect {
   transform: scale(0.001);
   position: absolute;
-  bottom: 55px;
-  left: 35px;
-  color: $font;
+  bottom: 50px;
+  left: 45px;
+  color: $tint;
   transition: transform 1s;
 }
 
 .selected {
   background-color: $primaryLite;
   color: $bold;
-  border: 4px solid $font;
+  border: 4px solid $accent;
   .colorTitle {
     color: $accent;
-    transform: scale(1.4);
+    transform: scale(1.2);
     @include mobile-land {
       transform: scale(1.1);
     }

@@ -10,7 +10,7 @@ class IdeasContainer extends Component {
       page: 0,
       domains: {
         cake: "birthday-cake",
-        centerpiece: "shapes",
+        "center piece": "shapes",
         favor: "gift",
         floral: "spa",
         invite: "envelope-open-text",
@@ -52,7 +52,11 @@ class IdeasContainer extends Component {
         <div className="left">
           <button type="button" onClick={this.handleLeft}>
             {pageOne > 0 ? (
-              <FontAwesomeIcon icon="caret-square-left" size="2x" />
+              <FontAwesomeIcon
+                icon="caret-square-left"
+                size="2x"
+                className="icoLeft"
+              />
             ) : (
               ""
             )}
@@ -75,7 +79,11 @@ class IdeasContainer extends Component {
         <div className="right">
           <button type="button" onClick={this.handleRight}>
             {pageOne < 6 ? (
-              <FontAwesomeIcon icon="caret-square-right" size="2x" />
+              <FontAwesomeIcon
+                icon="caret-square-right"
+                size="2x"
+                className="icoRight"
+              />
             ) : (
               ""
             )}

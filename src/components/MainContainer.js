@@ -62,7 +62,7 @@ class MainContainer extends Component {
               onTime={this.props.onTime}
             ></TimeContainer>
             <button
-              className={this.props.time ? "twoWay" : "oneWay"}
+              className={this.props.time ? "twoWay back" : "oneWay"}
               type="button"
               onClick={this.handleBack}
             >
@@ -70,7 +70,7 @@ class MainContainer extends Component {
             </button>
             {this.props.time ? (
               <button
-                className={this.props.time ? "twoWay" : "oneWay"}
+                className={this.props.time ? "twoWay next" : "oneWay"}
                 type="button"
                 onClick={this.handleNext}
               >

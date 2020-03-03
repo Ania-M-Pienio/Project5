@@ -11,8 +11,8 @@ class Setting extends Component {
         { type: "spring", icon: "leaf" },
         { type: "summer", icon: "umbrella-beach" },
         { type: "fall", icon: "cloud-rain" },
-        { type: "day", icon: "sun" },
-        { type: "eve", icon: "moon" },
+        { type: "daytime", icon: "sun" },
+        { type: "evening", icon: "moon" },
         { type: "color", icon: "palette" }
       ]
     };

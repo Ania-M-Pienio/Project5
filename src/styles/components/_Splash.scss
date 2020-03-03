@@ -43,6 +43,9 @@
   @include mobile-land {
     display: none;
   }
+  li {
+    line-height: 40px;
+  }
   span {
     color: $accent;
   }

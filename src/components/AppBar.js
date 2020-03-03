@@ -7,7 +7,8 @@ function AppBar(props) {
   // barLogoContainer
   return (
     <nav className="appBar">
-      <button type="button" className="barLogo" onClick={props.onStartOver}>
+      <div className="barLogo">
+      <button aria-label="Home" type="button" onClick={props.onStartOver}>
         <div
           className={
             props.season || props.time || props.color ? "homeLogo logoHide" : "homeLogo"
@@ -22,10 +23,11 @@ function AppBar(props) {
               : "homeIcon"
           }
         >
-          <FontAwesomeIcon icon="home" size="3x" />
+          <FontAwesomeIcon icon="home" size="4x" />
         </div>
         <span className="home">HOME</span>
       </button>
+        </div>
       <SettingContainer
         season={props.season}
         time={props.time}

@@ -4,18 +4,20 @@ import Choice from './Choice';
 function TimeContainer(props) {
     return (
       <section className="timeContainer">
-        <h1>What time of the day is your wedding starting at? </h1>
+        <h1 aria-label="CHOOSE THE TIME OF THE WEDDING">
+          CHOOSE THE TIME OF THE WEDDING
+        </h1>
         <div className="timeChoiceContainer">
           <Choice
             choiceGroup="time"
-            choice="day"
-            selected={props.currentTime === "day"}
+            choice="daytime"
+            selected={props.currentTime === "daytime"}
             onSeason={props.onTime}
           />
           <Choice
             choiceGroup="time"
-            choice="eve"
-            selected={props.currentTime === "eve"}
+            choice="evening"
+            selected={props.currentTime === "evening"}
             onSeason={props.onTime}
           />
         </div>

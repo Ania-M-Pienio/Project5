@@ -53,6 +53,9 @@ library.add(
   faHome,
 );
 
+
+
+
 class App extends Component {
   constructor() {
     super();
@@ -65,6 +68,7 @@ class App extends Component {
       photos: []
     };
   }
+
 
   handleRollBack = setback => {
     if (setback === "season") {
@@ -128,7 +132,7 @@ class App extends Component {
   };
 
   getColorSets = () => {
-    console.log(JSON.stringify(bm8));
+    
     const dbRef = firebase.database().ref("ColorSets");
     dbRef.on("value", response => {
       const setsFromDB = response.val();
@@ -170,6 +174,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(JSON.stringify(bm8));
     return (
       <div className="wrapper App">
         {this.state.isIntro ? (

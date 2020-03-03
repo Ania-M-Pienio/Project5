@@ -15,8 +15,8 @@ function Splash(props) {
             {"] floral "}
           </li>
           <li>
-            [<span> {"3"} </span> {"] centerpieces    ["} <span> {"4"} </span>{" "}
-            {"] tableware "}
+            [<span> {"3"} </span> {"] center pieces    ["} <span> {"4"} </span>{" "}
+            {"] table-ware "}
           </li>
           <li>
             [<span> {"5"} </span> {"] venues   ["} <span> {"6"} </span>{" "}
