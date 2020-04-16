@@ -39,6 +39,7 @@ class MainContainer extends Component {
               currentSeason={this.props.season}
               onSeason={this.props.onSeason}
             ></SeasonContainer>
+
             {this.props.season ? (
               <button
                 className="oneWay"
@@ -91,7 +92,7 @@ class MainContainer extends Component {
               onColor={this.props.onColor}
               colorChoices={this.props.colorChoices}
               photos={this.props.photos}
-            />
+            ></ColorContainer>
             <button
               className={this.props.color ? "twoWay back" : "oneWay"}
               type="button"

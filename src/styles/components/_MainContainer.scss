@@ -13,13 +13,16 @@
     font-size: 2.5rem;
     bottom: 0;
     right: 0;
-    margin: 0 auto;
   }
   button a {
     text-decoration: none;
     color: $tint;
-  }
-  
+    display: inline-block;
+    transition: all 1s;
+    @include mobile-port {
+      font-size: 1.5rem;
+    }
+  }  
 }
 
 button.oneWay {
@@ -32,4 +35,8 @@ button.twoWay {
 
 .next {
   border-left: none;
+}
+
+.test {
+  display: flex;
 }
