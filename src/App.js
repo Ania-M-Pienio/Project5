@@ -6,7 +6,6 @@ import Splash from "./components/Splash";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import "./App.scss";
-import bm8 from "./temp";
 import {
   faUmbrella,
   faSnowflake,
@@ -174,7 +173,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(JSON.stringify(bm8));
     return (
       <div className="wrapper App">
         {this.state.isIntro ? (

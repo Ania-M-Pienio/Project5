@@ -13,15 +13,15 @@
 @import "styles/components/Choices";
 @import "styles/components/Ideas";
 
-// font-family: 'DM Sans', ;
-// font-family: 'Spartan', ;
 
 // typography
 html {
   font-size: 70%;
+  height: 100vh;
 }
 body {
   background-color: $primary;
+  height: 100%;
 }
 
 body,
@@ -35,10 +35,12 @@ h4 {
 }
 
 .wrapper {
+  height: 100vh;
   max-width: 1480px;
   margin: 0 auto;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  
 }
 
 
@@ -79,5 +81,5 @@ ul {
 // General App
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }

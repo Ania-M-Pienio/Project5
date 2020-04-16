@@ -1,33 +1,35 @@
 .appBar {
-  height: 220px;
+  height: auto;
   color: $font;
-  padding: 50px 2% 50px 2%;
-  // border: 1px solid rgb(204, 22, 143); // just for boundry lines *will remove*
+  padding: 2% 0 2% 0;
   display: flex;
   border-bottom: 4px solid $bold;
-  @include mobile-land {
-    border-bottom: 4px solid $bold;
-  }
   @include mobile-port {
     flex-direction: column;
-    min-height: 370px;
+    height: auto;
+    padding-top: 5%;
+    align-content: center;
   }
   button {
-    object-fit: contain;
-    width: 200px;
-    height: 100%;
-    position: relative;
-    @include mobile-port {
-      border: none;
-    }
+    border: rgba(255, 255, 255, 0);
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
   }
 }
 
-.settingContainer .setting {
-  color: $bold;
+.settingContainer {
+  @include mobile-port {
+    height: auto;
+  }
+  .setting {
+    color: $bold;
+  }
 }
 
 .home {
+  position: absolute;
   color: rgba(255, 255, 255, 0);
 }
 

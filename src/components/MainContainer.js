@@ -8,7 +8,7 @@ class MainContainer extends Component {
     super();
     this.state = {
       stage: "season",
-      stages: ["season", "time", "color", "ideas"]
+      stages: ["season", "time", "color", "ideas"],
     };
   }
 
@@ -18,7 +18,7 @@ class MainContainer extends Component {
       this.props.onRollForward(this.state.stages[nowIndex]);
     }
     this.setState({
-      stage: this.state.stages[nowIndex + 1]
+      stage: this.state.stages[nowIndex + 1],
     });
   };
 
@@ -26,7 +26,7 @@ class MainContainer extends Component {
     const nowIndex = this.state.stages.indexOf(this.state.stage);
     this.props.onRollBack(this.state.stages[nowIndex]);
     this.setState({
-      stage: this.state.stages[nowIndex - 1]
+      stage: this.state.stages[nowIndex - 1],
     });
   };
 
@@ -92,9 +92,26 @@ class MainContainer extends Component {
               colorChoices={this.props.colorChoices}
               photos={this.props.photos}
             />
-            <button className="oneWay" type="button" onClick={this.handleBack}>
+            <button
+              className={this.props.color ? "twoWay back" : "oneWay"}
+              type="button"
+              onClick={this.handleBack}
+            >
               BACK
             </button>
+            {this.props.color ? (
+              <button className="twoWay next" type="button">
+                <a
+                  href="https://forms.gle/CNp9wyaaY8iRXPNu7"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  GIVE FEEDBACK
+                </a>
+              </button>
+            ) : (
+              ""
+            )}
           </Fragment>
         ) : (
           ""

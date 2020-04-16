@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:700|Spartan&display=swap");
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
 }
 
@@ -26,7 +38,8 @@ a:focus {
   outline: thin dotted;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -38,7 +51,8 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
 
@@ -51,7 +65,10 @@ mark {
   color: #000;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -62,14 +79,15 @@ pre {
 }
 
 q {
-  quotes: \201C \201D \2018 \2019;
+  quotes: \201c \201d \2018 \2019;
 }
 
 small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -77,11 +95,11 @@ sub, sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 img {
@@ -95,16 +113,20 @@ svg:not(:root) {
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   line-height: normal;
 }
 
@@ -113,23 +135,26 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   cursor: pointer;
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -143,11 +168,14 @@ table {
   border-spacing: 0;
 }
 
-body, figure {
+body,
+figure {
   margin: 0;
 }
 
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
+legend,
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -156,7 +184,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0;
 }
@@ -302,68 +330,36 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .logo {
   font-family: "DM Sans";
-  height: 100%;
-  width: 100%;
 }
 
-.logoBorder {
-  height: 100%;
-  width: 100%;
+.logo .logoBorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.logoBorder img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  display: block;
+.logo .logoBorder img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.splashLogo {
-  height: 500px;
-  width: 550px;
-  margin: 0 auto;
-  border: 4px solid #474545;
-  -webkit-transition: height 1s, width 1s;
-  transition: height 1s, width 1s;
-}
-
-@media (max-width: 780px) {
-  .splashLogo {
-    width: 350px;
-    height: 350px;
-  }
+.barLogo .logo .logoBorder {
+  width: 150px;
+  height: 150px;
 }
 
 .barLogo {
-  background-color: rgba(255, 255, 255, 0);
   height: 150px;
-  width: 270px;
-  margin: 0;
-  padding: 0;
 }
 
-@media (max-width: 560px) {
-  .barLogo {
-    margin: 0 auto;
-  }
+.splashLogo .logo .logoBorder {
+  width: 35%;
+  margin: 0 auto;
 }
 
-.barLogo img {
-  -o-object-fit: fit;
-     object-fit: fit;
-  min-height: 100%;
-}
-
-.homeLogo {
-  height: 100%;
-  border: rgba(255, 255, 255, 0);
-}
-
-@media (max-width: 560px) {
-  .homeLogo {
-    border: 4px solid #3f727a;
+@media (max-width: 780px) {
+  .splashLogo .logo .logoBorder {
+    width: 70%;
   }
 }
 
@@ -374,19 +370,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .appBar {
-  height: 220px;
+  height: auto;
   color: #474545;
-  padding: 50px 2% 50px 2%;
+  padding: 2% 0 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 4px solid #709396;
-}
-
-@media (max-width: 780px) {
-  .appBar {
-    border-bottom: 4px solid #709396;
-  }
 }
 
 @media (max-width: 560px) {
@@ -395,21 +385,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 370px;
+    height: auto;
+    padding-top: 5%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
 .appBar button {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 200px;
-  height: 100%;
-  position: relative;
+  border: rgba(255, 255, 255, 0);
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 560px) {
-  .appBar button {
-    border: none;
+  .settingContainer {
+    height: auto;
   }
 }
 
@@ -418,6 +411,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home {
+  position: absolute;
   color: rgba(255, 255, 255, 0);
 }
 
@@ -441,8 +435,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .mainContainer {
   color: #474545;
   width: 100%;
-  height: auto;
-  min-height: 450px;
+  height: 100%;
   padding: 2.5%;
 }
 
@@ -455,11 +448,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .mainContainer button {
   width: 100%;
-  height: 90px;
+  height: 80px;
   font-size: 2.5rem;
   bottom: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.mainContainer button a {
+  text-decoration: none;
+  color: #3f727a;
 }
 
 button.oneWay {
@@ -481,7 +479,7 @@ button.twoWay {
 }
 
 .splash button {
-  width: 550px;
+  width: 35%;
   height: 130px;
   padding: 2%;
   margin: 0 auto;
@@ -492,18 +490,18 @@ button.twoWay {
 
 @media (max-width: 780px) {
   .splash button {
-    width: 350px;
+    width: 70%;
   }
 }
 
 .splash h1 {
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 75%;
   color: #474545;
   font-family: "DM Sans";
   font-size: 4rem;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 20px;
   -webkit-transition: font-size 1s;
   transition: font-size 1s;
 }
@@ -511,38 +509,15 @@ button.twoWay {
 @media (max-width: 780px) {
   .splash h1 {
     font-size: 2.5rem;
-    max-width: 280px;
+    max-width: 70%;
     margin: 0 auto;
     margin-top: 20px;
   }
 }
 
-.splash ul {
-  margin-top: 40px;
-  padding: 1% 15%;
-  text-align: center;
-  font-family: "Spartan";
-  font-size: 2.2rem;
-  letter-spacing: 3px;
-}
-
-@media (max-width: 780px) {
-  .splash ul {
-    display: none;
-  }
-}
-
-.splash ul li {
-  line-height: 40px;
-}
-
-.splash ul span {
-  color: #803268;
-}
-
 .settingContainer {
   width: 100%;
-  height: 150px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +571,7 @@ button.twoWay {
 .colorContainer {
   width: 100%;
   height: 100%;
-  min-height: 500px;
+  min-height: 400px;
   margin: 0 auto;
 }
 
@@ -640,7 +615,7 @@ button.twoWay {
 .seasonChoiceContainer .choice,
 .timeChoiceContainer .choice {
   min-width: 200px;
-  height: auto;
+  height: 170px;
   padding: 2.5%;
   margin: 1.5%;
   border: 4px solid #3f727a;
@@ -1082,10 +1057,12 @@ button.twoWay {
 
 html {
   font-size: 70%;
+  height: 100vh;
 }
 
 body {
   background-color: #eff7f5;
+  height: 100%;
 }
 
 body,
@@ -1099,6 +1076,7 @@ h4 {
 }
 
 .wrapper {
+  height: 100vh;
   max-width: 1480px;
   margin: 0 auto;
   padding-left: 2.5%;
@@ -1140,6 +1118,6 @@ ul li {
 
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }
 /*# sourceMappingURL=App.css.map */
