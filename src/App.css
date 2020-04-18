@@ -339,8 +339,10 @@ input::-moz-focus-inner {
 }
 
 .logo .logoBorder img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 0.1px solid rgba(255, 255, 255, 0);
 }
 
 .barLogo .logo .logoBorder {

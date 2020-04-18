@@ -26,6 +26,8 @@ import {
   faCaretSquareLeft,
   faCaretSquareRight,
   faHome,
+  faGripVertical,
+  faBookOpen
 } from "@fortawesome/free-solid-svg-icons";
 
 // setup icons from Font Awesome
@@ -50,6 +52,8 @@ library.add(
   faCaretSquareLeft,
   faCaretSquareRight,
   faHome,
+  faGripVertical,
+  faBookOpen
 );
 
 
