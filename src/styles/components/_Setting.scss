@@ -31,3 +31,21 @@
     }
   }
 }
+
+.appBar .settingContainer .setting {
+  @include mobile-port {
+    margin-top: 10px;
+  }
+  * {
+    @include mobile-port {
+      font-size: 1.8rem;
+    }
+  }
+  h3, span {
+    @include mobile-port {
+      font-size: 1.3rem;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}

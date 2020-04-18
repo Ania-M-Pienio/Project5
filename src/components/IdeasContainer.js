@@ -6,7 +6,7 @@ class IdeasContainer extends Component {
   constructor() {
     super();
     this.state = {
-      gridMode: false,
+      gridMode: true,
       page: 0,
       domains: {
         cake: "birthday-cake",
@@ -62,7 +62,7 @@ class IdeasContainer extends Component {
       <Fragment>
         <div className="displayControl">
           {/* // right button */}
-          {(pageOne && !this.state.gridMode) > 0 ? (
+          {(pageOne  > 0) && !this.state.gridMode ? (
             <button type="button" onClick={this.handleLeft}>
               <FontAwesomeIcon
                 icon="caret-square-left"
@@ -75,7 +75,9 @@ class IdeasContainer extends Component {
           )}
 
           {/* // book-layout button */}
-          <button>
+          <button
+            className={"buttonControl" + (this.state.gridMode ? " layout" : "")}
+          >
             <FontAwesomeIcon
               icon="grip-vertical"
               size="2x"
@@ -85,7 +87,9 @@ class IdeasContainer extends Component {
           </button>
 
           {/* // grid-layout button */}
-          <button>
+          <button
+            className={"buttonControl" + (this.state.gridMode ? "" : " layout")}
+          >
             <FontAwesomeIcon
               icon="book-open"
               size="2x"
@@ -95,7 +99,7 @@ class IdeasContainer extends Component {
           </button>
 
           {/* // right button */}
-          {(pageOne && !this.state.gridMode) < 6 ? (
+          {(pageOne < 6) && !this.state.gridMode ? (
             <button type="button" onClick={this.handleRight}>
               <FontAwesomeIcon
                 icon="caret-square-right"

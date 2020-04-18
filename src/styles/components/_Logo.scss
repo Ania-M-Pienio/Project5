@@ -11,15 +11,20 @@
   }
 }
 
-
-
 // BAR LOGO
-.barLogo .logo .logoBorder {
-  width: 150px;
-  height: 150px;
-}
 .barLogo {
   height: 150px;
+  @include mobile-port {
+    height: 100px;
+  }
+  .logo .logoBorder {
+    width: 150px;
+    height: 150px;
+    @include mobile-port {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 
@@ -31,8 +36,6 @@
     width: 70%;
   }
 }
-
-
 
 // HOME LOGO ON MOBILE
 .homeLogo.logoHide {

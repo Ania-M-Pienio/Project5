@@ -10,8 +10,8 @@
     width: 100%;
     padding-top: 40px;
     @include mobile-port {
-      min-height: 250px;
-      background-color: rgb(195, 248, 255);
+      // 560
+      min-height: 200px;
     }
   }
 }

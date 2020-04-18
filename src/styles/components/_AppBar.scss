@@ -1,9 +1,13 @@
 .appBar {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
   height: auto;
   color: $font;
   padding: 2% 0 2% 0;
   display: flex;
   border-bottom: 4px solid $bold;
+  background-color: $primary;
   @include mobile-port {
     flex-direction: column;
     height: auto;
@@ -16,12 +20,17 @@
     height: 150px;
     padding: 0;
     margin: 0;
+    @include mobile-port {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
 .settingContainer {
   @include mobile-port {
     height: auto;
+
   }
   .setting {
     color: $bold;
@@ -37,6 +46,10 @@
   color: $tint;
   transform: scale(0);
   transition: transform 1s;
+  width: 100%;
+  @include mobile-port {
+    font-size: 0.7rem;
+  }
 }
 
 .homeIcon.iconShow {

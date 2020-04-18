@@ -345,13 +345,26 @@ input::-moz-focus-inner {
   border: 0.1px solid rgba(255, 255, 255, 0);
 }
 
+.barLogo {
+  height: 150px;
+}
+
+@media (max-width: 560px) {
+  .barLogo {
+    height: 100px;
+  }
+}
+
 .barLogo .logo .logoBorder {
   width: 150px;
   height: 150px;
 }
 
-.barLogo {
-  height: 150px;
+@media (max-width: 560px) {
+  .barLogo .logo .logoBorder {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .splashLogo .logo .logoBorder {
@@ -372,6 +385,9 @@ input::-moz-focus-inner {
 }
 
 .appBar {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
   height: auto;
   color: #474545;
   padding: 2% 0 2% 0;
@@ -379,6 +395,7 @@ input::-moz-focus-inner {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 4px solid #709396;
+  background-color: #eff7f5;
 }
 
 @media (max-width: 560px) {
@@ -400,6 +417,13 @@ input::-moz-focus-inner {
   height: 150px;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 560px) {
+  .appBar button {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -425,6 +449,13 @@ input::-moz-focus-inner {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .homeIcon {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 560px) {
@@ -439,6 +470,7 @@ input::-moz-focus-inner {
   width: 100%;
   height: 100%;
   padding: 2.5%;
+  padding-top: 200px;
 }
 
 @media (max-width: 780px) {
@@ -582,6 +614,26 @@ button.twoWay {
   }
 }
 
+@media (max-width: 560px) {
+  .appBar .settingContainer .setting {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .appBar .settingContainer .setting * {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .appBar .settingContainer .setting h3, .appBar .settingContainer .setting span {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
 .seasonContainer,
 .timeContainer,
 .colorContainer {
@@ -603,8 +655,7 @@ button.twoWay {
   .seasonContainer h1,
   .timeContainer h1,
   .colorContainer h1 {
-    min-height: 250px;
-    background-color: #c3f8ff;
+    min-height: 200px;
   }
 }
 
@@ -823,6 +874,14 @@ button.twoWay {
   color: #65ffcc;
 }
 
+.buttonControl.layout {
+  background-color: #3f727a;
+}
+
+.buttonControl.layout .icoControl {
+  color: #65ffcc;
+}
+
 .ideasPhotoPage:focus-within {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -844,6 +903,13 @@ button.twoWay {
 .displayControl .buttonSpace {
   width: 30%;
   border: none;
+}
+
+@media (max-width: 560px) {
+  .displayControl button *,
+  .displayControl .buttonSpace * {
+    font-size: 2.7rem;
+  }
 }
 
 .ideasPhotoPage {
@@ -929,6 +995,8 @@ button.twoWay {
 .ideasPhotoPage img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   position: relative;
   z-index: 2000;
   max-width: 100%;
@@ -938,6 +1006,12 @@ button.twoWay {
 @media (max-width: 1250px) {
   .ideasPhotoPage img {
     min-height: 600px;
+  }
+}
+
+@media (max-width: 560px) {
+  .ideasPhotoPage img {
+    min-height: 400px;
   }
 }
 
@@ -1048,10 +1122,25 @@ button.twoWay {
   }
 }
 
+@media (max-width: 780px) {
+  .altIdeaContainer .ideasPhotoPage {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
 .ideasContainer .page:nth-of-type(1) {
   border-top: none;
   border-right: 2px solid #3f727a;
   border-bottom: none;
+}
+
+@media (max-width: 780px) {
+  .ideasContainer .page:nth-of-type(1) {
+    border: 4px solid #3f727a;
+    border-top: none;
+    border-bottom: 2px solid #3f727a;
+  }
 }
 
 .ideasContainer .page:nth-of-type(1):hover {
@@ -1062,6 +1151,14 @@ button.twoWay {
   border-top: none;
   border-left: 2px solid #3f727a;
   border-bottom: none;
+}
+
+@media (max-width: 780px) {
+  .ideasContainer .page:nth-of-type(2) {
+    border: 4px solid #3f727a;
+    border-bottom: none;
+    border-top: 2px solid #3f727a;
+  }
 }
 
 .ideasContainer .page:nth-of-type(2):hover {
