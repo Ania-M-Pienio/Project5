@@ -40,6 +40,11 @@ h4 {
   margin: 0 auto;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  @include mobile-land {
+    // 780
+    padding-left: 6%;
+    padding-right: 6%;
+  }
   
 }
 
