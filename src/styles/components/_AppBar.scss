@@ -1,13 +1,15 @@
 .appBar {
   position: fixed;
-  z-index: 10000;
+  padding: 1% 10%;  
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 10000;
   height: auto;
   color: $font;
-  padding: 2% 0 2% 0;
-  display: flex;
   border-bottom: 4px solid $bold;
   background-color: $primary;
+  display: flex;
   @include mobile-port {
     flex-direction: column;
     height: auto;
@@ -30,7 +32,6 @@
 .settingContainer {
   @include mobile-port {
     height: auto;
-
   }
   .setting {
     color: $bold;
