@@ -6,11 +6,11 @@
   }
 }
 
-@mixin tablet-land-med() {
-  @media (max-width: 960px) {
-    @content;
-  }
-}
+// @mixin tablet-land-med() {
+//   @media (max-width: 960px) {
+//     @content;
+//   }
+// }
 
 @mixin tablet-port() {
   @media (max-width: 840px) {

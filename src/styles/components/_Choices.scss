@@ -70,6 +70,7 @@
   margin: 5% 2%;
   border: 4px solid $tint;
   @include tablet-port {
+    // 840
     margin: 50px 5%;
   }
   @include mobile-land {

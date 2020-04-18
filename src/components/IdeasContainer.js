@@ -37,15 +37,20 @@ class IdeasContainer extends Component {
     }
   };
 
-  handleChangeMode = () => {
+  handleChangeToGrid = () => {
     this.setState({
-      gridMode: !this.state.gridMode,
+      gridMode: true,      
     });
   };
 
+  handleChangeToBook = () => {
+    this.setState({ 
+      gridMode: false,
+    })
+  }
+
   render() {
     // prepare data to be used in render
-    const colorOne = this.props.current.split("_")[0];
     const pageOne = this.state.page;
     const pageTwo = this.state.page + 1;
     const pageOneDomain = this.props.photos[pageOne].domain;
@@ -75,7 +80,7 @@ class IdeasContainer extends Component {
               icon="grip-vertical"
               size="2x"
               className="icoControl"
-              onClick={this.handleChangeMode}
+              onClick={this.handleChangeToGrid}
             />
           </button>
 
@@ -85,7 +90,7 @@ class IdeasContainer extends Component {
               icon="book-open"
               size="2x"
               className="icoControl"
-              onClick={this.handleChangeMode}
+              onClick={this.handleChangeToBook}
             />
           </button>
 
@@ -109,19 +114,17 @@ class IdeasContainer extends Component {
             <Fragment>
               <Idea
                 current={this.props.current}
-                color={colorOne}
                 domain={pageOneDomain}
                 url={this.props.photos[pageOne].photoUrl}
                 icon={pageOneIcon}
-                className="pageIdea"
+                layout="page"
               />
               <Idea
                 current={this.props.current}
-                color={colorOne}
                 domain={pageTwoDomain}
                 url={this.props.photos[pageTwo].photoUrl}
                 icon={pageTwoIcon}
-                className="pageIdea"
+                layout="page"
               />
             </Fragment>
           ) : (
@@ -134,10 +137,10 @@ class IdeasContainer extends Component {
                   <Idea
                     key={photo.photoUrl}
                     current={this.props.current}
-                    color="na"
                     domain={photo.domain}
                     url={photo.photoUrl}
                     icon={this.state.domains[photo.domain]}
+                    layout="grid"
                   ></Idea>
                 );
               })}
