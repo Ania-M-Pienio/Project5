@@ -56,6 +56,20 @@ class IdeasContainer extends Component {
     return (
       <Fragment>
         <div className="displayControl">
+          {/* // right button */}
+          {(pageOne && !this.state.gridMode) > 0 ? (
+            <button type="button" onClick={this.handleLeft}>
+              <FontAwesomeIcon
+                icon="caret-square-left"
+                size="2x"
+                className="icoLeft"
+              />
+            </button>
+          ) : (
+            <div className="buttonSpace"></div>
+          )}
+
+          {/* // book-layout button */}
           <button>
             <FontAwesomeIcon
               icon="grip-vertical"
@@ -64,6 +78,8 @@ class IdeasContainer extends Component {
               onClick={this.handleChangeMode}
             />
           </button>
+
+          {/* // grid-layout button */}
           <button>
             <FontAwesomeIcon
               icon="book-open"
@@ -72,31 +88,32 @@ class IdeasContainer extends Component {
               onClick={this.handleChangeMode}
             />
           </button>
+
+          {/* // right button */}
+          {(pageOne && !this.state.gridMode) < 6 ? (
+            <button type="button" onClick={this.handleRight}>
+              <FontAwesomeIcon
+                icon="caret-square-right"
+                size="2x"
+                className="icoRight"
+              />
+            </button>
+          ) : (
+            <div className="buttonSpace"></div>
+          )}
         </div>
+        {/* end of layout control */}
+
         <div className="ideasContainer">
-          {/* // left button */}
           {!this.state.gridMode ? (
             <Fragment>
-              <div className="left">
-                <button type="button" onClick={this.handleLeft}>
-                  {pageOne > 0 ? (
-                    <FontAwesomeIcon
-                      icon="caret-square-left"
-                      size="2x"
-                      className="icoLeft"
-                    />
-                  ) : (
-                    ""
-                  )}
-                </button>
-              </div>
-
               <Idea
                 current={this.props.current}
                 color={colorOne}
                 domain={pageOneDomain}
                 url={this.props.photos[pageOne].photoUrl}
                 icon={pageOneIcon}
+                className="pageIdea"
               />
               <Idea
                 current={this.props.current}
@@ -104,22 +121,8 @@ class IdeasContainer extends Component {
                 domain={pageTwoDomain}
                 url={this.props.photos[pageTwo].photoUrl}
                 icon={pageTwoIcon}
+                className="pageIdea"
               />
-
-              {/* // right button */}
-              <div className="right">
-                <button type="button" onClick={this.handleRight}>
-                  {pageOne < 6 ? (
-                    <FontAwesomeIcon
-                      icon="caret-square-right"
-                      size="2x"
-                      className="icoRight"
-                    />
-                  ) : (
-                    ""
-                  )}
-                </button>
-              </div>
             </Fragment>
           ) : (
             ""

@@ -802,20 +802,10 @@ button.twoWay {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1%;
-}
-
-@media (max-width: 1250px) {
-  .ideasContainer {
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .ideasContainer button {
@@ -833,61 +823,24 @@ button.twoWay {
   color: #65ffcc;
 }
 
-.ideasContainer button:hover .icoRight,
-.ideasContainer button:hover .icoLeft,
-.ideasContainer button:active .icoRight,
-.ideasContainer button:active .icoLeft,
-.ideasContainer button:focus .icoRight,
-.ideasContainer button:focus .icoLeft {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  color: #65ffcc;
+.ideasContainer .pageIdea:first-child {
+  border-top: none;
+  border-right: 2px solid #3f727a;
+  border-bottom: none;
 }
 
-@media (max-width: 1250px) {
-  .ideasContainer button {
-    height: 98px;
-    width: 98px;
-    margin: 0;
-    margin-top: -2px;
-    border: 10px solid #3f727a;
-  }
+.ideasContainer .pageIdea:first-child:hover {
+  border: 4px solid #3f727a;
 }
 
-.right button {
-  text-align: right;
+.ideasContainer .pageIdea:nth-child(2) {
+  border-top: none;
+  border-left: 2px solid #3f727a;
+  border-bottom: none;
 }
 
-@media (max-width: 1250px) {
-  .right button {
-    position: absolute;
-    top: calc(50% - 90px);
-    right: 0;
-    z-index: 5000;
-    padding-right: 2%;
-  }
-}
-
-.left button {
-  text-align: left;
-}
-
-@media (max-width: 1250px) {
-  .left button {
-    position: absolute;
-    top: calc(50% - 90px);
-    left: 0;
-    z-index: 5000;
-    padding-left: 2%;
-  }
-}
-
-.icoRight,
-.icoLeft {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+.ideasContainer .pageIdea:nth-child(2):hover {
+  border: 4px solid #3f727a;
 }
 
 .ideasPhotoPage:focus-within {
@@ -896,14 +849,30 @@ button.twoWay {
   z-index: 8000;
 }
 
+.displayControl {
+  border: 4px solid #3f727a;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.displayControl button,
+.displayControl .buttonSpace {
+  width: 30%;
+  border: none;
+}
+
 .ideasPhotoPage {
+  width: 50%;
+  height: 90%;
+  border: 4px solid #3f727a;
+  max-height: 400px;
   position: relative;
   z-index: 1000;
-  width: 50%;
-  min-width: 500px;
-  height: 400px;
-  max-height: 400px;
-  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,11 +886,8 @@ button.twoWay {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow-y: hidden;
-  border: 10px solid #3f727a;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .ideasPhotoPage:hover {
@@ -961,14 +927,9 @@ button.twoWay {
 
 @media (max-width: 1250px) {
   .ideasPhotoPage {
-    margin: 0 auto;
-    width: 100%;
-    min-width: 100%;
-    min-height: 600px;
-    height: 600px;
-    max-height: 600px;
-    height: auto;
-    margin-bottom: 86px;
+    min-width: 380px;
+    min-height: 400px;
+    height: 90%;
   }
 }
 
@@ -979,7 +940,7 @@ button.twoWay {
   z-index: 2000;
   height: 100%;
   min-height: 100%;
-  width: 100%;
+  min-width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -1069,6 +1030,33 @@ button.twoWay {
   width: 25%;
   margin: 0 auto;
   padding: 0;
+}
+
+.altIdeaContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.altIdeaContainer .ideasPhotoPage {
+  width: 45%;
+  margin: 10px 0;
+  border: 4px solid #3f727a;
+}
+
+@media (max-width: 840px) {
+  .altIdeaContainer .ideasPhotoPage {
+    width: 30%;
+    min-width: 300px;
+  }
 }
 
 html {
