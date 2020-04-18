@@ -1099,6 +1099,7 @@ button.twoWay {
 
 .altIdeaContainer {
   width: 100%;
+  padding: 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
