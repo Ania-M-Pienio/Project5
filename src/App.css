@@ -530,12 +530,20 @@ button.twoWay {
 
 .splash button {
   width: 35%;
-  height: 130px;
+  height: 100px;
   padding: 2%;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 50px;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 850px) {
+  .splash button {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 780px) {
@@ -589,7 +597,7 @@ button.twoWay {
   margin-top: 30px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .settingContainer .setting {
     width: 30%;
   }
@@ -610,7 +618,7 @@ button.twoWay {
   font-size: 20px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .setting h3 {
     font-size: 15px;
   }
@@ -691,7 +699,7 @@ button.twoWay {
   border: 4px solid #3f727a;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .seasonChoiceContainer .choice,
   .timeChoiceContainer .choice {
     width: 150px;
@@ -730,7 +738,7 @@ button.twoWay {
   border: 4px solid #3f727a;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .colorChoice {
     margin: 50px 5%;
   }
@@ -798,7 +806,7 @@ button.twoWay {
   transition: transform 0.9s, -webkit-transform 0.9s;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .colorOne {
     width: 80px;
     height: 80px;
@@ -981,7 +989,7 @@ button.twoWay {
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .ideasPhotoPage {
     min-width: 150px;
   }
@@ -1118,7 +1126,7 @@ button.twoWay {
   border: 4px solid #3f727a;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
   .altIdeaContainer .ideasPhotoPage {
     width: 30%;
     min-width: 300px;
@@ -1175,7 +1183,7 @@ html {
 
 body {
   background-color: #eff7f5;
-  height: 100%;
+  height: 100vh;
 }
 
 body,
@@ -1189,7 +1197,7 @@ h4 {
 }
 
 .wrapper {
-  height: 100vh;
+  height: 100%;
   max-width: 1480px;
   margin: 0 auto;
   padding-left: 2.5%;

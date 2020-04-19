@@ -1,6 +1,8 @@
 
 
 
+// horizontal
+
 @mixin tablet-land() {
   @media (max-width: 1250px) {
     @content;
@@ -8,7 +10,7 @@
 }
 
 @mixin tablet-port() {
-  @media (max-width: 840px) {
+  @media (max-width: 850px) {
     @content;
   }
 }
@@ -21,6 +23,14 @@
 
 @mixin mobile-port() {
   @media (max-width: 560px) {
+    @content;
+  }
+}
+
+// vertical
+
+@mixin short() {
+  @media (max-height: 500px) {
     @content;
   }
 }
