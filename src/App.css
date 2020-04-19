@@ -209,7 +209,7 @@ input::-moz-focus-inner {
 }
 
 .primary {
-  color: #fffdfd;
+  color: #eeeff1;
 }
 
 .bold {
@@ -217,7 +217,7 @@ input::-moz-focus-inner {
 }
 
 .accent {
-  color: #99384b;
+  color: #2D330C;
 }
 
 .font {
@@ -394,7 +394,7 @@ input::-moz-focus-inner {
   height: auto;
   color: #444F09;
   border-bottom: 4px solid #D696A2;
-  background-color: #fffdfd;
+  background-color: #eeeff1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,7 +711,7 @@ button.twoWay {
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
   background-color: #FCF6D7;
-  color: #99384b;
+  color: #2D330C;
 }
 
 .seasonChoiceContainer .choice button,
@@ -723,7 +723,7 @@ button.twoWay {
 .seasonChoiceContainer .choice:focus-within,
 .timeChoiceContainer .choice:focus-within {
   background-color: #FCF6D7;
-  color: #99384b;
+  color: #2D330C;
 }
 
 .colorChoice input {
@@ -735,7 +735,7 @@ button.twoWay {
   width: auto;
   height: auto;
   margin: 5% 2%;
-  border: 4px solid #909B5C;
+  border: 4px solid #2D330C;
 }
 
 @media (max-width: 850px) {
@@ -779,7 +779,7 @@ button.twoWay {
 .colorChoice button:focus h3,
 .colorChoice button:hover .colorOne,
 .colorChoice button:focus .colorOne {
-  color: #99384b;
+  color: #2D330C;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -793,7 +793,7 @@ button.twoWay {
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid #909B5C;
+  border: 4px solid #2D330C;
 }
 
 .colorOne {
@@ -829,7 +829,7 @@ button.twoWay {
   position: absolute;
   bottom: 50px;
   left: 45px;
-  color: #909B5C;
+  color: #2D330C;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -839,11 +839,11 @@ button.twoWay {
 .selected {
   background-color: #FCF6D7;
   color: #D696A2;
-  border: 4px solid #99384b;
+  border: 4px solid #2D330C;
 }
 
 .selected .colorTitle {
-  color: #99384b;
+  color: #2D330C;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -1029,7 +1029,7 @@ button.twoWay {
   width: 100%;
   height: 79px;
   position: absolute;
-  color: #fffdfd;
+  color: #eeeff1;
   background-color: #696b70e3;
   z-index: 3000;
   top: 0;
@@ -1182,7 +1182,7 @@ html {
 }
 
 body {
-  background-color: #fffdfd;
+  background-color: #eeeff1;
   height: 100vh;
 }
 
