@@ -708,16 +708,25 @@ button.twoWay {
   }
 }
 
-.seasonChoiceContainer .choice:hover,
-.timeChoiceContainer .choice:hover {
-  background-color: #FCF6D7;
-  color: #2D330C;
-}
-
 .seasonChoiceContainer .choice button,
 .timeChoiceContainer .choice button {
   border: none;
   min-height: 120px;
+}
+
+.seasonChoiceContainer .choice button:hover, .seasonChoiceContainer .choice button:focus,
+.timeChoiceContainer .choice button:hover,
+.timeChoiceContainer .choice button:focus {
+  background-color: #FCF6D7;
+  color: #2D330C;
+}
+
+.choice.selected {
+  border: 4px solid #2D330C;
+}
+
+.choice.selected .setting * {
+  color: #444F09;
 }
 
 .seasonChoiceContainer .choice:focus-within,
@@ -735,7 +744,7 @@ button.twoWay {
   width: auto;
   height: auto;
   margin: 5% 2%;
-  border: 4px solid #2D330C;
+  border: 4px solid #909B5C;
 }
 
 @media (max-width: 850px) {
@@ -793,7 +802,7 @@ button.twoWay {
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid #2D330C;
+  border: 4px solid white;
 }
 
 .colorOne {
@@ -838,12 +847,11 @@ button.twoWay {
 
 .selected {
   background-color: #FCF6D7;
-  color: #D696A2;
+  color: #444F09;
   border: 4px solid #2D330C;
 }
 
 .selected .colorTitle {
-  color: #2D330C;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -853,6 +861,11 @@ button.twoWay {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.colorChoice.selected .colorSelect {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .ideasContainer {
