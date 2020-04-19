@@ -209,23 +209,23 @@ input::-moz-focus-inner {
 }
 
 .primary {
-  color: #eff7f5;
+  color: #fffdfd;
 }
 
 .bold {
-  color: #709396;
+  color: #D696A2;
 }
 
 .accent {
-  color: #803268;
+  color: #99384b;
 }
 
 .font {
-  color: #474545;
+  color: #444F09;
 }
 
 .tint {
-  color: #3f727a;
+  color: #909B5C;
 }
 
 .gold {
@@ -392,9 +392,9 @@ input::-moz-focus-inner {
   width: 100%;
   z-index: 10000;
   height: auto;
-  color: #474545;
-  border-bottom: 4px solid #709396;
-  background-color: #eff7f5;
+  color: #444F09;
+  border-bottom: 4px solid #D696A2;
+  background-color: #fffdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,7 +435,7 @@ input::-moz-focus-inner {
 }
 
 .settingContainer .setting {
-  color: #709396;
+  color: #D696A2;
 }
 
 .home {
@@ -444,7 +444,7 @@ input::-moz-focus-inner {
 }
 
 .homeIcon {
-  color: #3f727a;
+  color: #909B5C;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: -webkit-transform 1s;
@@ -468,7 +468,7 @@ input::-moz-focus-inner {
 }
 
 .mainContainer {
-  color: #474545;
+  color: #444F09;
   width: 100%;
   height: 100%;
   padding-top: 250px;
@@ -492,7 +492,7 @@ input::-moz-focus-inner {
 
 .mainContainer button a {
   text-decoration: none;
-  color: #3f727a;
+  color: #909B5C;
   display: inline-block;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -524,7 +524,7 @@ button.twoWay {
 
 .splash {
   height: 100%;
-  color: #474545;
+  color: #444F09;
   padding-top: 6%;
 }
 
@@ -555,13 +555,13 @@ button.twoWay {
 .splash h1 {
   margin: 0 auto;
   max-width: 75%;
-  color: #474545;
+  color: #444F09;
   font-family: "DM Sans";
   font-size: 4rem;
   text-align: center;
   margin-top: 20px;
-  -webkit-transition: font-size 1s;
-  transition: font-size 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 @media (max-width: 780px) {
@@ -608,7 +608,7 @@ button.twoWay {
   min-width: 100px;
   min-height: 100px;
   font-size: 50px;
-  color: #3f727a;
+  color: #909B5C;
 }
 
 .setting h3 {
@@ -696,7 +696,7 @@ button.twoWay {
   height: 170px;
   padding: 2.5%;
   margin: 1.5%;
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 @media (max-width: 850px) {
@@ -710,8 +710,8 @@ button.twoWay {
 
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
-  background-color: #65ffcc;
-  color: #803268;
+  background-color: #FCF6D7;
+  color: #99384b;
 }
 
 .seasonChoiceContainer .choice button,
@@ -722,8 +722,8 @@ button.twoWay {
 
 .seasonChoiceContainer .choice:focus-within,
 .timeChoiceContainer .choice:focus-within {
-  background-color: #65ffcc;
-  color: #803268;
+  background-color: #FCF6D7;
+  color: #99384b;
 }
 
 .colorChoice input {
@@ -735,7 +735,7 @@ button.twoWay {
   width: auto;
   height: auto;
   margin: 5% 2%;
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 @media (max-width: 850px) {
@@ -779,7 +779,7 @@ button.twoWay {
 .colorChoice button:focus h3,
 .colorChoice button:hover .colorOne,
 .colorChoice button:focus .colorOne {
-  color: #803268;
+  color: #99384b;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -793,7 +793,7 @@ button.twoWay {
 .colorOne,
 .colorTwo {
   margin: 0 auto;
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 .colorOne {
@@ -829,7 +829,7 @@ button.twoWay {
   position: absolute;
   bottom: 50px;
   left: 45px;
-  color: #3f727a;
+  color: #909B5C;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -837,13 +837,13 @@ button.twoWay {
 }
 
 .selected {
-  background-color: #65ffcc;
-  color: #709396;
-  border: 4px solid #803268;
+  background-color: #FCF6D7;
+  color: #D696A2;
+  border: 4px solid #99384b;
 }
 
 .selected .colorTitle {
-  color: #803268;
+  color: #99384b;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -875,22 +875,22 @@ button.twoWay {
   margin-top: 10%;
   height: 400px;
   width: 90px;
-  color: #3f727a;
+  color: #909B5C;
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid rgba(255, 255, 255, 0);
 }
 
 .ideasContainer button:hover, .ideasContainer button:focus {
   background-color: rgba(255, 255, 255, 0);
-  color: #65ffcc;
+  color: #FCF6D7;
 }
 
 .buttonControl.layout {
-  background-color: #3f727a;
+  background-color: #909B5C;
 }
 
 .buttonControl.layout .icoControl {
-  color: #65ffcc;
+  color: #FCF6D7;
 }
 
 .ideasPhotoPage:focus-within {
@@ -900,7 +900,7 @@ button.twoWay {
 }
 
 .displayControl {
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,7 +926,7 @@ button.twoWay {
 .ideasPhotoPage {
   width: 50%;
   height: 100%;
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
   max-height: 350px;
   position: relative;
   z-index: 1000;
@@ -1029,7 +1029,7 @@ button.twoWay {
   width: 100%;
   height: 79px;
   position: absolute;
-  color: #eff7f5;
+  color: #fffdfd;
   background-color: #696b70e3;
   z-index: 3000;
   top: 0;
@@ -1078,7 +1078,7 @@ button.twoWay {
 }
 
 .ideasIconContainer button .ideaIco {
-  color: #65ffcc;
+  color: #FCF6D7;
 }
 
 .ideasIconContainer button .ideaIco:focus-within {
@@ -1087,7 +1087,7 @@ button.twoWay {
 }
 
 .ideasIconContainer h3 {
-  color: #65ffcc;
+  color: #FCF6D7;
   font-family: "Spartan";
   font-size: 2.2rem;
   padding-left: 20px;
@@ -1123,7 +1123,7 @@ button.twoWay {
 .altIdeaContainer .ideasPhotoPage {
   width: 45%;
   margin: 10px 0;
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 @media (max-width: 850px) {
@@ -1142,38 +1142,38 @@ button.twoWay {
 
 .ideasContainer .page:nth-of-type(1) {
   border-top: none;
-  border-right: 2px solid #3f727a;
+  border-right: 2px solid #909B5C;
   border-bottom: none;
 }
 
 @media (max-width: 780px) {
   .ideasContainer .page:nth-of-type(1) {
-    border: 4px solid #3f727a;
+    border: 4px solid #909B5C;
     border-top: none;
-    border-bottom: 2px solid #3f727a;
+    border-bottom: 2px solid #909B5C;
   }
 }
 
 .ideasContainer .page:nth-of-type(1):hover {
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 .ideasContainer .page:nth-of-type(2) {
   border-top: none;
-  border-left: 2px solid #3f727a;
+  border-left: 2px solid #909B5C;
   border-bottom: none;
 }
 
 @media (max-width: 780px) {
   .ideasContainer .page:nth-of-type(2) {
-    border: 4px solid #3f727a;
+    border: 4px solid #909B5C;
     border-bottom: none;
-    border-top: 2px solid #3f727a;
+    border-top: 2px solid #909B5C;
   }
 }
 
 .ideasContainer .page:nth-of-type(2):hover {
-  border: 4px solid #3f727a;
+  border: 4px solid #909B5C;
 }
 
 html {
@@ -1182,7 +1182,7 @@ html {
 }
 
 body {
-  background-color: #eff7f5;
+  background-color: #fffdfd;
   height: 100vh;
 }
 
@@ -1212,14 +1212,14 @@ h4 {
 }
 
 button {
-  border: 4px solid #3f727a;
+  border: 5px solid #909B5C;
   background: rgba(255, 255, 255, 0);
   font-family: "DM Sans";
-  color: #3f727a;
+  color: #444F09;
 }
 
 button:hover, button:focus {
-  background-color: #65ffcc;
+  background-color: #FCF6D7;
 }
 
 input[type="radio"] {
@@ -1227,7 +1227,7 @@ input[type="radio"] {
 }
 
 label:hover, label:focus {
-  background-color: #65ffcc;
+  background-color: #FCF6D7;
 }
 
 ul {
