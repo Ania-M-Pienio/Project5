@@ -1,3 +1,10 @@
+.photosContainer {
+  @include mobile-port {
+    // 560
+    padding: 0 5%;
+  }
+}
+
 .ideasContainer {
   width: 100%;
   height: auto;
@@ -50,7 +57,7 @@
     &:hover *,
     &:focus * {
       color: $accent;
-    } 
+    }
   }
 }
 
@@ -107,9 +114,19 @@
     min-width: 100%;
     max-width: 100%;
   }
+  @include mobile-port {
+    margin-top: 20px;
+    border: 4px solid $accent;
+    overflow: hidden;
+    min-height: 300px;
+    height: 300px;
+    &:hover h3 {
+      font-size: 1rem;
+    }
+  }
   img {
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
     position: relative;
     z-index: 2000;
     max-width: 100%;
@@ -119,7 +136,8 @@
       min-height: 600px;
     }
     @include mobile-port {
-      min-height: 400px;
+      // 560
+      min-height: 310px;
     }
   }
 }
@@ -137,16 +155,7 @@
   justify-content: center;
   align-items: center;
   transition: background-color 0.5s, width 0.5s;
-  button:focus + h3 {
-    width: 60%;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    padding-left: 0;
-  }
-  button:focus-within {
-    height: 20%;
-  }
+  
   button:focus .ideaIco {
     font-size: 3rem;
     margin: 0 auto;
@@ -161,11 +170,12 @@
       font-size: 1.5rem;
     }
     .ideaIco {
+      font-size: 4rem;
       color: $primaryLite;
-    }
-    .ideaIco:focus-within {
-      font-size: 3rem;
-      margin: 0 auto;
+      @include mobile-port {
+        // 560
+        font-size: 3rem;
+      }
     }
   }
   h3 {
@@ -173,17 +183,12 @@
     font-family: "Spartan";
     font-size: 2.2rem;
     padding-left: 20px;
+    @include mobile-port {
+      font-size: 1.6rem;
+    }
   }
 }
 
-.ideasIconContainer:focus-within {
-  background-color: #696b70d8;
-  flex-direction: column;
-  height: 100%;
-  width: 25%;
-  margin: 0 auto;
-  padding: 0;
-}
 
 .altIdeaContainer {
   width: 100%;
@@ -195,7 +200,7 @@
   .ideasPhotoPage {
     width: 45%;
     margin: 10px 0;
-    border: 4px solid  $accent;
+    border: 4px solid $accent;
     @include tablet-port {
       // 840
       width: 30%;
@@ -213,28 +218,27 @@
 
 .ideasContainer .page:nth-of-type(1) {
   border-top: none;
-  border-right: 2px solid  $accent;
+  border-right: 2px solid $accent;
   border-bottom: none;
   @include mobile-land {
-    border: 4px solid  $accent;
-    border-top: none;
-    border-bottom: 2px solid  $accent;
+    margin-top: 20px;
+    border: 4px solid $accent;
   }
   &:hover {
-    border: 4px solid  $accent;;
+    border: 4px solid $accent;
   }
 }
 
 .ideasContainer .page:nth-of-type(2) {
   border-top: none;
-  border-left: 2px solid  $accent;
+  border-left: 2px solid $accent;
   border-bottom: none;
   @include mobile-land {
-    border: 4px solid  $accent;
-    border-bottom: none;
-    border-top: 2px solid  $accent;
+    margin-top: 20px;
+    border: 4px solid $accent;
+    margin-bottom: 20px;
   }
   &:hover {
-    border: 4px solid  $accent;
+    border: 4px solid $accent;
   }
 }

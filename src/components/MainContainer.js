@@ -93,26 +93,29 @@ class MainContainer extends Component {
               colorChoices={this.props.colorChoices}
               photos={this.props.photos}
             ></ColorContainer>
-            <button
-              className={this.props.color ? "twoWay back" : "oneWay"}
-              type="button"
-              onClick={this.handleBack}
-            >
-              BACK
-            </button>
-            {this.props.color ? (
-              <button className="twoWay next" type="button">
-                <a
-                  href="https://forms.gle/CNp9wyaaY8iRXPNu7"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  GIVE FEEDBACK
-                </a>
+
+            <div className="colorButtons">
+              <button
+                className={this.props.color ? "twoWay back" : "oneWay"}
+                type="button"
+                onClick={this.handleBack}
+              >
+                BACK
               </button>
-            ) : (
-              ""
-            )}
+              {this.props.color ? (
+                <button className="twoWay next" type="button">
+                  <a
+                    href="https://forms.gle/CNp9wyaaY8iRXPNu7"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                   SURVEY
+                  </a>
+                </button>
+              ) : (
+                ""
+              )}
+            </div>
           </Fragment>
         ) : (
           ""

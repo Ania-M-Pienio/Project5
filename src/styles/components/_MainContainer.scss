@@ -21,9 +21,6 @@
     color: $tint;
     display: inline-block;
     transition: all 1s;
-    @include mobile-port {
-      font-size: 1.5rem;
-    }
   }  
 }
 
@@ -42,3 +39,4 @@ button.twoWay {
 .test {
   display: flex;
 }
+

@@ -22,6 +22,7 @@
     height: 150px;
     padding: 0;
     margin: 0;
+    background-color: $transparent;
     @include mobile-port {
       width: 100px;
       height: 100px;
@@ -44,7 +45,7 @@
 }
 
 .homeIcon {
-  color: $tint;
+  color: $bold;
   transform: scale(0);
   transition: transform 1s;
   width: 100%;
