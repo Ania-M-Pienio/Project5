@@ -18,6 +18,9 @@
   @include mobile-port {
     height: 100px;
   }
+  button:hover img {
+      background-color: $primaryLite;
+  }
   .logo .logoBorder {
     width: 150px;
     height: 150px;
@@ -28,7 +31,6 @@
   }
 }
 
-
 // SPLASH PAGE LOGO
 .splashLogo .logo .logoBorder {
   width: 35%;
@@ -37,6 +39,7 @@
     width: 70%;
   }
 }
+
 
 // HOME LOGO ON MOBILE
 .homeLogo.logoHide {

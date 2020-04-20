@@ -126,7 +126,7 @@
   }
   img {
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
     position: relative;
     z-index: 2000;
     max-width: 100%;
@@ -198,18 +198,24 @@
   align-content: center;
   flex-wrap: wrap;
   .ideasPhotoPage {
-    width: 45%;
+    width: 48%;
+    min-height: 400px;
     margin: 10px 0;
     border: 4px solid $accent;
     @include tablet-port {
       // 840
-      width: 30%;
+      width: 35%;
       min-width: 300px;
+      min-height: 300px;
     }
     @include mobile-land {
       // 780
       width: 100%;
       min-width: 100%;
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
     }
   }
 }
