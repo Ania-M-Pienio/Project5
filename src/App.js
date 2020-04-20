@@ -63,6 +63,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      expand: false,
       isIntro: true,
       season: "",
       time: "",
@@ -70,6 +71,15 @@ class App extends Component {
       colorChoices: [],
       photos: []
     };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        expand: true,
+      });
+    }, 1000)
+
   }
 
 
@@ -135,7 +145,6 @@ class App extends Component {
   };
 
   getColorSets = () => {
-    
     const dbRef = firebase.database().ref("ColorSets");
     dbRef.on("value", response => {
       const setsFromDB = response.val();
@@ -192,7 +201,7 @@ class App extends Component {
           </Fragment>
         )}
         {this.state.isIntro ? (
-          <Splash onStart={this.handleStart} />
+          <Splash onStart={this.handleStart} expand={this.state.expand}/>
         ) : (
           <MainContainer
             onSeason={this.handleSeasonChoice}

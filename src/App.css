@@ -336,6 +336,7 @@ input::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .logo .logoBorder img {
@@ -344,6 +345,14 @@ input::-moz-focus-inner {
      object-fit: contain;
   border: 0.1px solid rgba(255, 255, 255, 0);
   background-color: white;
+}
+
+.logoBorder .leafOne {
+  position: absolute;
+}
+
+.logoBorder .leafOne img {
+  background: rgba(255, 255, 255, 0);
 }
 
 .barLogo {
