@@ -13,13 +13,127 @@
   }
 }
 
-.logoBorder .leafOne {
-  position: absolute;
-  img {
-     background: $transparent
-  }   
+@keyframes leafL {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(0.55);
+    margin-right: 45%;
+  }
 }
 
+@keyframes leafLB {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.65);
+    margin-right: 40%;
+    margin-top: 10%;
+  }
+}
+
+@keyframes leafC {
+  0% {
+    transform: scale(0);
+    margin-top: 0%;
+  }
+  70% {
+     transform: scale(0);
+  }
+  100% {
+    transform: scale(0.35);
+    margin-top: -30%;
+  }
+}
+
+@keyframes leafCB {
+  0% {
+    transform: scale(0);
+    margin-top: 0%;
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.4);
+    margin-top: -13%;
+  }
+}
+
+@keyframes leafR {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(0.55);
+    margin-left: 50%;
+  }
+}
+
+@keyframes leafRB {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.65) rotate(10deg);
+    margin-left: 40%;
+    margin-top: 8%;
+  }
+}
+
+.logoBorder .leafLeft {
+  transition: all 1s;
+  animation: leafL 2s ease-out;
+  animation-delay: 0.2s;
+}
+
+.logoBorder .leafLeftBottom {
+  transition: all 1s;
+  animation: leafLB 1s ease-out;
+  animation-delay: 0.1s;
+}
+
+.logoBorder .leafCenter {
+  transition: all 1s;
+  animation: leafC 2s ease-out;
+}
+
+.logoBorder .leafCenterBottom {
+  transition: all 1s;
+  animation: leafCB 1s ease-out;
+}
+
+.logoBorder .leafRight {
+  transition: all 1s;
+  animation: leafR 2s ease-out;
+  animation-delay: 0.2s;
+}
+
+.logoBorder .leafRightBottom {
+  transition: all 1s;
+  animation: leafRB 1s ease-out;
+  animation-delay: 0.1s;
+}
+
+.logoBorder .leaf {
+  position: absolute;
+  transform: scale(0);
+  transition: all 1s;
+  top: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  img {
+    background: $transparent;
+  }
+}
 
 // BAR LOGO
 .barLogo {
@@ -27,7 +141,7 @@
   @include mobile-port {
     height: 100px;
   }
-  button:hover img {
+  button:hover img:not(.leafImage) {
     background-color: $primaryLite;
   }
   .logo .logoBorder {
@@ -41,11 +155,14 @@
 }
 
 // SPLASH PAGE LOGO
-.splashLogo .logo .logoBorder {
-  width: 35%;
+.splashLogo {
   margin: 0 auto;
-  @include mobile-land {
-    width: 70%;
+  .logo .logoBorder {
+    width: 35%;
+    margin: 0 auto;
+    @include mobile-land {
+      width: 70%;
+    }
   }
 }
 

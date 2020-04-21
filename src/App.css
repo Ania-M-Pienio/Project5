@@ -347,11 +347,254 @@ input::-moz-focus-inner {
   background-color: white;
 }
 
-.logoBorder .leafOne {
-  position: absolute;
+@-webkit-keyframes leafL {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    margin-right: 45%;
+  }
 }
 
-.logoBorder .leafOne img {
+@keyframes leafL {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    margin-right: 45%;
+  }
+}
+
+@-webkit-keyframes leafLB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+    margin-right: 40%;
+    margin-top: 10%;
+  }
+}
+
+@keyframes leafLB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+    margin-right: 40%;
+    margin-top: 10%;
+  }
+}
+
+@-webkit-keyframes leafC {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    margin-top: 0%;
+  }
+  70% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+    margin-top: -30%;
+  }
+}
+
+@keyframes leafC {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    margin-top: 0%;
+  }
+  70% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.35);
+            transform: scale(0.35);
+    margin-top: -30%;
+  }
+}
+
+@-webkit-keyframes leafCB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    margin-top: 0%;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: -13%;
+  }
+}
+
+@keyframes leafCB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    margin-top: 0%;
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: -13%;
+  }
+}
+
+@-webkit-keyframes leafR {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    margin-left: 50%;
+  }
+}
+
+@keyframes leafR {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+    margin-left: 50%;
+  }
+}
+
+@-webkit-keyframes leafRB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.65) rotate(10deg);
+            transform: scale(0.65) rotate(10deg);
+    margin-left: 40%;
+    margin-top: 8%;
+  }
+}
+
+@keyframes leafRB {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(0.65) rotate(10deg);
+            transform: scale(0.65) rotate(10deg);
+    margin-left: 40%;
+    margin-top: 8%;
+  }
+}
+
+.logoBorder .leafLeft {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafL 2s ease-out;
+          animation: leafL 2s ease-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.logoBorder .leafLeftBottom {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafLB 1s ease-out;
+          animation: leafLB 1s ease-out;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.logoBorder .leafCenter {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafC 2s ease-out;
+          animation: leafC 2s ease-out;
+}
+
+.logoBorder .leafCenterBottom {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafCB 1s ease-out;
+          animation: leafCB 1s ease-out;
+}
+
+.logoBorder .leafRight {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafR 2s ease-out;
+          animation: leafR 2s ease-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.logoBorder .leafRightBottom {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: leafRB 1s ease-out;
+          animation: leafRB 1s ease-out;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.logoBorder .leaf {
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  top: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.logoBorder .leaf img {
   background: rgba(255, 255, 255, 0);
 }
 
@@ -365,7 +608,7 @@ input::-moz-focus-inner {
   }
 }
 
-.barLogo button:hover img {
+.barLogo button:hover img:not(.leafImage) {
   background-color: #FCF6D7;
 }
 
@@ -379,6 +622,10 @@ input::-moz-focus-inner {
     width: 100px;
     height: 100px;
   }
+}
+
+.splashLogo {
+  margin: 0 auto;
 }
 
 .splashLogo .logo .logoBorder {
