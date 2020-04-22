@@ -56,9 +56,6 @@ library.add(
   faBookOpen
 );
 
-
-
-
 class App extends Component {
   constructor() {
     super();
