@@ -13,15 +13,17 @@
 @import "styles/components/Choices";
 @import "styles/components/Ideas";
 
-
 // typography
 html {
   font-size: 70%;
-  height: 100vh;
+  height: 900px;
 }
 body {
   background-color: $primary;
-  height: 100vh;
+  height: 900px;
+  @include mobile-port {
+    height: 950px;
+  }
 }
 
 #root {
@@ -38,7 +40,7 @@ h4 {
   padding: 0;
 }
 
-// wrapper
+// wrappers
 .wrapper {
   height: 100%;
   max-width: 1480px;
@@ -50,7 +52,6 @@ h4 {
     padding-left: 6%;
     padding-right: 6%;
   }
-  
 }
 
 // all buttons - basic
@@ -67,16 +68,15 @@ button {
 
 // all input radios
 input[type="radio"] {
-  visibility: hidden;   
+  visibility: hidden;
 }
-
 
 // all labels
 label {
   &:hover,
   &:focus {
     background-color: $primaryLite;
-  } 
+  }
 }
 
 // General for unordered lists

@@ -32,61 +32,64 @@ class MainContainer extends Component {
 
   render() {
     return (
-      <main className="mainContainer">
+      <main className={"mainContainer" + (this.props.season? " expand" : "")}>
         {this.state.stage === "season" ? (
-          <Fragment>
+          <section>
             <SeasonContainer
               currentSeason={this.props.season}
               onSeason={this.props.onSeason}
             ></SeasonContainer>
-
-            {this.props.season ? (
-              <button
-                className="oneWay"
-                type="button"
-                onClick={this.handleNext}
-              >
-                NEXT
-              </button>
-            ) : (
-              ""
-            )}
-          </Fragment>
+            <div className="buttons seasonButtons">
+              {this.props.season ? (
+                <button
+                  className="oneWay"
+                  type="button"
+                  onClick={this.handleNext}
+                >
+                  NEXT
+                </button>
+              ) : (
+                ""
+              )}
+            </div>
+          </section>
         ) : (
           ""
         )}
 
         {this.state.stage === "time" ? (
-          <Fragment>
+          <section>
             <TimeContainer
               currentTime={this.props.time}
               onTime={this.props.onTime}
             ></TimeContainer>
-            <button
-              className={this.props.time ? "twoWay back" : "oneWay"}
-              type="button"
-              onClick={this.handleBack}
-            >
-              BACK
-            </button>
-            {this.props.time ? (
+            <div className="buttons timeButtons">
               <button
-                className={this.props.time ? "twoWay next" : "oneWay"}
+                className={this.props.time ? "twoWay back" : "oneWay"}
                 type="button"
-                onClick={this.handleNext}
+                onClick={this.handleBack}
               >
-                NEXT
+                BACK
               </button>
-            ) : (
-              " "
-            )}
-          </Fragment>
+              {this.props.time ? (
+                <button
+                  className={this.props.time ? "twoWay next" : "oneWay"}
+                  type="button"
+                  onClick={this.handleNext}
+                >
+                  NEXT
+                </button>
+              ) : (
+                " "
+              )}
+            </div>
+          </section>
         ) : (
           ""
         )}
 
         {this.state.stage === "color" ? (
-          <Fragment>
+          <section>
             <ColorContainer
               currentColor={this.props.color}
               onColor={this.props.onColor}
@@ -94,7 +97,7 @@ class MainContainer extends Component {
               photos={this.props.photos}
             ></ColorContainer>
 
-            <div className="colorButtons">
+            <div className="buttons colorButtons">
               <button
                 className={this.props.color ? "twoWay back" : "oneWay"}
                 type="button"
@@ -109,14 +112,14 @@ class MainContainer extends Component {
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                   SURVEY
+                    SURVEY
                   </a>
                 </button>
               ) : (
                 ""
               )}
             </div>
-          </Fragment>
+          </section>
         ) : (
           ""
         )}
