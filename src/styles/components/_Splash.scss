@@ -1,39 +1,94 @@
 .splash {
   height: 100%;
   color: $font;
-  padding-top: 6%;
+  padding-top: 2%;
+  @include short {
+    height: 100%;
+    padding: 8%;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mobile-port-short {
+    flex-direction: column;
+    padding: 8%;
+    justify-content: flex-start;
+  }
+}
+
+.splashControl {
+  @include short {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    order: 3;
+    margin: 5px;
+  }
+  @include mobile-port-short {
+    width: 100%;
+    height: 20%;
+  }
   button {
-    width: 35%;
+    width: 30%;
     height: 100px;
     padding: 2%;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 50px;
-    font-size: 3.3rem;
+    font-size: 2.9rem;
     transition: all 1s;
     @include tablet-port {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     @include mobile-land {
-      width: 70%;      
+      width: 70%;
+    }
+    @include short {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border: 4px solid $tint;
     }
   }
 }
 
-.splash h1 {
-  margin: 0 auto;
-  max-width: 75%;
-  color: $font;
-  font-family: "DM Sans";
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 20px;
-  transition: all 1s;
-  @include mobile-land {
-    font-size: 2.5rem;
-    max-width: 70%;
+.splashInfo {
+  @include short {
+    width: 33%;
+    border: 4px solid $tint;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    order: 2;
+    margin: 5px;
+  }
+  @include mobile-port-short {
+    width: 100%;
+    height: 20%;
+  }
+  h1 {
     margin: 0 auto;
+    max-width: 75%;
+    color: $font;
+    font-family: "DM Sans";
+    font-size: 2.7rem;
+    text-align: center;
     margin-top: 20px;
+    transition: all 1s;
+    @include tablet-port {
+      font-size: 2rem;
+    }
+    @include mobile-land {
+      font-size: 2rem;
+      max-width: 70%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    @include short {
+      margin: 0;
+      padding: 0;
+      align-self: center;
+    }
   }
 }
-

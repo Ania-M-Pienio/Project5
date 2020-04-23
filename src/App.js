@@ -76,7 +76,6 @@ class App extends Component {
         expand: true,
       });
     }, 1000)
-
   }
 
 

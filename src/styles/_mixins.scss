@@ -30,7 +30,19 @@
 // vertical
 
 @mixin short() {
-  @media (max-height: 500px) {
+  @media (max-height: 750px) {
+    @content;
+  }
+}
+
+@mixin v-short() {
+  @media (max-height: 400px) {
+    @content;
+  }
+}
+
+@mixin mobile-port-short() {
+  @media (max-height: 740px) and (max-width: 560px) {
     @content;
   }
 }

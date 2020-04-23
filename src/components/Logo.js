@@ -3,6 +3,7 @@ import m8 from "../assets/BM8B.png";
 import leafLV from "../assets/leaf-lv.png";
 import leafRV from "../assets/leaf-rv.png";
 import leafC from "../assets/leaf-c.png";
+// import leafS from "../assets/BM8S.png";
 
 function Logo() {
   return (
@@ -27,6 +28,8 @@ function Logo() {
         <div className="leaf leafRightBottom">
           <img src={leafLV} className="leafImage leafL" alt="bride"></img>
         </div>
+      </div>
+      <div className="shortLogo"> 
       </div>
     </div>
   );
