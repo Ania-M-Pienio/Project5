@@ -16,22 +16,16 @@
 // typography
 html {
   font-size: 70%;
-  height: 900px;
 }
 body {
   background-color: $primary;
-  height: 900px;
-  @include mobile-port {
-    height: 950px;
-  }
+  padding-bottom: 50px;
 }
 
 #root {
   height: 100%;
 }
 
-body,
-html,
 h1,
 h2,
 h3,
@@ -92,5 +86,5 @@ ul {
 // General App
 .App {
   text-align: center;
-  height: 100%;
+  height: 100%;  
 }

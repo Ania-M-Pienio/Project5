@@ -33,7 +33,7 @@
   }
   button {
     width: 30%;
-    height: 100px;
+    height: 90px;
     padding: 2%;
     margin: 0 auto;
     margin-top: 60px;
@@ -68,7 +68,6 @@
   }
   @include mobile-port-short {
     width: 100%;
-    height: 20%;
   }
   h1 {
     margin: 0 auto;

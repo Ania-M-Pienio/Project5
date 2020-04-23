@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import SeasonContainer from "./SeasonContainer";
 import TimeContainer from "./TimeContainer";
 import ColorContainer from "./ColorContainer";
