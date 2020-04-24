@@ -951,7 +951,6 @@ button.twoWay {
 .splashControl button {
   width: 30%;
   height: 90px;
-  padding: 2%;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -1735,8 +1734,26 @@ input[type="radio"] {
   visibility: hidden;
 }
 
+input,
+button {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+input:focus,
+button:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+label {
+  outline: none;
+}
+
 label:hover, label:focus {
   background-color: #FCF6D7;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 ul {

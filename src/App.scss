@@ -22,7 +22,6 @@ body {
   padding-bottom: 50px;
 }
 
-
 h1,
 h2,
 h3,
@@ -62,11 +61,24 @@ input[type="radio"] {
   visibility: hidden;
 }
 
+input,
+button {
+  outline-color: transparent;
+  outline-style: none;
+  &:focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+}
+
 // all labels
 label {
+  outline: none;
   &:hover,
   &:focus {
     background-color: $primaryLite;
+    outline-color: transparent;
+    outline-style: none;
   }
 }
 
@@ -83,5 +95,5 @@ ul {
 // General App
 .App {
   text-align: center;
-  height: 100%;  
+  height: 100%;
 }
