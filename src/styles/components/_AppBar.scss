@@ -5,21 +5,20 @@
   left: 0;
   width: 100%;
   z-index: 10000;
-  height: auto;
   color: $font;
   border-bottom: 4px solid $bold;
   background-color: $primary;
   display: flex;
+  justify-content: space-between;
+  align-content: center;
   @include mobile-port {
     flex-direction: column;
-    height: auto;
-    padding-top: 5%;
     align-content: center;
   }
   button {
+    width: 90px;
+    height: 90px;
     border: rgba(255, 255, 255, 0);
-    width: 150px;
-    height: 150px;
     padding: 0;
     margin: 0;
     background-color: $transparent;
@@ -31,18 +30,34 @@
 }
 
 .settingContainer {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   @include mobile-port {
-    height: auto;
+    width: 100%;
+    justify-content: center;
   }
   .setting {
     color: $bold;
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
+    @include tablet-port {
+      width: 30%;
+    }
+    h3 {
+      font-size: 12px;
+      margin-top: 5px;
+      margin: 0;
+      padding: 0;
+      @include mobile-port {
+        font-size: 10px;
+      }
+    }
   }
 }
 
-.home {
-  position: absolute;
-  color: rgba(255, 255, 255, 0);
-}
 
 .homeIcon {
   color: $bold;

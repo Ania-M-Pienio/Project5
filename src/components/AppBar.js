@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function AppBar(props) {
   return (
     <nav className="appBar">
+      {/* [1] logo */}
       <div className="barLogo">
         <button aria-label="Home" type="button" onClick={props.onStartOver}>
           <div
@@ -17,6 +18,7 @@ function AppBar(props) {
           >
             <Logo />
           </div>
+
           <div
             className={
               props.season || props.time || props.color
@@ -26,9 +28,9 @@ function AppBar(props) {
           >
             <FontAwesomeIcon icon="home" size="4x" />
           </div>
-          <span className="home">HOME</span>
         </button>
       </div>
+      {/* [2] settings */}
       <SettingContainer
         season={props.season}
         time={props.time}
@@ -38,6 +40,5 @@ function AppBar(props) {
   );
 }
 export default AppBar;
-
 
 // aria-label="Home" type="button" onClick={props.onStartOver}>

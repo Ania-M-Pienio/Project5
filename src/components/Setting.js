@@ -13,8 +13,8 @@ class Setting extends Component {
         { type: "fall", icon: "cloud-rain" },
         { type: "daytime", icon: "sun" },
         { type: "evening", icon: "moon" },
-        { type: "color", icon: "palette" }
-      ]
+        { type: "color", icon: "palette" },
+      ],
     };
   }
 
@@ -25,11 +25,11 @@ class Setting extends Component {
     let colorTwo = "";
     // determining which kind of icon should be used in the display of the setting
     if (this.props.icon.includes("_")) {
-      icons = this.state.graphics.filter(i => i.type === "color");
+      icons = this.state.graphics.filter((i) => i.type === "color");
       colorOne = this.props.icon.split("_")[0];
       colorTwo = this.props.icon.split("_")[1];
     } else {
-      icons = this.state.graphics.filter(i => i.type === this.props.icon);
+      icons = this.state.graphics.filter((i) => i.type === this.props.icon);
     }
     // select the filtered icon every time component renders
     thisGraphic = icons[0];
@@ -42,13 +42,14 @@ class Setting extends Component {
           ""
         )}
         <h3>
+          <span></span>
           {this.props.icon.includes("_") ? (
-            <Fragment>
+            <span>
               {" "}
               <span>{colorOne}</span> &amp; <span>{colorTwo}</span>{" "}
-            </Fragment>
+            </span>
           ) : (
-            thisGraphic.type
+            <span> {thisGraphic.type}</span>
           )}
         </h3>
       </div>

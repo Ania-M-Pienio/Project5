@@ -1,24 +1,4 @@
-.settingContainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: flex-end;
-  @include mobile-port {
-    justify-content: center;
-  }
-  .setting {
-    width: 25%;
-    margin-top: 30px;
-    @include tablet-port {
-      width: 30%;
-    }
-  }
-}
-
 .setting {
-  width: 100%;
-  min-width: 100px;
-  min-height: 100px;
   font-size: 50px;
   color: $tint;
   h3 {
@@ -26,26 +6,10 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 20px;
+    align-self: center;
     @include tablet-port {
       font-size: 15px;
     }
   }
 }
 
-.appBar .settingContainer .setting {
-  @include mobile-port {
-    margin-top: 10px;
-  }
-  * {
-    @include mobile-port {
-      font-size: 1.8rem;
-    }
-  }
-  h3, span {
-    @include mobile-port {
-      font-size: 1.3rem;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-  }
-}
