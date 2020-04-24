@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Splash(props) {
   return (
@@ -12,7 +13,8 @@ function Splash(props) {
       {/* [2] */}
       <div className="splashControl">
         <button type="button" onClick={props.onStart}>
-          GET STARTED
+          <span>START</span>{" "}
+          <FontAwesomeIcon icon="sign-in-alt" size="1x"></FontAwesomeIcon>
         </button>
       </div>
 
@@ -21,7 +23,6 @@ function Splash(props) {
         <span></span>
         <h1> GET IDEAL WEDDING COLOURS </h1>
       </div>
-
     </section>
   );
 }

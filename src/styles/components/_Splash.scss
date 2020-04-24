@@ -41,6 +41,8 @@
     margin-bottom: 50px;
     font-size: 2.9rem;
     transition: all 1s;
+    display: flex;
+    justify-content: center;
     @include tablet-port {
       font-size: 2rem;
     }
@@ -52,6 +54,11 @@
       width: 100%;
       margin: 0;
       border: 4px solid $tint;
+    }
+    * {
+      display: inline-block;
+      align-self: center;
+      margin: 5px;
     }
   }
 }

@@ -27,7 +27,8 @@ import {
   faCaretSquareRight,
   faHome,
   faGripVertical,
-  faBookOpen
+  faBookOpen,
+  faSignInAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 // setup icons from Font Awesome
@@ -53,7 +54,8 @@ library.add(
   faCaretSquareRight,
   faHome,
   faGripVertical,
-  faBookOpen
+  faBookOpen,
+  faSignInAlt
 );
 
 class App extends Component {
