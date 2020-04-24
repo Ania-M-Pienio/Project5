@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment} from "react";
 import firebase from "./firebaseConfig";
 import MainContainer from "./components/MainContainer";
 import AppBar from "./components/AppBar";

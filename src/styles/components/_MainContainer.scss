@@ -10,7 +10,7 @@
   }
   button {
     width: 100%;
-    height: 80px;
+    height: 100%;
     font-size: 2.5rem;
   }
   button a {
@@ -22,7 +22,9 @@
 }
 
 .mainContainer.expand {
-  padding-top: 230px;
+  @include mobile-port {
+    padding-top: 230px;
+  }
 }
 
 .mainContainer section {
@@ -32,6 +34,9 @@
   .buttons {
     display: flex;
     justify-content: center;
+    button {
+      height: 70px;
+    }
   }
 }
 
