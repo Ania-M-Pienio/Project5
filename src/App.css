@@ -808,7 +808,7 @@ input::-moz-focus-inner {
   color: #444F09;
   width: 100%;
   height: 100%;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 @media (max-width: 780px) {
@@ -834,7 +834,7 @@ input::-moz-focus-inner {
 
 @media (max-width: 560px) {
   .mainContainer.expand {
-    padding-top: 230px;
+    padding-top: 200px;
   }
 }
 
@@ -1108,6 +1108,14 @@ button.twoWay {
   padding-top: 40px;
 }
 
+@media (max-width: 950px) {
+  .seasonContainer h1,
+  .timeContainer h1,
+  .colorContainer h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 560px) {
   .seasonContainer h1,
   .timeContainer h1,
@@ -1161,6 +1169,14 @@ button.twoWay {
     min-width: 150px;
     min-height: 140px;
     max-height: 100px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .seasonChoiceContainer .choice,
+  .timeChoiceContainer .choice {
+    width: 100px;
+    margin: 0.5%;
   }
 }
 
