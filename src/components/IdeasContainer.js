@@ -30,7 +30,7 @@ class IdeasContainer extends Component {
   };
 
   handleRight = () => {
-    if (this.state.page < 6) {
+    if (this.state.page < 7) {
       this.setState({
         page: this.state.page + 1,
       });
@@ -52,7 +52,10 @@ class IdeasContainer extends Component {
   render() {
     // prepare data to be used in render
     const pageOne = this.state.page;
-    const pageTwo = this.state.page + 1;
+    let pageTwo = 0;
+    if (pageOne < 7) {
+     pageTwo = this.state.page + 1;
+    }
     const pageOneDomain = this.props.photos[pageOne].domain;
     const pageOneIcon = this.state.domains[pageOneDomain];
     const pageTwoDomain = this.props.photos[pageTwo].domain;
@@ -99,7 +102,7 @@ class IdeasContainer extends Component {
           </button>
 
           {/* // right button */}
-          {pageOne < 6 && !this.state.gridMode ? (
+          {pageOne < 7 && !this.state.gridMode ? (
             <button type="button" onClick={this.handleRight}>
               <FontAwesomeIcon
                 icon="caret-square-right"
@@ -113,7 +116,7 @@ class IdeasContainer extends Component {
         </div>
         {/* end of layout control */}
 
-        <div className="ideasContainer">
+        <div className={"ideasContainer" + (pageOne === 7 ?  " end": "")}>
           {!this.state.gridMode ? (
             <Fragment>
               <Idea
@@ -123,6 +126,7 @@ class IdeasContainer extends Component {
                 icon={pageOneIcon}
                 layout="page"
               />
+              { pageOne !== 7 ? (
               <Idea
                 current={this.props.current}
                 domain={pageTwoDomain}
@@ -130,6 +134,7 @@ class IdeasContainer extends Component {
                 icon={pageTwoIcon}
                 layout="page"
               />
+              ) : "" }
             </Fragment>
           ) : (
             ""
