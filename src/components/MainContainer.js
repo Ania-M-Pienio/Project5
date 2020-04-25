@@ -125,19 +125,17 @@ class MainContainer extends Component {
         {this.state.stage === "ideas" ? (
           <section>
             <PhotoContainer photos={this.props.photos}></PhotoContainer>
-            {/* {this.props.color ? (
-              <button className="oneWay" type="button">
-                <a
-                  href="https://forms.gle/CNp9wyaaY8iRXPNu7"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  SURVEY
-                </a>
+            <div className="buttons ideaButtons">
+              <button
+                className= "oneWay"
+                type="button"
+                onClick={this.handleBack}
+              >
+                BACK
               </button>
-            ) : (
-              ""
-            )} */}
+          
+
+            </div>
           </section>
         ) : (
           ""

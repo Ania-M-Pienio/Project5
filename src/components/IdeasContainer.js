@@ -6,7 +6,7 @@ class IdeasContainer extends Component {
   constructor() {
     super();
     this.state = {
-      gridMode: true,
+      gridMode: false,
       page: 0,
       domains: {
         cake: "birthday-cake",
