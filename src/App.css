@@ -834,7 +834,7 @@ input::-moz-focus-inner {
 
 @media (max-width: 560px) {
   .mainContainer.expand {
-    padding-top: 200px;
+    padding-top: 180px;
   }
 }
 
@@ -1076,8 +1076,8 @@ button.twoWay {
 }
 
 .setting h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 20px;
   -ms-flex-item-align: center;
@@ -1179,6 +1179,14 @@ button.twoWay {
   }
 }
 
+@media (max-width: 560px) {
+  .seasonChoiceContainer .choice,
+  .timeChoiceContainer .choice {
+    min-width: 120px;
+    min-height: 100px;
+  }
+}
+
 .seasonChoiceContainer .choice:hover,
 .timeChoiceContainer .choice:hover {
   background-color: #FCF6D7;
@@ -1188,7 +1196,6 @@ button.twoWay {
 .timeChoiceContainer .choice button {
   padding: 10%;
   border: none;
-  min-height: 120px;
 }
 
 .seasonChoiceContainer .choice button:hover, .seasonChoiceContainer .choice button:focus,
@@ -1196,6 +1203,13 @@ button.twoWay {
 .timeChoiceContainer .choice button:focus {
   background-color: #FCF6D7;
   color: #2D330C;
+}
+
+@media (max-width: 560px) {
+  .seasonChoiceContainer .choice button label .choiceIcon .setting,
+  .timeChoiceContainer .choice button label .choiceIcon .setting {
+    font-size: 30px;
+  }
 }
 
 .choice.selected {

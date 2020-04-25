@@ -58,19 +58,26 @@
     width: 100px;
     margin: 0.5%;
   }
+  @include mobile-port {
+    min-width: 120px;
+    min-height: 100px;
 
+  }
   &:hover {
     background-color: $primaryLite;
   }
-
   button {
     padding: 10%;
     border: none;
-    min-height: 120px;
     &:hover,
     &:focus {
       background-color: $primaryLite;
       color: $accent;
+    }
+    label .choiceIcon .setting {
+      @include mobile-port {
+        font-size: 30px;
+      }
     }
   }
 }
