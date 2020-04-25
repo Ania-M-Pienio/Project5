@@ -16,12 +16,16 @@
     @include mobile-port {
       // 560
       font-size: 2rem;
+      padding-top: 20px;
     }
   }
 }
 
 .colorContainer h1 {
   min-height: 80px;
+  @include mobile-port {
+    padding-top: 10px;
+  }
 }
 
 .seasonChoiceContainer,
@@ -40,6 +44,7 @@
   @include mobile-port {
     // 560
     margin-top: 10px;
+    padding-bottom: 0.5%;
   }
 }
 
