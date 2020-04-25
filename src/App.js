@@ -158,7 +158,7 @@ class App extends Component {
       }
       const filteredSets = arrayOfDBSets
         .filter(set => set.seasons.includes(this.state.season))
-        .filter(set => set.time.includes(this.state.time));
+        .filter(set => set.time.includes(this.state.time)).slice(0, 6);
 
       this.setState({
         colorChoices: filteredSets
