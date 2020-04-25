@@ -1106,7 +1106,7 @@ button.twoWay {
 .photosContainer h1 {
   font-size: 3rem;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 @media (max-width: 950px) {
@@ -1129,7 +1129,7 @@ button.twoWay {
 }
 
 .colorContainer h1 {
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .seasonChoiceContainer,
