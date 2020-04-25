@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ColorChoice from "./ColorChoice";
-import IdeasContainer from "./IdeasContainer";
 
 function ColorContainer(props) {
     return (
@@ -20,18 +19,6 @@ function ColorContainer(props) {
                 onColor={props.onColor}
               />
           ))}
-        </div>
-        <div className="photosContainer">
-          {props.photos.length === 0 ? (
-            ""
-          ) : (
-            <Fragment>
-              <IdeasContainer
-                current={props.currentColor}
-                photos={props.photos}
-              />
-            </Fragment>
-          )}
         </div>
       </section>
     );

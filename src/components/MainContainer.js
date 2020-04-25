@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SeasonContainer from "./SeasonContainer";
 import TimeContainer from "./TimeContainer";
 import ColorContainer from "./ColorContainer";
+import PhotoContainer from "./PhotoContainer";
 
 class MainContainer extends Component {
   constructor() {
@@ -32,7 +33,7 @@ class MainContainer extends Component {
 
   render() {
     return (
-      <main className={"mainContainer" + (this.props.season? " expand" : "")}>
+      <main className={"mainContainer" + (this.props.season ? " expand" : "")}>
         {this.state.stage === "season" ? (
           <section>
             <SeasonContainer
@@ -94,7 +95,6 @@ class MainContainer extends Component {
               currentColor={this.props.color}
               onColor={this.props.onColor}
               colorChoices={this.props.colorChoices}
-              photos={this.props.photos}
             ></ColorContainer>
 
             <div className="buttons colorButtons">
@@ -106,19 +106,38 @@ class MainContainer extends Component {
                 BACK
               </button>
               {this.props.color ? (
-                <button className="twoWay next" type="button">
-                  <a
-                    href="https://forms.gle/CNp9wyaaY8iRXPNu7"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    SURVEY
-                  </a>
+                <button
+                  className={this.props.color ? "twoWay next" : "oneWay"}
+                  type="button"
+                  onClick={this.handleNext}
+                >
+                  NEXT
                 </button>
               ) : (
-                ""
+                " "
               )}
             </div>
+          </section>
+        ) : (
+          ""
+        )}
+
+        {this.state.stage === "ideas" ? (
+          <section>
+            <PhotoContainer photos={this.props.photos}></PhotoContainer>
+            {/* {this.props.color ? (
+              <button className="oneWay" type="button">
+                <a
+                  href="https://forms.gle/CNp9wyaaY8iRXPNu7"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SURVEY
+                </a>
+              </button>
+            ) : (
+              ""
+            )} */}
           </section>
         ) : (
           ""
