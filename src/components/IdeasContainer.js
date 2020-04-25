@@ -62,7 +62,7 @@ class IdeasContainer extends Component {
       <Fragment>
         <div className="displayControl">
           {/* // right button */}
-          {(pageOne  > 0) && !this.state.gridMode ? (
+          {pageOne > 0 && !this.state.gridMode ? (
             <button type="button" onClick={this.handleLeft}>
               <FontAwesomeIcon
                 icon="caret-square-left"
@@ -99,7 +99,7 @@ class IdeasContainer extends Component {
           </button>
 
           {/* // right button */}
-          {(pageOne < 6) && !this.state.gridMode ? (
+          {pageOne < 6 && !this.state.gridMode ? (
             <button type="button" onClick={this.handleRight}>
               <FontAwesomeIcon
                 icon="caret-square-right"
