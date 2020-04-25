@@ -20,6 +20,10 @@
   }
 }
 
+.colorContainer h1 {
+  min-height: 100px;
+}
+
 .seasonChoiceContainer,
 .timeChoiceContainer,
 .colorChoiceContainer {
@@ -61,14 +65,13 @@
   @include mobile-port {
     min-width: 120px;
     min-height: 100px;
-
   }
   &:hover {
     background-color: $primaryLite;
   }
   button {
     padding: 10%;
-    border: none;
+    border: $transparent;
     &:hover,
     &:focus {
       background-color: $primaryLite;
@@ -100,39 +103,22 @@
 }
 
 .colorChoice {
-  position: relative;
-  width: auto;
   height: auto;
-  margin: 5% 2%;
+  margin: 60px 10px 20px 10px;
   border: 4px solid $tint;
   @include tablet-port {
     // 840
-    margin: 50px 5%;
-  }
-  @include mobile-land {
-    // 780
-    height: 180px;
-  }
-  h3 {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: -60px;
-    width: 80%;
-    height: auto;
-    text-align: center;
-    font-family: "Spartan";
-    font-size: 1.6rem;
-    transition: all 1s;
+    margin: 60px 10px 20px;
   }
 
   button {
-    border: none;
-    height: 100%;
-    padding: 10px;
+    position: relative;
+    height: auto;
+    border: 4px solid $transparent;
+    padding: 15px;
     &:hover .colorSelect,
     &:focus .colorSelect {
-      transform: scale(1.6);
+      transform: scale(1.2);
     }
     &:hover h3,
     &:focus h3,
@@ -141,13 +127,38 @@
       color: $accent;
       transform: scale(1.2);
     }
+    @include tablet-port {
+      padding: 5px;
+    }
+    h3 {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-family: "Spartan";
+      font-size: 1.3rem;
+      transition: all 1s;
+      @include mobile-port {
+        font-size: 1.2rem;
+        top: -50px;
+      }
+      span {
+        display: inline-block;
+      }
+    }
   }
 }
 
 .colorChoiceIcon {
   &:hover .colorSelect,
   &:focus .colorSelect {
-    transform: scale(1.6);
+    transform: scale(1.2);
   }
 }
 
@@ -158,13 +169,13 @@
 }
 
 .colorOne {
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   margin-top: -10px;
   transition: transform 0.9s;
   @include tablet-port {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   &:hover {
     transform: scale(1.2);
@@ -172,17 +183,26 @@
 }
 
 .colorTwo {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
+  @include tablet-port {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .colorSelect {
   transform: scale(0.001);
   position: absolute;
-  bottom: 50px;
-  left: 45px;
+  bottom: 30px;
+  left: 30px;
   color: $accent;
   transition: transform 1s;
+  @include tablet-port {
+    // 960
+    bottom: 15px;
+    left: 15px;
+  }
 }
 
 .selected {
@@ -199,6 +219,6 @@
 
 .colorChoice.selected {
   .colorSelect {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }

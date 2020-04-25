@@ -1124,6 +1124,10 @@ button.twoWay {
   }
 }
 
+.colorContainer h1 {
+  min-height: 100px;
+}
+
 .seasonChoiceContainer,
 .timeChoiceContainer,
 .colorChoiceContainer {
@@ -1195,7 +1199,7 @@ button.twoWay {
 .seasonChoiceContainer .choice button,
 .timeChoiceContainer .choice button {
   padding: 10%;
-  border: none;
+  border: rgba(255, 255, 255, 0);
 }
 
 .seasonChoiceContainer .choice button:hover, .seasonChoiceContainer .choice button:focus,
@@ -1231,49 +1235,28 @@ button.twoWay {
 }
 
 .colorChoice {
-  position: relative;
-  width: auto;
   height: auto;
-  margin: 5% 2%;
+  margin: 60px 10px 20px 10px;
   border: 4px solid #909B5C;
 }
 
 @media (max-width: 950px) {
   .colorChoice {
-    margin: 50px 5%;
+    margin: 60px 10px 20px;
   }
-}
-
-@media (max-width: 780px) {
-  .colorChoice {
-    height: 180px;
-  }
-}
-
-.colorChoice h3 {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: -60px;
-  width: 80%;
-  height: auto;
-  text-align: center;
-  font-family: "Spartan";
-  font-size: 1.6rem;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .colorChoice button {
-  border: none;
-  height: 100%;
-  padding: 10px;
+  position: relative;
+  height: auto;
+  border: 4px solid rgba(255, 255, 255, 0);
+  padding: 15px;
 }
 
 .colorChoice button:hover .colorSelect,
 .colorChoice button:focus .colorSelect {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .colorChoice button:hover h3,
@@ -1285,10 +1268,49 @@ button.twoWay {
           transform: scale(1.2);
 }
 
+@media (max-width: 950px) {
+  .colorChoice button {
+    padding: 5px;
+  }
+}
+
+.colorChoice button h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Spartan";
+  font-size: 1.3rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 560px) {
+  .colorChoice button h3 {
+    font-size: 1.2rem;
+    top: -50px;
+  }
+}
+
+.colorChoice button h3 span {
+  display: inline-block;
+}
+
 .colorChoiceIcon:hover .colorSelect,
 .colorChoiceIcon:focus .colorSelect {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .colorOne,
@@ -1298,8 +1320,8 @@ button.twoWay {
 }
 
 .colorOne {
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   margin-top: -10px;
   -webkit-transition: -webkit-transform 0.9s;
   transition: -webkit-transform 0.9s;
@@ -1309,8 +1331,8 @@ button.twoWay {
 
 @media (max-width: 950px) {
   .colorOne {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -1320,21 +1342,35 @@ button.twoWay {
 }
 
 .colorTwo {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 950px) {
+  .colorTwo {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .colorSelect {
   -webkit-transform: scale(0.001);
           transform: scale(0.001);
   position: absolute;
-  bottom: 50px;
-  left: 45px;
+  bottom: 30px;
+  left: 30px;
   color: #2D330C;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+}
+
+@media (max-width: 950px) {
+  .colorSelect {
+    bottom: 15px;
+    left: 15px;
+  }
 }
 
 .selected {
@@ -1356,8 +1392,8 @@ button.twoWay {
 }
 
 .colorChoice.selected .colorSelect {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media (max-width: 560px) {
