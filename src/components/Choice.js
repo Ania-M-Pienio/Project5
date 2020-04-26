@@ -1,33 +1,32 @@
 import React, { Component } from "react";
 import Setting from "./Setting";
 
-class Choice extends Component {
-  render() {
+function Choice({choiceGroup, choice, selected, onSeason}) {
+
     return (
-      <div className={this.props.selected ? "choice selected" : "choice"}>
+      <div className={selected ? "choice selected" : "choice"}>
         <button
-          role={ "choose " + this.props.choice}
+          role={ "choose " + choice}
           onClick={() => {
-            this.props.onSeason(this.props.choice);
+            onSeason(choice);
           }}
         >
-          <label htmlFor={this.props.choice}>   
+          <label htmlFor={choice}>   
             <div className="choiceIcon">
-              <Setting icon={this.props.choice} size="1x" />
+              <Setting icon={choice} size="1x" />
             </div>
           </label>
           <input
             type="radio"
-            id={this.props.choice}
-            name={this.props.choiceGroup}
+            id={choice}
+            name={choiceGroup}
             onChange={() => {
-              this.props.onSeason(this.props.choice);
+              onSeason(choice);
             }}
           ></input>
         </button>
       </div>  
-    );
-  }
+    );  
 }
 export default Choice;
 
