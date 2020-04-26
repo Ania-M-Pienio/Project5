@@ -30,3 +30,8 @@ class Choice extends Component {
   }
 }
 export default Choice;
+
+      // choiceGroup="season"
+      //       choice="spring"
+      //       selected={this.props.currentSeason === "spring"}
+      //       onSeason={this.props.onSeason}

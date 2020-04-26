@@ -1,4 +1,4 @@
-import React, { Component, Fragment} from "react";
+import React, { Component} from "react";
 import firebase from "./firebaseConfig";
 import MainContainer from "./components/MainContainer";
 import AppBar from "./components/AppBar";
@@ -68,7 +68,7 @@ class App extends Component {
       time: "",
       colorSet: "",
       colorChoices: [],
-      photos: []
+      photos: [],
     };
   }
 
@@ -77,11 +77,10 @@ class App extends Component {
       this.setState({
         expand: true,
       });
-    }, 1000)
+    }, 1000);
   }
 
-
-  handleRollBack = setback => {
+  handleRollBack = (setback) => {
     if (setback === "season") {
       this.setState({ season: "" });
     } else if (setback === "time") {
@@ -90,12 +89,12 @@ class App extends Component {
       this.setState({
         colorSet: "",
         colorChoices: [],
-        photos: []
+        photos: [],
       });
     }
   };
 
-  handleRollForward = forward => {
+  handleRollForward = (forward) => {
     if (forward === "time") {
       this.getColorSets();
     }
@@ -109,32 +108,32 @@ class App extends Component {
 
   handleStartOver = () => {
     this.setState({
-      isIntro: true
+      isIntro: true,
     });
   };
 
-  handleSeasonChoice = season => {
+  handleSeasonChoice = (season) => {
     this.setState({
-      season: season
+      season: season,
     });
     if (this.state.time) {
       this.getColorSets();
     }
   };
 
-  handleTimeChoice = time => {
+  handleTimeChoice = (time) => {
     this.setState({
-      time: time
+      time: time,
     });
     if (this.state.season) {
       this.getColorSets();
     }
   };
 
-  handleColorChoice = colors => {
+  handleColorChoice = (colors) => {
     this.setState(
       {
-        colorSet: colors
+        colorSet: colors,
       },
       () => {
         this.getPhotoSets();
@@ -144,7 +143,7 @@ class App extends Component {
 
   getColorSets = () => {
     const dbRef = firebase.database().ref("ColorSets");
-    dbRef.on("value", response => {
+    dbRef.on("value", (response) => {
       const setsFromDB = response.val();
       const arrayOfDBSets = [];
       for (let key in setsFromDB) {
@@ -153,32 +152,33 @@ class App extends Component {
           primary: setsFromDB[key].primary,
           secondary: setsFromDB[key].secondary,
           seasons: setsFromDB[key].seasons,
-          time: setsFromDB[key].time
+          time: setsFromDB[key].time,
         });
       }
       const filteredSets = arrayOfDBSets
-        .filter(set => set.seasons.includes(this.state.season))
-        .filter(set => set.time.includes(this.state.time)).slice(0, 6);
+        .filter((set) => set.seasons.includes(this.state.season))
+        .filter((set) => set.time.includes(this.state.time))
+        .slice(0, 6);
 
       this.setState({
-        colorChoices: filteredSets
+        colorChoices: filteredSets,
       });
     });
   };
 
   getPhotoSets = () => {
     const dbRef = firebase.database().ref(`PhotoSets/${this.state.colorSet}`);
-    dbRef.on("value", response => {
+    dbRef.on("value", (response) => {
       const photosFromDB = response.val();
       const arrayDBPhotos = [];
       for (let key in photosFromDB) {
         arrayDBPhotos.push({
           domain: key,
-          photoUrl: photosFromDB[key]
+          photoUrl: photosFromDB[key],
         });
       }
       this.setState({
-        photos: arrayDBPhotos
+        photos: arrayDBPhotos,
       });
     });
   };
@@ -189,17 +189,15 @@ class App extends Component {
         {this.state.isIntro ? (
           ""
         ) : (
-          <Fragment>
-            <AppBar
-              onStartOver={this.handleStartOver}
-              season={this.state.season}
-              time={this.state.time}
-              color={this.state.colorSet}
-            />
-          </Fragment>
+          <AppBar
+            onStartOver={this.handleStartOver}
+            season={this.state.season}
+            time={this.state.time}
+            color={this.state.colorSet}
+          />
         )}
         {this.state.isIntro ? (
-          <Splash onStart={this.handleStart} expand={this.state.expand}/>
+          <Splash onStart={this.handleStart} expand={this.state.expand} />
         ) : (
           <MainContainer
             onSeason={this.handleSeasonChoice}
