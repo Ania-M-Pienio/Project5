@@ -66,7 +66,11 @@ class IdeasContainer extends Component {
         <div className="displayControl">
           {/* // right button */}
           {pageOne > 0 && !this.state.gridMode ? (
-            <button type="button" onClick={this.handleLeft}>
+            <button
+              aria-label="previous page"
+              type="button"
+              onClick={this.handleLeft}
+            >
               <FontAwesomeIcon
                 icon="caret-square-left"
                 size="2x"
@@ -79,6 +83,7 @@ class IdeasContainer extends Component {
 
           {/* // book-layout button */}
           <button
+            aria-label="view as a book"
             className={"buttonControl" + (this.state.gridMode ? " layout" : "")}
           >
             <FontAwesomeIcon
@@ -91,6 +96,7 @@ class IdeasContainer extends Component {
 
           {/* // grid-layout button */}
           <button
+            aria-label="view as a grid"
             className={"buttonControl" + (this.state.gridMode ? "" : " layout")}
           >
             <FontAwesomeIcon
@@ -103,7 +109,11 @@ class IdeasContainer extends Component {
 
           {/* // right button */}
           {pageOne < 7 && !this.state.gridMode ? (
-            <button type="button" onClick={this.handleRight}>
+            <button
+              aria-label="next page"
+              type="button"
+              onClick={this.handleRight}
+            >
               <FontAwesomeIcon
                 icon="caret-square-right"
                 size="2x"
@@ -116,7 +126,7 @@ class IdeasContainer extends Component {
         </div>
         {/* end of layout control */}
 
-        <div className={"ideasContainer" + (pageOne === 7 ?  " end": "")}>
+        <div className={"ideasContainer" + (pageOne === 7 ? " end" : "")}>
           {!this.state.gridMode ? (
             <Fragment>
               <Idea
@@ -126,15 +136,17 @@ class IdeasContainer extends Component {
                 icon={pageOneIcon}
                 layout="page"
               />
-              { pageOne !== 7 ? (
-              <Idea
-                current={this.props.current}
-                domain={pageTwoDomain}
-                url={this.props.photos[pageTwo].photoUrl}
-                icon={pageTwoIcon}
-                layout="page"
-              />
-              ) : "" }
+              {pageOne !== 7 ? (
+                <Idea
+                  current={this.props.current}
+                  domain={pageTwoDomain}
+                  url={this.props.photos[pageTwo].photoUrl}
+                  icon={pageTwoIcon}
+                  layout="page"
+                />
+              ) : (
+                ""
+              )}
             </Fragment>
           ) : (
             ""

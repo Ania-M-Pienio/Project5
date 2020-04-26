@@ -1163,6 +1163,7 @@ button.twoWay {
   .timeChoiceContainer,
   .colorChoiceContainer {
     margin-top: 10px;
+    margin-bottom: 10px;
     padding-bottom: 0.5%;
   }
 }
