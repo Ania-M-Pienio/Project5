@@ -78,32 +78,34 @@ class IdeasContainer extends Component {
               />
             </button>
           ) : (
-            <div className="buttonSpace"></div>
+            <div tabIndex="-1" className="buttonSpace"></div>
           )}
 
           {/* // book-layout button */}
           <button
             aria-label="view as a book"
+            type="button"
             className={"buttonControl" + (this.state.gridMode ? " layout" : "")}
+            onClick={this.handleChangeToGrid}
           >
             <FontAwesomeIcon
               icon="grip-vertical"
               size="2x"
               className="icoControl"
-              onClick={this.handleChangeToGrid}
             />
           </button>
 
           {/* // grid-layout button */}
           <button
             aria-label="view as a grid"
+            type="button"
             className={"buttonControl" + (this.state.gridMode ? "" : " layout")}
+            onClick={this.handleChangeToBook}
           >
             <FontAwesomeIcon
               icon="book-open"
               size="2x"
               className="icoControl"
-              onClick={this.handleChangeToBook}
             />
           </button>
 
@@ -121,7 +123,7 @@ class IdeasContainer extends Component {
               />
             </button>
           ) : (
-            <div className="buttonSpace"></div>
+            <div tabIndex="-1" className="buttonSpace"></div>
           )}
         </div>
         {/* end of layout control */}
