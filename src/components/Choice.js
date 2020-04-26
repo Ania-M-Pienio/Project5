@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Setting from "./Setting";
 
 function Choice({choiceGroup, choice, selected, onSeason}) {
@@ -30,7 +30,3 @@ function Choice({choiceGroup, choice, selected, onSeason}) {
 }
 export default Choice;
 
-      // choiceGroup="season"
-      //       choice="spring"
-      //       selected={this.props.currentSeason === "spring"}
-      //       onSeason={this.props.onSeason}

@@ -41,4 +41,3 @@ function AppBar(props) {
 }
 export default AppBar;
 
-// aria-label="Home" type="button" onClick={props.onStartOver}>
