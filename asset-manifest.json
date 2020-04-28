@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Project5/static/css/main.3988a942.chunk.css",
-    "main.js": "/Project5/static/js/main.3e28c1d2.chunk.js",
-    "main.js.map": "/Project5/static/js/main.3e28c1d2.chunk.js.map",
-    "runtime-main.js": "/Project5/static/js/runtime-main.8ca323a3.js",
-    "runtime-main.js.map": "/Project5/static/js/runtime-main.8ca323a3.js.map",
-    "static/js/2.c9fd7ab5.chunk.js": "/Project5/static/js/2.c9fd7ab5.chunk.js",
-    "static/js/2.c9fd7ab5.chunk.js.map": "/Project5/static/js/2.c9fd7ab5.chunk.js.map",
-    "index.html": "/Project5/index.html",
-    "precache-manifest.7e34ec2c5607229e71ed796852cc56dc.js": "/Project5/precache-manifest.7e34ec2c5607229e71ed796852cc56dc.js",
-    "service-worker.js": "/Project5/service-worker.js",
-    "static/css/main.3988a942.chunk.css.map": "/Project5/static/css/main.3988a942.chunk.css.map",
-    "static/js/2.c9fd7ab5.chunk.js.LICENSE.txt": "/Project5/static/js/2.c9fd7ab5.chunk.js.LICENSE.txt",
-    "static/media/BM8B.png": "/Project5/static/media/BM8B.d1a2970f.png",
-    "static/media/App.scss": "/Project5/static/media/BM8S.c242f42c.png",
-    "static/media/leaf-c.png": "/Project5/static/media/leaf-c.9d64527d.png",
-    "static/media/leaf-lv.png": "/Project5/static/media/leaf-lv.396f651a.png",
-    "static/media/leaf-rv.png": "/Project5/static/media/leaf-rv.1d4b1254.png"
+    "main.css": "/Ania-M-Pienio/BrideM8.git/static/css/main.c11a3973.chunk.css",
+    "main.js": "/Ania-M-Pienio/BrideM8.git/static/js/main.84b44209.chunk.js",
+    "main.js.map": "/Ania-M-Pienio/BrideM8.git/static/js/main.84b44209.chunk.js.map",
+    "runtime-main.js": "/Ania-M-Pienio/BrideM8.git/static/js/runtime-main.46a54fa5.js",
+    "runtime-main.js.map": "/Ania-M-Pienio/BrideM8.git/static/js/runtime-main.46a54fa5.js.map",
+    "static/js/2.c079ebed.chunk.js": "/Ania-M-Pienio/BrideM8.git/static/js/2.c079ebed.chunk.js",
+    "static/js/2.c079ebed.chunk.js.map": "/Ania-M-Pienio/BrideM8.git/static/js/2.c079ebed.chunk.js.map",
+    "index.html": "/Ania-M-Pienio/BrideM8.git/index.html",
+    "precache-manifest.70f727921b0e4f5444b6403dd9f1f8bd.js": "/Ania-M-Pienio/BrideM8.git/precache-manifest.70f727921b0e4f5444b6403dd9f1f8bd.js",
+    "service-worker.js": "/Ania-M-Pienio/BrideM8.git/service-worker.js",
+    "static/css/main.c11a3973.chunk.css.map": "/Ania-M-Pienio/BrideM8.git/static/css/main.c11a3973.chunk.css.map",
+    "static/js/2.c079ebed.chunk.js.LICENSE.txt": "/Ania-M-Pienio/BrideM8.git/static/js/2.c079ebed.chunk.js.LICENSE.txt",
+    "static/media/BM8B.png": "/Ania-M-Pienio/BrideM8.git/static/media/BM8B.d1a2970f.png",
+    "static/media/App.scss": "/Ania-M-Pienio/BrideM8.git/static/media/BM8S.c242f42c.png",
+    "static/media/leaf-c.png": "/Ania-M-Pienio/BrideM8.git/static/media/leaf-c.9d64527d.png",
+    "static/media/leaf-lv.png": "/Ania-M-Pienio/BrideM8.git/static/media/leaf-lv.396f651a.png",
+    "static/media/leaf-rv.png": "/Ania-M-Pienio/BrideM8.git/static/media/leaf-rv.1d4b1254.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ca323a3.js",
-    "static/js/2.c9fd7ab5.chunk.js",
-    "static/css/main.3988a942.chunk.css",
-    "static/js/main.3e28c1d2.chunk.js"
+    "static/js/runtime-main.46a54fa5.js",
+    "static/js/2.c079ebed.chunk.js",
+    "static/css/main.c11a3973.chunk.css",
+    "static/js/main.84b44209.chunk.js"
   ]
 }
